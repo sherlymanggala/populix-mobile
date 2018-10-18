@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 $color-gray: #A1AFBB;
+$toggler--dark-blue: #546E7E;
 $color-blue: #179DFE;
 $color-black: #0D2433;
 $color-white: #FFFFFF;
@@ -30,6 +31,12 @@ $border-bottom--gray: 1px solid #EDEFF2;
 .nav-link {
     font-weight: 500;
     color: $color-black !important;
+    margin: 2px 0;
+    font-weight: 400;
+}
+
+.nav-item:nth-child(1) {
+    margin-top: 50px;
 }
 
 /* For Mobile View */
@@ -77,6 +84,8 @@ a.btn--muat-lainnya {
 button.navbar-toggler {
     border: 0px;
     background-color: $color-white;
+    padding-left: 0;
+    padding-top: 18px;
 }
 
 /* Button 'Ambil Studi' */
@@ -92,17 +101,16 @@ button.navbar-toggler {
     border: 0px;
 }
 
-/* For Navbar Only */
+/* For Side Navbar Only */
 @media (max-width: 768px) {
     /* Animasi Side Navbar Slide in dari kiri */
     .navbar-collapse {
         position: absolute;
         top: 0;
-        left: 0;
-        padding: 15px;
         width: 100%;
         background-color: #fff !important;
         height: 100vh;
+        padding: 30px;
     }
     .navbar-collapse.collapsing {
         height: auto;
@@ -126,7 +134,7 @@ button.navbar-toggler {
         outline: 0;
     }
 
-    /* Funtion Rotate */
+    /* Function Rotate */
     @mixin rotate($degree) {
         -webkit-transform: rotate($degree);
         -moz-transform: rotate($degree);
@@ -162,7 +170,7 @@ button.navbar-toggler {
     .navbar-toggler span {
         @include rotate(0deg);
         display: block;
-        background-color: #444;
+        background-color: $toggler--dark-blue;
         height: 3px;
         width: 25px;
         margin-top: 4px;
@@ -171,6 +179,7 @@ button.navbar-toggler {
         left: 0;
         opacity: 1;
         z-index: 999;
+        border-radius: 3px;
     }
 
     /* Animation buat garis pertama dan garis ketiga */
@@ -181,20 +190,18 @@ button.navbar-toggler {
 
     /* Garis pertama saat aktif */
     .navbar-toggler:not(.collapsed) span.icon-toggler1 {
-        @include rotate-translate(300px, 135deg);
+        @include rotate-translate(85vw, 135deg);
         position: absolute;
-        left: 12px;
         top: 10px;
-        margin-top: 12px;
+        margin-top: 30px;
     }
 
     /* Garis ketiga saat aktif */
     .navbar-toggler:not(.collapsed) span.icon-toggler3 {
-        @include rotate-translate(300px, -135deg);
+        @include rotate-translate(85vw, -135deg);
         position: absolute;
-        left: 12px;
         top: 10px;
-        margin-top: 12px;
+        margin-top: 30px;
     }
 
     /* Garis kedua untuk hilang saat aktif*/
@@ -259,4 +266,3 @@ button.navbar-toggler {
         color: $color-blue;
     }
 }
-
