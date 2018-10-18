@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* Border bawah gray*/
+.text--gray {
+  color: #A1AFBB;
+}
+
+.text--blue {
+  color: #179DFE;
+}
+
+.btn--blue {
+  background-color: #179DFE;
+  border: 0px;
+}
+
+/* Active Link Colored Blue */
+.nav-link.active,
+.nav-link:hover {
+  color: #179DFE !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #0D2433 !important;
+}
+
+/* For Mobile View */
+h1, h2, h3, h4, h5, h6, p, span, label {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.35em;
+}
+
+h2 {
+  font-size: 1.15em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.95em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+/* Buat header only */
+.header--to-do h4 {
+  text-transform: uppercase;
+}
+
+/* Button 'Muat Lainnya' */
+a.btn--muat-lainnya {
+  display: block !important;
+  float: right;
+  margin-bottom: 30px;
+}
+
+/* Button toggler nav border */
+button.navbar-toggler {
+  border: 0px;
+  background-color: #FFFFFF;
+}
+
+/* Button 'Ambil Studi' */
+.btn--ambil-studi {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
+
+/* Button berbentuk text */
+.btn--text {
+  background-color: transparent !important;
+  border: 0px;
+}
+
+/* For Navbar Only */
+@media (max-width: 768px) {
+  /* Animasi Side Navbar Slide in dari kiri */
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #fff !important;
+    height: 100vh;
+  }
+
+  .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.3s linear;
+    -o-transition: left 0.3s linear;
+    -moz-transition: left 0.3s linear;
+    transition: left 0.3s linear;
+    left: -100%;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s linear;
+    -o-transition: left 0.3s linear;
+    -moz-transition: left 0.3s linear;
+    transition: left 0.3s linear;
+  }
+
+  /* Animated Navbar Toggler Button */
+  .navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+  }
+
+  /* Funtion Rotate */
+  /* Function Translate */
+  /* Function Rotate and Translate */
+  /* Function Animation */
+  /* Kondisi awal */
+  .navbar-toggler span {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    display: block;
+    background-color: #444;
+    height: 3px;
+    width: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    z-index: 999;
+  }
+
+  /* Animation buat garis pertama dan garis ketiga */
+  .navbar-toggler span.icon-toggler1,
+.navbar-toggler span.icon-toggler3 {
+    -webkit-transition: transform 0.35s ease-in-out;
+    -moz-transition: transform 0.35s ease-in-out;
+    -o-transition: transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
+  }
+
+  /* Garis pertama saat aktif */
+  .navbar-toggler:not(.collapsed) span.icon-toggler1 {
+    -webkit-transform: translateX(300px) rotate(135deg);
+    -moz-transform: translateX(300px) rotate(135deg);
+    -o-transform: translateX(300px) rotate(135deg);
+    transform: translateX(300px) rotate(135deg);
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    margin-top: 12px;
+  }
+
+  /* Garis ketiga saat aktif */
+  .navbar-toggler:not(.collapsed) span.icon-toggler3 {
+    -webkit-transform: translateX(300px) rotate(-135deg);
+    -moz-transform: translateX(300px) rotate(-135deg);
+    -o-transform: translateX(300px) rotate(-135deg);
+    transform: translateX(300px) rotate(-135deg);
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    margin-top: 12px;
+  }
+
+  /* Garis kedua untuk hilang saat aktif*/
+  .navbar-toggler:not(.collapsed) span.icon-toggler2 {
+    opacity: 0;
+  }
+}
+/* Header Welcome */
+.header {
+  margin: 30px 0;
+}
+
+.header--welcome {
+  margin-top: 70px;
+}
+
+/* buat section besar */
+.section {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EDEFF2;
+}
+
+/* section buat aktivitas yg bisa dilakukan */
+.section-aktivitas {
+  margin: 30px 0;
+}
+
+/* buat section riwayat aktivitas*/
+.section-riwayat {
+  border-bottom: 1px solid #EDEFF2;
+  margin-bottom: 20px;
+}
+
+/* Layout Icons */
+.template-icon {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  vertical-align: middle;
+}
+
+.riwayat-aktivitas {
+  margin-top: 60px;
+}
+
+/* ===== Screening Page ====== */
+.section-screening h4 {
+  margin: 20px 0 20px;
+  border-bottom: 1px solid #EDEFF2;
+  padding-bottom: 10px;
+}
+.section-screening .section {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.section-screening select {
+  border: none;
+  font-weight: bold;
+  color: #179DFE;
+}
+
+/*# sourceMappingURL=base-style.css.map */
