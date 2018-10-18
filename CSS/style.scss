@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 $color-gray: #A1AFBB;
-$toggler--dark-blue: #546E7E;
+$color-gray-bg: #EDEFF2;
 $color-blue: #179DFE;
 $color-black: #0D2433;
 $color-white: #FFFFFF;
+$toggler--dark-blue: #546E7E;
 
 /* Border bawah gray*/
-$border-bottom--gray: 1px solid #EDEFF2;
+$border-bottom--gray: 1px solid $color-gray-bg;
 
 .text--gray {
     color: $color-gray;
@@ -20,23 +21,6 @@ $border-bottom--gray: 1px solid #EDEFF2;
 .btn--blue {
     background-color: $color-blue;
     border: 0px;
-}
-
-/* Active Link Colored Blue */
-.nav-link.active,
-.nav-link:hover {
-    color: $color-blue !important;
-}
-
-.nav-link {
-    font-weight: 500;
-    color: $color-black !important;
-    margin: 2px 0;
-    font-weight: 400;
-}
-
-.nav-item:nth-child(1) {
-    margin-top: 50px;
 }
 
 /* For Mobile View */
@@ -80,14 +64,6 @@ a.btn--muat-lainnya {
     margin-bottom: 30px;
 }
 
-/* Button toggler nav border */
-button.navbar-toggler {
-    border: 0px;
-    background-color: $color-white;
-    padding-left: 0;
-    padding-top: 18px;
-}
-
 /* Button 'Ambil Studi' */
 .btn--ambil-studi {
     padding: 10px 20px;
@@ -108,24 +84,27 @@ button.navbar-toggler {
         position: absolute;
         top: 0;
         width: 100%;
-        background-color: #fff !important;
+        background-color: $color-white !important;
         height: 100vh;
         padding: 30px;
     }
+
+    /* Transition Function */
+    @mixin transition ($direction ,$second, $timing) {
+        -webkit-transition: $direction $second $timing;
+        -o-transition: $direction $second $timing;
+        -moz-transition: $direction $second $timing;
+        transition: $direction $second $timing;
+    }
+
     .navbar-collapse.collapsing {
+        @include transition(left, .17s , linear);
         height: auto;
-        -webkit-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        -moz-transition: left 0.3s linear;
-        transition: left 0.3s linear;
         left: -100%;
     }
     .navbar-collapse.show {
+        @include transition(left, .17s , linear);
         left: 0;
-        -webkit-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        -moz-transition: left 0.3s linear;
-        transition: left 0.3s linear;
     }
 
     /* Animated Navbar Toggler Button */
@@ -207,6 +186,60 @@ button.navbar-toggler {
     /* Garis kedua untuk hilang saat aktif*/
     .navbar-toggler:not(.collapsed) span.icon-toggler2 {
         opacity: 0;
+    }
+}
+
+/* Button toggler */
+button.navbar-toggler {
+    border: 0px;
+    background-color: $color-white;
+    padding-left: 0;
+    padding-top: 18px;
+}
+
+/* Active Link Colored Blue */
+.nav-link.active,
+.nav-link:hover {
+    color: $color-blue !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: $color-black !important;
+    margin: 2px 0;
+    font-weight: 400;
+}
+
+/* Kasih Jarak antara brand logo dan link */
+.nav-item:nth-child(1) {
+    margin-top: 50px;
+}
+
+/* Notif & Wajah */
+.notif-wajah {
+    padding-top: 18px;
+    padding-right: 20px;
+    vertical-align: top;
+
+    button {
+        border: 0px;
+        background-color: $color-gray-bg;
+        border-radius: 50px;
+        color: $color-gray;
+        width: 42px;
+
+        i {
+            font-size: 1.5em;
+            margin-top: 2px;
+        }
+    }
+
+    button:nth-child(2) {
+        background-color: transparent;
+    }
+
+    img {
+        border-radius: 50px;
     }
 }
 

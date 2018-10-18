@@ -13,23 +13,6 @@
   border: 0px;
 }
 
-/* Active Link Colored Blue */
-.nav-link.active,
-.nav-link:hover {
-  color: #179DFE !important;
-}
-
-.nav-link {
-  font-weight: 500;
-  color: #0D2433 !important;
-  margin: 2px 0;
-  font-weight: 400;
-}
-
-.nav-item:nth-child(1) {
-  margin-top: 50px;
-}
-
 /* For Mobile View */
 h1, h2, h3, h4, h5, h6, p, span, label {
   font-family: "Roboto", sans-serif;
@@ -71,14 +54,6 @@ a.btn--muat-lainnya {
   margin-bottom: 30px;
 }
 
-/* Button toggler nav border */
-button.navbar-toggler {
-  border: 0px;
-  background-color: #FFFFFF;
-  padding-left: 0;
-  padding-top: 18px;
-}
-
 /* Button 'Ambil Studi' */
 .btn--ambil-studi {
   padding: 10px 20px;
@@ -99,26 +74,27 @@ button.navbar-toggler {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: #fff !important;
+    background-color: #FFFFFF !important;
     height: 100vh;
     padding: 30px;
   }
 
+  /* Transition Function */
   .navbar-collapse.collapsing {
+    -webkit-transition: left 0.17s linear;
+    -o-transition: left 0.17s linear;
+    -moz-transition: left 0.17s linear;
+    transition: left 0.17s linear;
     height: auto;
-    -webkit-transition: left 0.3s linear;
-    -o-transition: left 0.3s linear;
-    -moz-transition: left 0.3s linear;
-    transition: left 0.3s linear;
     left: -100%;
   }
 
   .navbar-collapse.show {
+    -webkit-transition: left 0.17s linear;
+    -o-transition: left 0.17s linear;
+    -moz-transition: left 0.17s linear;
+    transition: left 0.17s linear;
     left: 0;
-    -webkit-transition: left 0.3s linear;
-    -o-transition: left 0.3s linear;
-    -moz-transition: left 0.3s linear;
-    transition: left 0.3s linear;
   }
 
   /* Animated Navbar Toggler Button */
@@ -186,6 +162,56 @@ button.navbar-toggler {
     opacity: 0;
   }
 }
+/* Button toggler */
+button.navbar-toggler {
+  border: 0px;
+  background-color: #FFFFFF;
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+/* Active Link Colored Blue */
+.nav-link.active,
+.nav-link:hover {
+  color: #179DFE !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #0D2433 !important;
+  margin: 2px 0;
+  font-weight: 400;
+}
+
+/* Kasih Jarak antara brand logo dan link */
+.nav-item:nth-child(1) {
+  margin-top: 50px;
+}
+
+/* Notif & Wajah */
+.notif-wajah {
+  padding-top: 18px;
+  padding-right: 20px;
+  vertical-align: top;
+}
+.notif-wajah button {
+  border: 0px;
+  background-color: #EDEFF2;
+  border-radius: 50px;
+  color: #A1AFBB;
+  width: 42px;
+}
+.notif-wajah button i {
+  font-size: 1.5em;
+  margin-top: 2px;
+}
+.notif-wajah button:nth-child(2) {
+  background-color: transparent;
+}
+.notif-wajah img {
+  border-radius: 50px;
+}
+
 /* Header Welcome */
 .header {
   margin: 30px 0;
