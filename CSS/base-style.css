@@ -212,6 +212,7 @@ button.navbar-toggler {
   border-radius: 50px;
 }
 
+/* TODO : Popover design to look like design */
 /* Popover */
 .popover-body div {
   padding: 10px 0;
@@ -222,6 +223,7 @@ button.navbar-toggler {
   padding-right: 5px;
 }
 
+/* Hide Popover Content */
 .hidden {
   display: none;
 }
@@ -265,6 +267,9 @@ button.navbar-toggler {
 }
 
 /* ===== Screening Page ====== */
+.section-screening {
+  /* TODO: need to style select box to look like design */
+}
 .section-screening h4 {
   margin: 20px 0 20px;
   border-bottom: 1px solid #EDEFF2;
@@ -279,5 +284,8 @@ button.navbar-toggler {
   font-weight: bold;
   color: #179DFE;
 }
+
+/* TODO */
+/* ======== Login Page ===========*/
 
 /*# sourceMappingURL=base-style.css.map */
