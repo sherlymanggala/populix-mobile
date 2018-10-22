@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $color-gray: #A1AFBB;
 $color-gray-bg: #EDEFF2;
 $color-blue: #179DFE;
 $color-black: #0D2433;
 $color-white: #FFFFFF;
+$color-orange: #FAAF40;
+$color-chocolate: #F9E4B8;
 $toggler--dark-blue: #546E7E;
 
 /* Border bawah gray*/
@@ -18,14 +20,27 @@ $border-bottom--gray: 1px solid $color-gray-bg;
     color: $color-blue;
 }
 
+.text--white {
+    color: $color-white;
+}
+
 .btn--blue {
     background-color: $color-blue;
     border: 0px;
 }
 
+.btn--orange {
+    background-color: $color-orange;
+}
+
+.bg--chocolate {
+    background-color: $color-chocolate;
+}
+
 /* For Mobile View */
 h1, h2, h3, h4, h5, h6, p, span, label {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
 }
 
 h1 {
@@ -49,7 +64,8 @@ h5 {
 }
 
 p {
-    font-size: 0.9em;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 /* Buat header only */
@@ -322,3 +338,8 @@ button.navbar-toggler {
 
 /* TODO */
 /* ======== Login Page ===========*/
+/* All Fullwdith Button */
+.btn--fullwidth {
+    width: 100%;
+    padding: 10px;
+}

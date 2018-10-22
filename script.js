@@ -10,4 +10,10 @@ $(function() {
             return $(title).children(".popover-heading").html();
         }
     });
+
+    //$('.box--notification').hide();
+
+    $('#button-email--reset').click(function() {
+        $('.box--notification').show();
+    })
 });

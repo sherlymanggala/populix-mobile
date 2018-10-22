@@ -18,8 +18,35 @@
     <body>        
         <!-- Body Starts Here -->
         <div class="container">
-            <!-- TODO -->
-            
+            <!-- Logo dan Link register -->
+            <div class="row nav">
+                <div class="col nav-brand">
+                    <img src="Assets/logo.png" alt="Populix" width="100">
+                </div>
+                <div class="col-7 text--login">
+                    <p>Kembali ke halaman  <a class="text--blue" href="#">Login</a></p>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="header">
+                <h1 class="font-weight-bold">Lupa kata sandi? Tetap tenang.</h1>
+                <h4>Silahkan masukkan email yang kamu gunakan untuk akun Populix dan kami akan mengirimkan instruksi selanjutnya.</h4>
+            </div>
+
+            <!-- Box Notification -->
+            <div class="box--notification">
+                <p>Kami telah mengirimkan instruksi selanjutnya ke email <span class="font-weight-bold" id="user-email">juinalwilliam@studioalva.co.id</span></p>
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="login-email--reset">Alamat email</label>
+                    <input type="email" class="form-control" id="login-email--reset" placeholder="Masukkan email">
+                </div>
+                <button id="button-email--reset" type="submit" class="btn btn-primary btn--blue btn--fullwidth">Kirim Ulang Kata Sandi</button>
+            </form>
         </div>
         
         <!-- Optional JavaScript -->
