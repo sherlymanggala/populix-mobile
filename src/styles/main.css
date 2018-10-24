@@ -147,23 +147,23 @@ p {
   font-weight: 400;
 }
 
-.navbar-notif-avatar {
+.topnav-notif-avatar {
   vertical-align: top;
 }
-.navbar-notif-avatar button {
+.topnav-notif-avatar button {
   border: 0px;
   background-color: #EDEFF2;
   border-radius: 50px;
   color: #E6E8EA;
   width: 24px;
 }
-.navbar-notif-avatar button i {
+.topnav-notif-avatar button i {
   font-size: 12px;
 }
-.navbar-notif-avatar button:nth-child(2) {
+.topnav-notif-avatar button:nth-child(2) {
   background-color: transparent;
 }
-.navbar-notif-avatar img {
+.topnav-notif-avatar img {
   border-radius: 50px;
 }
 
@@ -256,6 +256,14 @@ button.navbar-toggler {
   display: none;
 }
 
+/* TODO: need to style select box to look like design */
+select,
+input[type=date] {
+  border: none;
+  font-weight: 700;
+  color: #179DFE;
+}
+
 .body-content h1, .body-content h2 {
   font-weight: 700;
 }
@@ -285,9 +293,6 @@ button.navbar-toggler {
   margin-bottom: 20px;
 }
 
-.section-screening {
-  /* TODO: need to style select box to look like design */
-}
 .section-screening h4 {
   margin: 20px 0 20px;
   border-bottom: 1px solid #EDEFF2;
@@ -296,11 +301,6 @@ button.navbar-toggler {
 .section-screening .section {
   display: grid;
   grid-template-columns: 1fr 6fr;
-}
-.section-screening select {
-  border: none;
-  font-weight: bold;
-  color: #0A3047;
 }
 
 /*# sourceMappingURL=main.css.map */

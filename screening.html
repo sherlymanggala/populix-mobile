@@ -18,96 +18,42 @@
 <body id="screening">
     <div class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" grid-icon-toggle="collapse" grid-icon-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
+        <nav class="topnav navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button> 
+            </button>
             
             <!-- Sidebar -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="sidebar collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
                     <img class="img-fluid" src="src/assets/image.png">
                 </a>
                 
                 <!-- Link starts here -->
-                <ul class="navbar-nav nav d-flex justify-content-end">
+                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link link" href="index.html">Dashboard</a>
+                        <a class="nav-link link active" href="index.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link active" href="screening.html">Screening</a>
+                        <a class="nav-link link" href="#">Screening</a>
                     </li>
                 </ul>
             </div>
             
             <!-- Notif and Avatar -->
-            <div class="topnav-notif-avatar row">
-                <button id="topnav-btn-notif" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#content-notif">
-                    <span class="icon-nav"><i class="fas fa-bell"></i></span>
+            <div class="topnav-notif-avatar">
+                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
+                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
                 </button>
-                <button id="topnav-btn-avatar" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#content-profile">
-                    <span class="icon-nav"><img src="src/assets/profile-picture.png" width=40></span>
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
+                    <span class="navbar-icon"><img src="src/assets/profile-picture.png" width=24></span>
                 </button>
-            </div>
-            
-            <!-- Content untuk Popover Notif -->
-            <div id="content-notif" class="hidden popover-content">
-                <div class="popover-heading container">Notifications</div>
-                <div class="popover-body container">
-                    <div class="notification">
-                        <span class="notif-content">Kamu mendapatkan reward dari studi "Marketplace section-activity-marketplace- Tokped"</span><br>
-                        <span class="notif-date text--gray">27 September 2018</span><span class="notif-time text--gray">17:59</span>
-                    </div>
-                    <div class="notification">
-                        <span class="notif-content">Kamu mendapatkan reward dari studi "Penggunaan teknologi di bidang marketing"</span><br>
-                        <span class="notif-date text--gray">27 September 2018</span><span class="notif-time text--gray">15:59</span>
-                    </div>
-                    <a class="btn--text text--blue" href="#">See all</a>
-                </div>
-            </div>
-            
-            <!-- TODO neeed to style -->
-            <!-- Content untuk Popover Profile -->
-            <div id="content-profile" class="popover-content popover-content-hidden">
-                <div class="popover-header container">Profil saya</div>
-                <div class="popover-body container">
-                    <div class="profile-info">
-                        <span class="username">Juinal William</span><br>
-                        <span class="progressive-bar"></span>
-                        <label>Saldo</label><br>
-                        <span class="user-saldo">Rp 1.000.000</span>
-                    </div>
-                    <div class="profile-links">
-                        <ul class="nav flex-column">
-                            <li>
-                                <a href="#">Tentang</a>
-                            </li>
-                            <li>
-                                <a href="#">Kontak</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="profile-links">
-                        <ul class="nav flex-column">
-                            <li>
-                                <a href="#">Bantuan</a>
-                            </li>
-                            <li>
-                                <a href="#">Log out</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </nav>
         

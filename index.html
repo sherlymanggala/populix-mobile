@@ -19,21 +19,21 @@
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" grid-icon-toggle="collapse" grid-icon-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <!-- Sidebar -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="sidebar collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
                     <img class="img-fluid" src="src/assets/image.png">
                 </a>
                 
                 <!-- Link starts here -->
-                <ul class="navbar-nav nav d-flex justify-content-end">
+                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link link active" href="index.html">Dashboard</a>
                     </li>
@@ -47,11 +47,11 @@
             </div>
             
             <!-- Notif and Avatar -->
-            <div class="navbar-notif-avatar">
-                <button id="topnav-btn-notif" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#navbar-popover-notif">
+            <div class="topnav-notif-avatar">
+                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
                     <span class="navbar-icon"><i class="fas fa-bell"></i></span>
                 </button>
-                <button id="topnav-btn-avatar" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#navbar-popover-avatar">
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
                     <span class="navbar-icon"><img src="src/assets/profile-picture.png" width=24></span>
                 </button>
             </div>
@@ -80,7 +80,7 @@
             <div class="section-activity">
                 <div id="section-activity-marketplace">
                     <!-- Icon here -->
-                    <img src="src/assets/screening-tab-icons/pendidikan-icon.png" width="100">
+                    <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
                     <h2>Studi marketplace tentang pengguna teknologi</h2>
                     <h5><span class="section-activity-marketplace-name">Tokopedia</span></h5>
                     <p class="text--gray"><span class="section-activity-marketplace-detail">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
@@ -92,15 +92,15 @@
                         <p><span class="section-activity-marketplace-orang">15</span> orang</p>
                         
                         <!-- Waktu -->
-                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png" width="50">
+                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
                         <p><span class="section-activity-marketplace-waktu">20 menit</span></p>
                         
                         <!-- Duit -->
-                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png" width="50">
+                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
                         <p>Rp. <span class="section-activity-marketplace-duit">250.000</span></p>
                         
                         <!-- Tanggal -->
-                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png" width="50">
+                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
                         <p><span class="section-activity-marketplace-tanggal">17 Agustus 2018</span></p>
                     </div>
                     
@@ -116,5 +116,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="src/scripts/script.js"></script>
 </body>
 </html>

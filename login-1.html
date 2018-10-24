@@ -7,7 +7,7 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="src/styles/main.css">
     
     <!-- Bootstrap FA Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="login-3" class="login">        
+<body id="login-1" class="login">        
     <!-- Body Starts Here -->
     <div class="container">
         <!-- Top Nav Logo dan Link register -->
@@ -30,19 +30,22 @@
         
         <!-- Header -->
         <div class="body-header">
-            <h1>Masukkan kata sandi yang baru.</h1>
-            <h4>Silahkan masukkan kata sandi yang baru. Untuk kamu gunakan ketika ingin melakukan login pada akun Populix.</h4>
+            <h1>Lupa kata sandi? Tetap tenang.</h1>
+            <h4>Silahkan masukkan email yang kamu gunakan untuk akun Populix dan kami akan mengirimkan instruksi selanjutnya.</h4>
+        </div>
+        
+        <!-- Box Notification -->
+        <div class="body-notification-box">
+            <p>Kami telah mengirimkan instruksi selanjutnya ke email <span id="login-1-email">juinalwilliam@studioalva.co.id</span></p>
         </div>
         
         <!-- Login Form -->
         <form class="body-content-form">
             <div class="form-group">
-                <label for="form-password--new">Kata sandi baru</label>
-                <input type="password" class="form-control" id="form-password--new" placeholder="Masukkan kata sandi yang baru">
-                <label for="form-password--confirm">Konfirmasi kata sandi baru</label>
-                <input type="password" class="form-control" id="form-password--confirm" placeholder="Masukkan kembali kata sandi yang baru">
+                <label for="form-email--reset">Alamat email</label>
+                <input type="email" class="form-control" id="form-email--reset" placeholder="Masukkan email">
             </div>
-            <button id="form-btn-password--reset" type="submit" class="btn btn-primary btn--blue btn--fullwidth">Kirim kata sandi</button>
+            <button id="form-btn-email--reset" type="submit" class="btn btn-primary btn--blue btn--fullwidth">Kirim Ulang Kata Sandi</button>
         </form>
     </div>
     

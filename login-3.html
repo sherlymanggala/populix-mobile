@@ -7,7 +7,7 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="src/styles/main.css">
     
     <!-- Bootstrap FA Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="login-1" class="login">        
+<body id="login-3" class="login">
     <!-- Body Starts Here -->
     <div class="container">
         <!-- Top Nav Logo dan Link register -->
@@ -30,22 +30,17 @@
         
         <!-- Header -->
         <div class="body-header">
-            <h1>Lupa kata sandi? Tetap tenang.</h1>
-            <h4>Silahkan masukkan email yang kamu gunakan untuk akun Populix dan kami akan mengirimkan instruksi selanjutnya.</h4>
-        </div>
-        
-        <!-- Box Notification -->
-        <div class="body-notification-box">
-            <p>Kami telah mengirimkan instruksi selanjutnya ke email <span id="login-1-email">juinalwilliam@studioalva.co.id</span></p>
+            <h1>Atur ulang kata sandi</h1>
+            <h4>Kamu mengirimkan instruksi untuk mengatur ulang kata sandi. Klik "ubah kata sandi" untuk membuat kata sandi yang baru.</h4>
         </div>
         
         <!-- Login Form -->
         <form class="body-content-form">
+            <button id="form-btn-email--resend" type="submit" class="btn btn-primary btn--blue btn--fullwidth">Kirim Ulang Kata Sandi</button>
             <div class="form-group">
                 <label for="form-email--reset">Alamat email</label>
                 <input type="email" class="form-control" id="form-email--reset" placeholder="Masukkan email">
-            </div>
-            <button id="form-btn-email--reset" type="submit" class="btn btn-primary btn--blue btn--fullwidth">Kirim Ulang Kata Sandi</button>
+            </div>                
         </form>
     </div>
     

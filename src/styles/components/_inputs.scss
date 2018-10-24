@@ -1,0 +1,7 @@
+/* TODO: need to style select box to look like design */
+select,
+input[type=date] {
+    border: none;
+    font-weight: $font-bold;
+    color: $color-light-blue;
+}

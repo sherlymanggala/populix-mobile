@@ -8,11 +8,4 @@
         display: grid;
         grid-template-columns: 1fr 6fr;
     }
-
-    /* TODO: need to style select box to look like design */
-    select {
-        border: none;
-        font-weight: bold;
-        color: $color-blue;
-    }
 }
