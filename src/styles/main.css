@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+nav .dropdown-item {
+  color: #0D2433 !important;
+}
+
 @media (max-width: 768px) {
   /**
    * Sidebar animation from left to right
@@ -136,8 +140,7 @@ p {
   vertical-align: middle;
 }
 
-.nav-link,
-.sidebar-nav > a.dropdown-item {
+.nav-link {
   color: #0D2433 !important;
   font-weight: 500;
   margin: 2px 0;
@@ -171,7 +174,7 @@ p {
 
 @media (max-width: 768px) {
   /* Kondisi awal */
-  .navbar-toggler span {
+  .topnav .navbar-toggler span {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -187,8 +190,7 @@ p {
     z-index: 999;
     border-radius: 3px;
   }
-
-  .navbar-collapse {
+  .topnav .navbar-collapse {
     position: absolute;
     top: 0;
     width: 90%;
@@ -196,11 +198,12 @@ p {
     height: 100vh;
   }
 
-  /* Kasih Jarak antara brand logo dan link */
-  .nav-item:nth-child(1) {
+  .sidebar-nav {
+    /* Kasih Jarak antara brand logo dan dashboard */
+  }
+  .sidebar-nav #sidebar-nav-link-dashboard {
     margin-top: 32px;
   }
-
   .sidebar-nav .grid--left a {
     display: grid;
     grid-template-columns: 50px 1fr;
