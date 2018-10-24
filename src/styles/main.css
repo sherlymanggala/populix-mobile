@@ -12,7 +12,8 @@
   padding: 0;
 }
 
-.row {
+.row,
+.col {
   padding: 0;
   margin: 0;
 }
@@ -135,16 +136,17 @@ p {
   vertical-align: middle;
 }
 
-.nav-link.active,
-.nav-link:hover {
-  color: #179DFE !important;
-}
-
-.nav-link {
-  color: #0D2433;
+.nav-link,
+.sidebar-nav > a.dropdown-item {
+  color: #0D2433 !important;
   font-weight: 500;
   margin: 2px 0;
   font-weight: 400;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #179DFE !important;
 }
 
 .topnav-notif-avatar {
@@ -196,7 +198,12 @@ p {
 
   /* Kasih Jarak antara brand logo dan link */
   .nav-item:nth-child(1) {
-    margin-top: 50px;
+    margin-top: 32px;
+  }
+
+  .sidebar-nav .grid--left a {
+    display: grid;
+    grid-template-columns: 50px 1fr;
   }
 }
 .btn--blue {

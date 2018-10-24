@@ -10,8 +10,15 @@
     padding: 0;
 }
 
-// Remove Row Padding and Margin
-.row {
+// Remove Col and Row Padding and Margin
+.row,
+.col {
     padding: 0;
     margin: 0;
+}
+
+nav {
+    .dropdown-item {
+        color: $color-dark-blue !important;
+    }
 }
