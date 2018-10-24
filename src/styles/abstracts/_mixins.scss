@@ -1,0 +1,50 @@
+/// Transition Mixin
+/// $property = transition-property
+/// $second = transition-duration
+/// $timing = transition-timing-function
+@mixin transition ($property ,$second, $timing) {
+    -webkit-transition: $property $second $timing;
+    -o-transition: $property $second $timing;
+    -moz-transition: $property $second $timing;
+    transition: $property $second $timing;
+}
+
+/// Transform Rotate Mixin
+/// $degree = rotating angle
+@mixin rotate($degree) {
+    -webkit-transform: rotate($degree);
+    -moz-transform: rotate($degree);
+    -o-transform: rotate($degree);
+    transform: rotate($degree);
+}
+
+/// Transform Translate Mixin
+/// $x = value for X-axis
+/// $y = value for Y-axis
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
+/// Transform Translate + Rotate Mixin
+/// Translate X axis only
+/// $value = value for X-axis
+/// $degree = rotating angle
+@mixin rotate-translate($value, $degree) {
+    -webkit-transform: translateX($value) rotate($degree);
+    -moz-transform: translateX($value) rotate($degree);
+    -o-transform: translateX($value) rotate($degree);
+    transform: translateX($value) rotate($degree);
+}
+
+/// Transition Transform (Animate) Mixin
+/// Using ease-in-out for smooth animation
+/// $second = transition-duration
+@mixin animate($second) {
+    -webkit-transition: transform $second ease-in-out;
+    -moz-transition: transform $second ease-in-out;
+    -o-transition: transform $second ease-in-out;
+    transition: transform $second ease-in-out;
+}

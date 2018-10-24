@@ -15,65 +15,158 @@
     <title>Populix</title>
 </head>
 
-<body>        
+<body id="prescreening-1-5" class="prescreening">        
     <!-- Body Starts Here -->
     <div class="container">
-        <!-- Logo dan Lewati -->
-        <div class="row nav">
+        <!-- Top Nav Logo dan Link Lewati -->
+        <div class="topnav row nav">
             <div class="col nav-brand">
-                <img src="Assets/logo.png" alt="Populix" width="100">
+                <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="float-right text--skip">
-                <a class="text--blue" href="#">Lewati</a>
+            <div class="col-7 topnav-btn-text-register">
+                <a class="text--blue" href="#">Login</a>
             </div>
         </div>
         
         <!-- Welcome User -->
-        <p class="text--black">Hi, <span id="username">Juinal William</span></p>
+        <div class="body-header">
+            <p class="text--black">Hi, <span class="username">Juinal William</span></p>
+        </div>
         
-        <img src="Assets/dot.png">
+        <img src="src/assets/dot.png">
         
-        <!-- Header -->
-        <div class="header">
-            <h1 class="font-weight-bold">Kami perlu mengetahui tentang kamu.</h1>
+        <!-- prescreening- -->
+        <div class="body-content-prescreening">
+            <h1>Kami perlu mengetahui tentang kamu.</h1>
             <p>Semakin banyak kamu menjawab pertanyaan screening 
                 maka semakin besar juga peluang kamu untuk bisa 
                 mengikuti studi dari kami.<br><br>
-                Dengan <span class="bg--chocolate font-weight-bold">minimal 50% kelengkapan</span>
+                Dengan <span class="text-highlight--cream">minimal 50% kelengkapan</span>
                 kamu bisa mulai mendapatkan studi.
             </p>
         </div>
         
         <!-- Kebijakan privasi -->
-        <div>
-            <span>Icon</span>
-            <p class="f-12">
+        <div class="body-content-privacy">
+            <span class="icon">Icon</span>
+            <p class="f-12 question">
                 Informasi data pribadi kamu aman bersama kami.
                 <a class="text--blue" href="#">Kebijakan privasi</a>
             </p>
         </div>
         
         <!-- Progress Bar -->
-        <div class="progress">
+        <div class="body-content-progress progress">
             <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <p class="f-12"><span class="font-weight-bold">5%</span> kelengkapan sebelum mengambil survey</p>
+        <p class="f-12"><span>5%</span> kelengkapan sebelum mengambil survey</p>
         
         <!-- Gender -->
-        <div>
-            <span>Icon</span>
-            <p>Saya adalah...</p>
-            <button class="btn--gender"><img src="Assets/man.png" alt="Laki-laki"></button>
-            <button class="btn--gender"><img src="Assets/women.png" alt="Perempuan"></button>
+        <div class="body-content-gender">
+            <div class="radio-question">
+                <span class="icon">Icon</span>
+                <label class="question">Saya adalah...</label><br>
+            </div>            
+            <div class="radio-option option">
+                <input id="radio-option-male" type="radio" name="gender" value="male" />
+                <label for="radio-option-male"><img src="src/assets/man.png"></label>
+                <input id="radio-option-female" type="radio" name="gender" value="female" />
+                <label for="radio-option-female"><img src="src/assets/women.png"></label>
+            </div>
         </div>
         
-    </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Tanggal Lahir -->
+        <div class="body-content-birthday">
+            <div class="input-question">
+                <span class="icon">Icon</span>
+                <label class="question">Saya lahir pada...</label><br>
+            </div>            
+            <div class="input-option option">
+                <input type="date" name="birthday">
+            </div>
+        </div>
+        
+        <!-- Etnis -->
+        <div class="body-content-etnis">
+            <div class="select-question">
+                <span class="icon">Icon</span>
+                <label class="question">Etnis saya adalah...</label><br>
+            </div>            
+            <div class="select-option option">
+                <select name="etnis" id="select-option-etnis">
+                    <option value="Jawa">Jawa</option>
+                    <option value="Sunda">Sunda</option>
+                    <option value="Tionghoa">Tionghoa</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Agama -->
+        <div class="body-content-agama">
+            <div class="select-question">
+                <span class="icon">Icon</span>
+                <label class="question">Agama/kepercayaan saya adalah...</label><br>
+            </div>            
+            <div class="select-option option">
+                <select name="agama" id="select-option-agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Khatolik">Khatolik</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Hindu">Hindu</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Kewarganegaraan -->
+        <div class="body-content-warganegara">
+            <div class="select-question">
+                <span class="icon">Icon</span>
+                <label class="question">Kewarganegaraan saya adalah...</label><br>
+            </div>            
+            <div class="select-option option">
+                <select name="warganegara" id="select-option-warganegara">
+                    <option value="WNI">WNI</option>
+                    <option value="WNA">WNA</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Domisili -->
+        <div class="body-content-domisili">
+            <div class="select-question">
+                <span class="icon">Icon</span>
+                <label class="question">Kota tempat saya tinggal di...</label><br>
+            </div>            
+            <div class="select-option option">
+                <select name="domisili" id="select-option-domisili">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bogor">Bogor</option>
+                    <option value="Depok">Depok</option>
+                    <option value="Tangerang">Tangerang</option>
+                    <option value="Bekasi">Bekasi</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- KTP -->
+        <div class="body-content-ktp">
+            <div class="input-file-question">
+                <span class="icon">Icon</span>
+                <label class="question">Informasi KTP</label><br>
+            </div>            
+            <div class="input-file-option option">
+                <input type="file">
+                <label>Maksimal file <strong>1 MB</strong></label><br>
+                <label class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</label>
+            </div>
+        </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>

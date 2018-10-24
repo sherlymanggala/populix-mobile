@@ -1,0 +1,32 @@
+.body-content {
+    h1, h2 {
+        font-weight: $font-bold;
+    }
+    .img-3-dots {
+        margin: 24px 0;
+    }
+}
+
+.section-activity {
+    h4 {
+        font-weight: $font-semibold;
+    }
+}
+
+/* buat section besar */
+.section {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: $border-bottom--gray;
+}
+
+/* section buat aktivitas yg bisa dilakukan */
+.body-content-section-activity {
+    margin: 30px 0;
+}
+
+/* buat section riwayat aktivitas*/
+.section-riwayat {
+    border-bottom: $border-bottom--gray;
+    margin-bottom: 20px;
+}

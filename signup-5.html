@@ -15,44 +15,40 @@
     <title>Populix</title>
 </head>
 
-<body>        
+<body id="signup-5" class="signup">        
     <!-- Body Starts Here -->
     <div class="container">
-        <!-- Logo dan Lewati -->
-        <div class="row nav">
+        <!-- Top Nav Logo dan Link Lewati -->
+        <div class="topnav row nav">
             <div class="col nav-brand">
-                <img src="Assets/logo.png" alt="Populix" width="100">
+                <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="float-right text--skip">
+            <div class="float-right topnav-btn-text-skip">
                 <a class="text--blue" href="#">Lewati</a>
             </div>
         </div>
         
         <!-- Welcome User -->
-        <p class="text--black">Hi, <span id="username">Juinal William</span></p>
+        <p class="text--black">Hi, <span class="username">Juinal William</span></p>
         
-        <img src="Assets/dot.png">
+        <img src="src/assets/dot.png">
         
         <!-- Header -->
-        <div class="header">
-            <h1 class="font-weight-bold">Silahkan masukkan nomor handphone kamu.</h1>
-            <p>Kami akan memberitahukan kamu lewat SMS jika ada studi
-                yang tersedia untuk kamu ambil.
+        <div class="body-header">
+            <h1>Selamat bergabung dengan Populix.</h1>
+            <p>Email konfirmasi telah dikirimkan, 
+                segera konfirmasi email anda agar anda bisa 
+                mengakses semua fitur dari Populix.
             </p>
         </div>
         
-        <!-- Form Nomor Handphone -->
-        <form>
-            <div class="form-group">
-                <label class="font-weight-bold" for="signup-no-hp">Nomor handphone aktif</label>
-                <input type="email" class="form-control" id="signup-no-hp" placeholder="Contoh: 081254281234">
-            </div>
-        </form>
-        
         <!-- Lanjut -->
-        <a role="button" class="btn btn-primary btn--blue btn--fullwidth text--white" href="#">
+        <a role="button" class="btn-lanjut btn btn-primary btn--blue btn--fullwidth text--white" href="#">
             Lanjut <i class="fas fa-arrow-right"></i>
         </a>
+        
+        <!-- Kirim ulang email konfirmasi-->
+        <p><a class="text--blue" href="#">Kirim ulang email konfirmasi</a></p>
     </div>
     
     <!-- Optional JavaScript -->

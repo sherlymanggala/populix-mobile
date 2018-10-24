@@ -1,0 +1,37 @@
+// Active Link Colored Blue
+.nav-link.active,
+.nav-link:hover {
+    color: $color-light-blue !important;
+}
+
+.nav-link {
+    color: $color-dark-blue;
+    font-weight: 500;
+    margin: 2px 0;
+    font-weight: 400;
+}
+
+// Notif & Avatar
+.navbar-notif-avatar {
+    vertical-align: top;
+
+    button {
+        border: 0px;
+        background-color: $color-light-gray;
+        border-radius: 50px;
+        color: $color-gray;
+        width: 24px;
+
+        i {
+            font-size: 12px;
+        }
+    }
+
+    button:nth-child(2) {
+        background-color: transparent;
+    }
+
+    img {
+        border-radius: 50px;
+    }
+}

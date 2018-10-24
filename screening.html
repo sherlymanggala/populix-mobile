@@ -1,38 +1,37 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/base-style.css">
-        
-        <!-- Bootstrap FA Icons -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-        
-        <title>Populix</title>
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles/main.css">
+    
+    <!-- Bootstrap FA Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <title>Populix</title>
+</head>
+
+<body id="screening">
+    <div class="container">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" grid-icon-toggle="collapse" grid-icon-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
-                <span class="icon-toggler1"> </span>
-                <span class="icon-toggler2"> </span>
-                <span class="icon-toggler3"> </span>
+                <span></span>
+                <span></span>
+                <span></span>
             </button> 
             
+            <!-- Sidebar -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
-                    <img class="img-fluid" src="Assets/image.png">
+                    <img class="img-fluid" src="src/assets/image.png">
                 </a>
-                
-                <!-- Sementara jangan di hapus -->
-                <ul class="navbar-nav mr-auto"></ul>
                 
                 <!-- Link starts here -->
                 <ul class="navbar-nav nav d-flex justify-content-end">
@@ -43,28 +42,27 @@
                         <a class="nav-link link" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link active" href="#">Screening</a>
+                        <a class="nav-link link active" href="screening.html">Screening</a>
                     </li>
                 </ul>
             </div>
-
-            <!-- Notif and Wajah -->
-            <div class="notif-wajah row">
-                <button id="btn--notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#content--notif">
+            
+            <!-- Notif and Avatar -->
+            <div class="topnav-notif-avatar row">
+                <button id="topnav-btn-notif" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#content-notif">
                     <span class="icon-nav"><i class="fas fa-bell"></i></span>
                 </button>
-                <button id="btn--profile" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#content--profile">
-                    <span class="icon-nav"><img src="Assets/profile-picture.png" width=40></span>
+                <button id="topnav-btn-avatar" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#content-profile">
+                    <span class="icon-nav"><img src="src/assets/profile-picture.png" width=40></span>
                 </button>
             </div>
-
-            <!-- TODO neeed to style -->
+            
             <!-- Content untuk Popover Notif -->
-            <div id="content--notif" class="hidden popover-content">
+            <div id="content-notif" class="hidden popover-content">
                 <div class="popover-heading container">Notifications</div>
                 <div class="popover-body container">
                     <div class="notification">
-                        <span class="notif-content">Kamu mendapatkan reward dari studi "Marketplace perusahaan Tokped"</span><br>
+                        <span class="notif-content">Kamu mendapatkan reward dari studi "Marketplace section-activity-marketplace- Tokped"</span><br>
                         <span class="notif-date text--gray">27 September 2018</span><span class="notif-time text--gray">17:59</span>
                     </div>
                     <div class="notification">
@@ -74,17 +72,17 @@
                     <a class="btn--text text--blue" href="#">See all</a>
                 </div>
             </div>
-
+            
             <!-- TODO neeed to style -->
             <!-- Content untuk Popover Profile -->
-            <div id="content--profile" class="hidden popover-content">
-                <div class="popover-heading container">Profil saya</div>
+            <div id="content-profile" class="popover-content popover-content-hidden">
+                <div class="popover-header container">Profil saya</div>
                 <div class="popover-body container">
                     <div class="profile-info">
                         <span class="username">Juinal William</span><br>
                         <span class="progressive-bar"></span>
                         <label>Saldo</label><br>
-                        <span class="user-saldo font-weight-bold">Rp 1.000.000</span>
+                        <span class="user-saldo">Rp 1.000.000</span>
                     </div>
                     <div class="profile-links">
                         <ul class="nav flex-column">
@@ -112,18 +110,14 @@
                 </div>
             </div>
         </nav>
-
-        
-
-        <!-- Navbar End Here -->
         
         <!-- Body Starts Here -->
-        <div class="container">
+        <div class="body-content">
             <div class="section-screening">
-                <h4 class="font-weight-bold">Screening &bull; Profesi</h4>
+                <h4>Screening &bull; Profesi</h4>
                 <!-- Saya bekerja -->
-                <div class="section">
-                    <img src="Assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening-time">
+                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
                     <form>
                         <label>Saya bekerja...</label><br>
                         <select>
@@ -133,8 +127,8 @@
                     </form>
                 </div>
                 <!-- Jabatan saya -->
-                <div class="section">
-                    <img src="Assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening-jabatan">
+                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
                     <form>
                         <label>Jabatan saya sebagai...</label><br>
                         <select>
@@ -145,9 +139,9 @@
                         </select>
                     </form>
                 </div>
-                <!-- Bidang Perusahaan -->
-                <div class="section">
-                    <img src="Assets/favicon.png" alt="Marketplace" width=32>
+                <!-- Bidang section-activity-marketplace- -->
+                <div class="section-screening-marketplace">
+                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
                     <form>
                         <label>Perusahaan saya bergerak di bidang...</label><br>
                         <select>
@@ -159,8 +153,8 @@
                     </form>
                 </div>
                 <!-- Cuti -->
-                <div class="section">
-                    <img src="Assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening-cuti">
+                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
                     <form>
                         <label>Saya pernah mengambil cuti...</label><br>
                         <select>
@@ -176,8 +170,8 @@
                     </form>
                 </div>
                 <!-- Installed Marketplace App -->
-                <div class="section">
-                    <img src="Assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening-app">
+                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
                     <form>
                         <label>Marketplace apa saja yang teriinstal di handphone anda?</label><br>
                         <select> 
@@ -194,22 +188,23 @@
                             Pilih <i class="fas fa-caret-down"></i>
                         </div>
                         <div class="select-box">
-                            <div class="input input1" data-value="1">A. Tokopedia, Bukalapak</div>
-                            <div class="input input2" data-value="2">B. Zalora, JD.ID, Bukalapak</div>
-                            <div class="input input3" data-value="3">C. Tokopedia, Zalora, JD.ID</div>
-                            <div class="input input4" data-value="4">D. JD.ID, Bukalapak, Zalora</div>
-                            <div class="input input5" data-value="5">E. Tokopedia, Zalora, JD.ID, Bukalapak</div>
+                            <div class="input input1" grid-icon-value="1">A. Tokopedia, Bukalapak</div>
+                            <div class="input input2" grid-icon-value="2">B. Zalora, JD.ID, Bukalapak</div>
+                            <div class="input input3" grid-icon-value="3">C. Tokopedia, Zalora, JD.ID</div>
+                            <div class="input input4" grid-icon-value="4">D. JD.ID, Bukalapak, Zalora</div>
+                            <div class="input input5" grid-icon-value="5">E. Tokopedia, Zalora, JD.ID, Bukalapak</div>
                         </div>
                     </div> -->
                 </div>
             </div>
         </div>
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
 </html>

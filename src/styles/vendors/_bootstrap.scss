@@ -1,0 +1,17 @@
+// Define padding for all pages
+.container {
+    padding: 32px 24px 76px 24px !important;
+}
+
+// Remove Navbar Padding
+.navbar,
+.navbar-collapse,
+.navbar-toggler {
+    padding: 0;
+}
+
+// Remove Row Padding and Margin
+.row {
+    padding: 0;
+    margin: 0;
+}

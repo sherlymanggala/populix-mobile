@@ -1,0 +1,43 @@
+// for blue bg color
+.btn--blue {
+    background-color: $color-blue;
+    border: 0px;
+}
+
+// for orange bg color
+.btn--orange {
+    background-color: $color-orange;
+}
+
+/* Button 'Muat Lainnya' */
+a.btn--muat-lainnya {
+    display: block !important;
+    float: right;
+    margin-bottom: 30px;
+}
+
+/* Button 'Ambil Studi' */
+.btn--ambil-studi {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+/* Button berbentuk text */
+.btn--text {
+    background-color: transparent !important;
+    border: 0px;
+}
+
+/* Button navbar toggler */
+button.navbar-toggler {
+    border: 0px;
+    background-color: $color-white;
+    padding-left: 0;
+}
+
+/* All Fullwdith Button */
+.btn--fullwidth {
+    width: 100%;
+    padding: 10px;
+}

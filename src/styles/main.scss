@@ -1,0 +1,41 @@
+// Google Font Roboto
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/**
+ * import all styles
+ */
+@import 
+    'abstracts/functions',
+    'abstracts/mixins',
+    'abstracts/placeholders',
+    'abstracts/variables';
+
+@import
+    'vendors/bootstrap';
+
+@import
+    'base/animations',
+    'base/color',
+    'base/typography';
+
+@import
+    'layout/footer',
+    'layout/forms',
+    'layout/grid',
+    'layout/header',
+    'layout/navigation',
+    'layout/sidebar';
+
+@import
+    'components/buttons',
+    'components/cover',
+    'components/dropdown',
+    'components/popover';
+
+@import
+    'pages/dashboard',
+    'pages/login',
+    'pages/screening';
+
+@import
+    'themes/theme';

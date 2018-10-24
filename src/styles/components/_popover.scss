@@ -1,0 +1,17 @@
+/* Popover */
+.popover-body {
+    div {
+        padding: 10px 0;
+        border-bottom: $border-bottom--gray;
+
+        /* Notif */
+        .notif-date {
+            padding-right: 5px;
+        }
+    }
+}
+
+/* Hide Popover Content */
+.popover-content-hidden {
+    display: none;
+}

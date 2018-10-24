@@ -1,0 +1,35 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+/**
+ * Small Devices
+ */
+h1 {
+    font-size: 1.35em;
+}
+h2 {
+    font-size: 1.15em;
+}
+h3 {
+    font-size: 1.1em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.95em;
+}
+
+// General p with font-size 13px
+p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: $font-regular;
+}
+
+// For p that has font-size 12px
+.f-12 {
+    font-size: 12px;
+}

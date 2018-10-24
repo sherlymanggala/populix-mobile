@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/**
+ * import all styles
+ */
+.container {
+  padding: 32px 24px 76px 24px !important;
+}
+
+.navbar,
+.navbar-collapse,
+.navbar-toggler {
+  padding: 0;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /**
+   * Sidebar animation from left to right
+   */
+  .navbar-collapse.collapsing {
+    -webkit-transition: left 0.17s linear;
+    -o-transition: left 0.17s linear;
+    -moz-transition: left 0.17s linear;
+    transition: left 0.17s linear;
+    height: auto;
+    left: -100%;
+  }
+
+  .navbar-collapse.show {
+    -webkit-transition: left 0.17s linear;
+    -o-transition: left 0.17s linear;
+    -moz-transition: left 0.17s linear;
+    transition: left 0.17s linear;
+    left: 0;
+  }
+
+  .navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+  }
+
+  .navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+    -webkit-transition: transform 0.35s ease-in-out;
+    -moz-transition: transform 0.35s ease-in-out;
+    -o-transition: transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    -webkit-transform: translateX(65vw) rotate(135deg);
+    -moz-transform: translateX(65vw) rotate(135deg);
+    -o-transform: translateX(65vw) rotate(135deg);
+    transform: translateX(65vw) rotate(135deg);
+    position: absolute;
+    top: 10px;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    -webkit-transform: translateX(65vw) rotate(-135deg);
+    -moz-transform: translateX(65vw) rotate(-135deg);
+    -o-transform: translateX(65vw) rotate(-135deg);
+    transform: translateX(65vw) rotate(-135deg);
+    position: absolute;
+    top: 10px;
+  }
+
+  /* Garis kedua untuk hilang saat aktif*/
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+}
+.text--gray {
+  color: #E6E8EA;
+}
+
+.text--light-blue {
+  color: #179DFE;
+}
+
+.text--white {
+  color: #FFFFFF;
+}
+
+.text-highlight--cream {
+  background-color: #F9E4B8;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}
+
+/**
+ * Small Devices
+ */
+h1 {
+  font-size: 1.35em;
+}
+
+h2 {
+  font-size: 1.15em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.95em;
+}
+
+p {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+/* Layout Icons */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  vertical-align: middle;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #179DFE !important;
+}
+
+.nav-link {
+  color: #0D2433;
+  font-weight: 500;
+  margin: 2px 0;
+  font-weight: 400;
+}
+
+.navbar-notif-avatar {
+  vertical-align: top;
+}
+.navbar-notif-avatar button {
+  border: 0px;
+  background-color: #EDEFF2;
+  border-radius: 50px;
+  color: #E6E8EA;
+  width: 24px;
+}
+.navbar-notif-avatar button i {
+  font-size: 12px;
+}
+.navbar-notif-avatar button:nth-child(2) {
+  background-color: transparent;
+}
+.navbar-notif-avatar img {
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  /* Kondisi awal */
+  .navbar-toggler span {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    display: block;
+    background-color: #0D2433;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 4px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    z-index: 999;
+    border-radius: 3px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    background-color: #FFFFFF !important;
+    height: 100vh;
+  }
+
+  /* Kasih Jarak antara brand logo dan link */
+  .nav-item:nth-child(1) {
+    margin-top: 50px;
+  }
+}
+.btn--blue {
+  background-color: #0A3047;
+  border: 0px;
+}
+
+.btn--orange {
+  background-color: #FAAF40;
+}
+
+/* Button 'Muat Lainnya' */
+a.btn--muat-lainnya {
+  display: block !important;
+  float: right;
+  margin-bottom: 30px;
+}
+
+/* Button 'Ambil Studi' */
+.btn--ambil-studi {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
+
+/* Button berbentuk text */
+.btn--text {
+  background-color: transparent !important;
+  border: 0px;
+}
+
+/* Button navbar toggler */
+button.navbar-toggler {
+  border: 0px;
+  background-color: #FFFFFF;
+  padding-left: 0;
+}
+
+/* All Fullwdith Button */
+.btn--fullwidth {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Popover */
+.popover-body div {
+  padding: 10px 0;
+  border-bottom: 1px solid #EDEFF2;
+  /* Notif */
+}
+.popover-body div .notif-date {
+  padding-right: 5px;
+}
+
+/* Hide Popover Content */
+.popover-content-hidden {
+  display: none;
+}
+
+.body-content h1, .body-content h2 {
+  font-weight: 700;
+}
+.body-content .img-3-dots {
+  margin: 24px 0;
+}
+
+.section-activity h4 {
+  font-weight: 600;
+}
+
+/* buat section besar */
+.section {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EDEFF2;
+}
+
+/* section buat aktivitas yg bisa dilakukan */
+.body-content-section-activity {
+  margin: 30px 0;
+}
+
+/* buat section riwayat aktivitas*/
+.section-riwayat {
+  border-bottom: 1px solid #EDEFF2;
+  margin-bottom: 20px;
+}
+
+.section-screening {
+  /* TODO: need to style select box to look like design */
+}
+.section-screening h4 {
+  margin: 20px 0 20px;
+  border-bottom: 1px solid #EDEFF2;
+  padding-bottom: 10px;
+}
+.section-screening .section {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.section-screening select {
+  border: none;
+  font-weight: bold;
+  color: #0A3047;
+}
+
+/*# sourceMappingURL=main.css.map */

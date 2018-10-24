@@ -15,33 +15,44 @@
     <title>Populix</title>
 </head>
 
-<body id="login-2" class="login">
+<body id="signup-6" class="signup">        
     <!-- Body Starts Here -->
     <div class="container">
-        <!-- Top Nav Logo dan Link register -->
+        <!-- Top Nav Logo dan Link Lewati -->
         <div class="topnav row nav">
             <div class="col nav-brand">
                 <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="col-7 topnav-btn-text-register">
-                <p>Kembali ke halaman <a class="text--blue" href="#">Login</a></p>
+            <div class="float-right topnav-btn-text-skip">
+                <a class="text--blue" href="#">Lewati</a>
             </div>
         </div>
         
+        <!-- Welcome User -->
+        <p class="text--black">Hi, <span class="username">Juinal William</span></p>
+        
+        <img src="src/assets/dot.png">
+        
         <!-- Header -->
         <div class="body-header">
-            <h1>Atur ulang kata sandi</h1>
-            <h4>Kamu mengirimkan instruksi untuk mengatur ulang kata sandi. Klik "ubah kata sandi" untuk membuat kata sandi yang baru.</h4>
+            <h1>Silahkan masukkan nomor handphone kamu.</h1>
+            <p>Kami akan memberitahukan kamu lewat SMS jika ada studi
+                yang tersedia untuk kamu ambil.
+            </p>
         </div>
         
-        <!-- Login Form -->
+        <!-- Form Nomor Handphone -->
         <form class="body-content-form">
-            <button id="form-btn-email--resend" type="submit" class="btn btn-primary btn--blue btn--fullwidth">Kirim Ulang Kata Sandi</button>
             <div class="form-group">
-                <label for="form-email--reset">Alamat email</label>
-                <input type="email" class="form-control" id="form-email--reset" placeholder="Masukkan email">
-            </div>                
+                <label for="signup-no-hp">Nomor handphone aktif</label>
+                <input type="email" class="form-control" id="signup-no-hp" placeholder="Contoh: 081254281234">
+            </div>
         </form>
+        
+        <!-- Lanjut -->
+        <a role="button" class="btn btn-primary btn--blue btn--fullwidth text--white" href="#">
+            Lanjut <i class="fas fa-arrow-right"></i>
+        </a>
     </div>
     
     <!-- Optional JavaScript -->

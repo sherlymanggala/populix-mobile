@@ -1,35 +1,36 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/base-style.css">
-        
-        <title>Populix</title>
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles/main.css">
+    
+    <!-- Bootstrap FA Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <title>Populix</title>
+</head>
+
+<body id="dashboard">
+    <div class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <span class="icon-toggler1"> </span>
-                <span class="icon-toggler2"> </span>
-                <span class="icon-toggler3"> </span>
+        <nav class="topnav navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" grid-icon-toggle="collapse" grid-icon-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             
+            <!-- Sidebar -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
-                    <img class="img-fluid" src="Assets/image.png">
+                    <img class="img-fluid" src="src/assets/image.png">
                 </a>
-                
-                <!-- Sementara jangan di hapus -->
-                <ul class="navbar-nav mr-auto"></ul>
                 
                 <!-- Link starts here -->
                 <ul class="navbar-nav nav d-flex justify-content-end">
@@ -44,167 +45,76 @@
                     </li>
                 </ul>
             </div>
+            
+            <!-- Notif and Avatar -->
+            <div class="navbar-notif-avatar">
+                <button id="topnav-btn-notif" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#navbar-popover-notif">
+                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
+                </button>
+                <button id="topnav-btn-avatar" grid-icon-container="body" grid-icon-toggle="popover" grid-icon-placement="bottom" grid-icon-html="true" grid-icon-popover-content="#navbar-popover-avatar">
+                    <span class="navbar-icon"><img src="src/assets/profile-picture.png" width=24></span>
+                </button>
+            </div>
         </nav>
-        <!-- Navbar End Here -->
         
         <!-- Body Starts Here -->
-        <div class="container">
+        <div class="body-content">
             <!-- Welcome and Todo Section -->
-            <div class="header header--welcome font-weight-bold">
-                <h1>Hi, <span class="username">Juinal</span>.<br>Selamat datang :)</h1>
-            </div>
-            <!-- 3 titik -->
-            <img src="Assets/dot.png">
+            <h1>Hi, <span class="username">Juinal</span>.<br>Selamat datang :)</h1>
             
-            <div class="header header--to-do">
-                <h4 class="text--gray">Aktivitas yang bisa kamu lakukan:</h4>
+            <!-- 3 titik -->
+            <img class="img-3-dots" src="src/assets/dot.png">
+            
+            <div id="section-activity">
+                <h4 class="f-12 text--gray text-uppercase">Aktivitas yang bisa kamu lakukan:</h4>
                 
                 <!-- Verifikasi Email -->
-                <div class="verifikasi section-aktivitas">
-                    <h2 class="font-weight-bold">Studi baru untuk kamu</h2>
+                <div id="section-activity-verifikasi" class="body-content-section-activity">
+                    <h2>Studi baru untuk kamu</h2>
                     <p>Email kamu belum terverifikasi.</p>
-                    <a class="text--blue" href="#">Verifikasi sekarang</a>
-                </div>
-                
-                <!-- Profile belum lengkap -->
-                <div class="profil section-aktivitas">
-                    <h2 class="font-weight-bold">Profil kamu belum lengkap</h2>
-                    <p>Selagi kami menyiapkan studi untuk kamu, bantu kami untuk melengkapi data <strong>profil</strong> kamu terlebih dahulu.</p><a class="text--blue" href="#">Lengkapi profil</a>
+                    <a class="text--light-blue" href="#">Verifikasi sekarang</a>
                 </div>
             </div>
             
             <!-- Studi Marketplace -->
-            <div class="marketplace section">
-                <!-- Icon here -->
-                <img src="Assets/screening-tab-icons/pendidikan-icon.png" width="100">
-                <h4 class="font-weight-bold">Studi marketplace tentang pengguna teknologi</h4>
-                <h5><span class="perusahaan">Tokopedia</span></h5>
-                <p class="text--gray"><span class="perusahaan-detail">Perusahaan startup dan Teknologi Indonesia</span></p>
-                
-                <!-- Data perusahaan -->
-                <div class="template-icon">
-                    <!-- Jumlah orang -->
-                    <img id="data-orang" class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-orang">15</span> orang</p>
-
-                    <!-- Waktu -->
-                    <img id="data-waktu" class="icon" src="Assets/screening-tab-icons/hubungan-keluarga-icon.png" width="50">
-                    <p><span class="perusahaan-waktu">20 menit</span></p>
-
-                    <!-- Duit -->
-                    <img id="data-duit" class="icon" src="Assets/screening-tab-icons/status-sosial-icon.png" width="50">
-                    <p>Rp. <span class="perusahaan-duit">250.000</span></p>
-
-                    <!-- Tanggal -->
-                    <img id="data-tanggal" class="icon" src="Assets/screening-tab-icons/pendidikan-icon.png" width="50">
-                    <p><span class="perusahaan-tanggal">17 Agustus 2018</span></p>
-                </div>
-                
-                <!-- Button Ambil Studi -->
-                <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
-            </div>
-            
-            <!-- Forum Grup Diskusi -->
-            <div class="forum-grup-diskusi section">
-                <!-- Icon here -->
-                <h4 class="font-weight-bold">Forum Grup Diskusi</h4>
-                <h5><span class="perusahaan">East Ventures</span></h5>
-                <p class="text--gray"><span class="perusahaan-detail">Perusahaan startup dan Teknologi Indonesia</span></p>
-                
-                <!-- Data perusahaan -->
-                <div class="template-icon">
-                    <!-- Jumlah orang -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-orang">15</span> orang</p>
-
-                    <!-- Duit -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p>Rp. <span class="perusahaan-duit">250.000</span></p>
-
-                    <!-- Tanggal -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-tanggal">17 Agustus 2018</span></p>
-
-                    <!-- Tempat -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-tempat">Concrete Co-working Space(Pluit), Jakarta Utara</span></p>
-                </div>
-                
-                <!-- Button Ambil Studi -->
-                <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
-            </div>
-            
-            <!-- Wawancara Mendalam -->
-            <div class="wawancara-mendalam section">
-                <!-- Icon here -->
-                <h4 class="font-weight-bold">Wawancara Mendalam (In Depth Interview)</h4>
-                <h5><span class="perusahaan">East Ventures</span></h5>
-                <p class="text--gray"><span class="perusahaan-detail">Perusahaan startup dan Teknologi Indonesia</span></p>
-                
-                <!-- Data perusahaan -->
-                <div class="template-icon">
-                    <!-- Jumlah orang -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-orang">15</span> orang</p>
-
-                    <!-- Duit -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p>Rp. <span class="perusahaan-duit">250.000</span></p>
-
-                    <!-- Tanggal -->
-                    <img class="icon"  src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-tanggal">17 Agustus 2018</span></p>
-
-                    <!-- Tempat -->
-                    <img class="icon" src="Assets/screening-tab-icons/profesi-icon.png" width="50">
-                    <p><span class="perusahaan-tempat">Concrete Co-working Space(Pluit), Jakarta Utara</span></p>
-                </div>
-                
-                <!-- Button Ambil Studi -->
-                <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
-            </div> 
-            
-            <!-- Button Muat lainnya -->
-            <a class="text--blue btn--text btn--muat-lainnya" href="#">Muat lainnya</a>
-            
-            <!-- Riwayat Aktivitas -->
-            <div class="riwayat-aktivitas">
-                <h4 class="text--gray text-uppercase">Riwayat Aktivitas</h4>
-                <div class="section-riwayat">
+            <div class="section-activity">
+                <div id="section-activity-marketplace">
                     <!-- Icon here -->
-                    <h4>Kamu melakukan penarikan sebesar Rp <span class="penarikan-nominal">30.000</span></h4>
-                    <p class="text--gray"><span class="penarikan-tanggal">3 hari lalu</span></p>
-                </div>
-                
-                <div class="section-riwayat">
-                    <!-- Icon here -->
-                    <h4>Kamu telah melengkapi pre screening.</h4>
-                    <p class="text--gray"><span class="penarikan-tanggal">3 hari lalu</span></p>
-                </div>
-                
-                <div class="section-riwayat">
-                    <!-- Icon here -->
-                    <h4>Kamu mengikuti survey untuk: Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</h4>
-                    <p class="text--gray"><span class="penarikan-tanggal">3 hari lalu</span></p>
-                </div>
-                
-                <div class="section-riwayat">
-                    <!-- Icon here -->
-                    <h4>Kamu baru saja menerima dana sebesar Rp <span class="terima-dana-nominal">250.000</span></h4>
-                    <p class="text--gray"><span class="penarikan-tanggal">3 hari lalu</span></p>
+                    <img src="src/assets/screening-tab-icons/pendidikan-icon.png" width="100">
+                    <h2>Studi marketplace tentang pengguna teknologi</h2>
+                    <h5><span class="section-activity-marketplace-name">Tokopedia</span></h5>
+                    <p class="text--gray"><span class="section-activity-marketplace-detail">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
+                    
+                    <!-- Data section-activity-marketplace- -->
+                    <div class="grid">
+                        <!-- Jumlah orang -->
+                        <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                        <p><span class="section-activity-marketplace-orang">15</span> orang</p>
+                        
+                        <!-- Waktu -->
+                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png" width="50">
+                        <p><span class="section-activity-marketplace-waktu">20 menit</span></p>
+                        
+                        <!-- Duit -->
+                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png" width="50">
+                        <p>Rp. <span class="section-activity-marketplace-duit">250.000</span></p>
+                        
+                        <!-- Tanggal -->
+                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png" width="50">
+                        <p><span class="section-activity-marketplace-tanggal">17 Agustus 2018</span></p>
+                    </div>
+                    
+                    <!-- Button Ambil Studi -->
+                    <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
                 </div>
             </div>
-            
-            <!-- Button Muat lainnya -->
-            <a class="text--blue btn--text btn--muat-lainnya" href="#">Muat lainnya</a>
-            
-            <div class="w-100"></div>
         </div>
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>

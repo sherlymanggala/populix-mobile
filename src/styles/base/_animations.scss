@@ -1,0 +1,48 @@
+// For Small Devices
+@media (max-width: 768px) {
+    /**
+     * Sidebar animation from left to right
+     */
+     // Collapsed sidebar
+    .navbar-collapse.collapsing {
+        @include transition(left, .17s , linear);
+        height: auto;
+        left: -100%;
+    }
+    // Showed sidebar
+    .navbar-collapse.show {
+        @include transition(left, .17s , linear);
+        left: 0;
+    }
+    
+    // Animated Navbar Hamburger Button
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: 0;
+    }       
+    
+    // animation for first and third hamburger bar
+    .navbar-toggler span:nth-child(1),
+    .navbar-toggler span:nth-child(3) {
+        @include animate(.35s);
+    }
+    
+    // First hamburger bar while active
+    .navbar-toggler:not(.collapsed) span:nth-child(1) {
+        @include rotate-translate(65vw, 135deg);
+        position: absolute;
+        top: 10px;
+    }
+    
+    // Third hamburger bar while active
+    .navbar-toggler:not(.collapsed) span:nth-child(3) {
+        @include rotate-translate(65vw, -135deg);
+        position: absolute;
+        top: 10px;
+    }
+    
+    /* Garis kedua untuk hilang saat aktif*/
+    .navbar-toggler:not(.collapsed) span:nth-child(2) {
+        opacity: 0;
+    }
+}

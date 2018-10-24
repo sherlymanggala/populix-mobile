@@ -1,0 +1,18 @@
+.section-screening {
+    h4 {
+        margin: 20px 0 20px;
+        border-bottom: $border-bottom--gray;
+        padding-bottom: 10px;
+    }
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+
+    /* TODO: need to style select box to look like design */
+    select {
+        border: none;
+        font-weight: bold;
+        color: $color-blue;
+    }
+}
