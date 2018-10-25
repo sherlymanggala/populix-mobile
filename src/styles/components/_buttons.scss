@@ -1,43 +1,104 @@
 // for blue bg color
 .btn--blue {
-    background-color: $color-light-blue;
-    border: 0px;
+  background-color: $color-light-blue;
+  border: 0px;
 }
 
 // for orange bg color
 .btn--orange {
-    background-color: $color-orange;
+  background-color: $color-orange;
 }
 
 /* Button 'Muat Lainnya' */
 a.btn--muat-lainnya {
-    display: block !important;
-    float: right;
-    margin-bottom: 30px;
+  display: block !important;
+  float: right;
+  margin-bottom: 30px;
 }
 
 /* Button 'Ambil Studi' */
 .btn--ambil-studi {
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 0.95em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.95em;
 }
 
 /* Button berbentuk text */
 .btn--text {
-    background-color: transparent !important;
-    border: 0px;
+  background-color: transparent !important;
+  border: 0px;
 }
 
 /* Button navbar toggler */
 button.navbar-toggler {
-    border: 0px;
-    background-color: $color-white;
-    padding-left: 0;
+  border: 0px;
+  background-color: $color-white;
+  padding-left: 0;
 }
 
 /* All Fullwdith Button */
 .btn--fullwidth {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+// Toggle Switch Button
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  
+  input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-gray;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+    &:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: $color-white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+  }
+}
+
+input:checked + .slider {
+  background-color: $color-orange;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $color-orange;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

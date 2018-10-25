@@ -95,48 +95,62 @@ nav .dropdown-item {
   background-color: #F9E4B8;
 }
 
-* {
-  font-family: "Open Sans", sans-serif;
-  color: #000000;
-}
-
 /**
- * Small Devices
+ * h1 untuk header welcome user
+ * Contoh: Hi, Juinal. Selamat datang.
+ *
+ * h2 untuk header activity
+ * Contoh: Studi marketplace tentang pengguna teknologi
+ * 
+ * h3 untuk nama perusahaan dari activity
+ * Contoh: Tokopedia, East Ventures, dll
+ * 
+ * h4 untuk header warna grey
+ * Contoh: Aktivitas yang bisa kamu lakukan, Riwayat Aktivitas, dll
+ *
+ * p umumnya digunakan yang lain-lain
+ * Contoh: subtitle, konten, dll
+ *
+ * class f-12 untuk p atau span atau label ukuran 12sp
  */
 h1 {
-  font-size: 1.35em;
+  font-size: 1em;
+  line-height: 20px;
 }
 
 h2 {
-  font-size: 1.15em;
+  font-size: 0.93em;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 0.87em;
 }
 
 h4 {
-  font-size: 1em;
-}
-
-h5 {
-  font-size: 0.95em;
+  font-size: 0.75em;
+  color: #A1AFBB;
+  font-weight: 600;
 }
 
 p {
-  font-size: 13px;
+  font-size: 0.81em;
   line-height: 20px;
   font-weight: 400;
 }
 
 .f-12 {
-  font-size: 12px;
+  font-size: 0.75em;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
 }
 
 /* Layout Icons */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 3fr;
+  grid-template-columns: 50px auto;
   vertical-align: middle;
 }
 
@@ -249,6 +263,63 @@ button.navbar-toggler {
 .btn--fullwidth {
   width: 100%;
   padding: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E6E8EA;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #FFFFFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #FAAF40;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FAAF40;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* Popover */

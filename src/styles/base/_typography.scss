@@ -1,35 +1,58 @@
-* {
-    font-family: 'Open Sans', sans-serif;
-    color: #000000;
-}
-
 /**
- * Small Devices
+ * h1 untuk header welcome user
+ * Contoh: Hi, Juinal. Selamat datang.
+ *
+ * h2 untuk header activity
+ * Contoh: Studi marketplace tentang pengguna teknologi
+ * 
+ * h3 untuk nama perusahaan dari activity
+ * Contoh: Tokopedia, East Ventures, dll
+ * 
+ * h4 untuk header warna grey
+ * Contoh: Aktivitas yang bisa kamu lakukan, Riwayat Aktivitas, dll
+ *
+ * p umumnya digunakan yang lain-lain
+ * Contoh: subtitle, konten, dll
+ *
+ * class f-12 untuk p atau span atau label ukuran 12sp
  */
+
+// 16sp
 h1 {
-    font-size: 1.35em;
-}
-h2 {
-    font-size: 1.15em;
-}
-h3 {
-    font-size: 1.1em;
-}
-h4 {
     font-size: 1em;
-}
-h5 {
-    font-size: 0.95em;
+    line-height: 20px;
 }
 
-// General p with font-size 13px
+// 15sp
+h2 {
+    font-size: 0.93em;
+}
+
+// 14sp
+h3 {
+    font-size: 0.87em;
+}
+
+// 12sp
+h4 {
+    font-size: 0.75em;
+    color: $color-dark-gray;
+    font-weight: $font-semibold;
+}
+
+// General p with font-size 13sp
 p {
-    font-size: 13px;
+    font-size: 0.81em;
     line-height: 20px;
     font-weight: $font-regular;
 }
 
-// For p that has font-size 12px
+// For p or span that has font-size 12sp
 .f-12 {
-    font-size: 12px;
+    font-size: 0.75em;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
 }
