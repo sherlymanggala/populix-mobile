@@ -96,40 +96,55 @@ nav .dropdown-item {
 }
 
 /**
- * h1 untuk header welcome user
- * Contoh: Hi, Juinal. Selamat datang.
+ * h1 untuk header superbesar (28sp)
+ * Contoh: Verifikasi email
  *
- * h2 untuk header activity
+ * h2 untuk header login atau signup (20sp)
+ * Contoh: Selamat bergabung dengan Populix
+ * 
+ * h3 untuk header welcome user (16sp)
+ * Contoh: Hi, Juinal. Selamat datang.
+ * 
+ * h4 untuk header activity (15sp)
  * Contoh: Studi marketplace tentang pengguna teknologi
- * 
- * h3 untuk nama perusahaan dari activity
+ *
+ * h5 untuk nama perusahaan dari activity (14sp)
  * Contoh: Tokopedia, East Ventures, dll
- * 
- * h4 untuk header warna grey
+ *
+ * h6 untuk header warna grey (12sp)
  * Contoh: Aktivitas yang bisa kamu lakukan, Riwayat Aktivitas, dll
  *
- * p umumnya digunakan yang lain-lain
+ * p umumnya digunakan yang lain-lain (13sp)
  * Contoh: subtitle, konten, dll
  *
  * class f-12 untuk p atau span atau label ukuran 12sp
  */
 h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
   font-size: 1em;
   line-height: 20px;
 }
 
-h2 {
+h4 {
   font-size: 0.93em;
 }
 
-h3 {
+h5 {
   font-size: 0.87em;
 }
 
-h4 {
+h6 {
   font-size: 0.75em;
   color: #A1AFBB;
-  font-weight: 600;
+  font-weight: 600 !important;
+  line-height: 1em;
 }
 
 p {
@@ -145,6 +160,7 @@ p {
 * {
   font-family: "Open Sans", sans-serif;
   color: #000000;
+  background-color: #FFFFFF;
 }
 
 /* Layout Icons */
@@ -345,15 +361,11 @@ input[type=date] {
   color: #179DFE;
 }
 
-.body-content h1, .body-content h2 {
+.body-content h3, .body-content h4 {
   font-weight: 700;
 }
 .body-content .img-3-dots {
   margin: 24px 0;
-}
-
-.section-activity h4 {
-  font-weight: 600;
 }
 
 /* buat section besar */
@@ -372,16 +384,6 @@ input[type=date] {
 .section-riwayat {
   border-bottom: 1px solid #EDEFF2;
   margin-bottom: 20px;
-}
-
-.section-screening h4 {
-  margin: 20px 0 20px;
-  border-bottom: 1px solid #EDEFF2;
-  padding-bottom: 10px;
-}
-.section-screening .section {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
 }
 
 /*# sourceMappingURL=main.css.map */

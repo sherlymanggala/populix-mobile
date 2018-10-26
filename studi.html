@@ -34,11 +34,11 @@
                 
                 <!-- Link starts here -->
                 <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link link active" href="index.html">Dashboard</a>
+                    <li id="sidebar-nav-link-dashboard" class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link" href="#">Lihat Studi</a>
+                        <a class="nav-link link active" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
@@ -69,55 +69,36 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <!-- Welcome and Todo Section -->
-            <h3>Hi, <span class="username">Juinal</span>.<br>Selamat datang :)</h3>
-            
-            <!-- 3 titik -->
-            <img class="img-3-dots" src="src/assets/dot.png">
-            
-            <div id="section-activity">
-                <h6>Aktivitas yang bisa kamu lakukan:</h6>
-                
-                <!-- Verifikasi Email -->
-                <div id="section-activity-verifikasi" class="body-content-section-activity">
-                    <h4>Studi baru untuk kamu</h4>
-                    <p>Email kamu belum terverifikasi.</p>
-                    <a class="text--light-blue" href="#">Verifikasi sekarang</a>
+            <!-- Client Tab -->
+            <nav id="body-content-tab">
+                <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-tab-studi" data-toggle="tab" href="#nav-studi" role="tab" aria-controls="nav-studi" aria-selected="true">Studi</a>
+                    <a class="nav-item nav-link" id="nav-tab-riwayat" data-toggle="tab" href="#nav-riwayat" role="tab" aria-controls="nav-riwayat" aria-selected="false">Riwayat</a>
                 </div>
-            </div>
-            
-            <!-- Studi Marketplace -->
-            <div class="section-activity">
-                <div id="section-activity-marketplace">
-                    <!-- Icon here -->
-                    <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
-                    <h4>Studi marketplace tentang pengguna teknologi</h4>
-                    <h5><span class="section-activity-marketplace-name">Tokopedia</span></h5>
-                    <p class="text--gray"><span class="section-activity-marketplace-detail">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
+            </nav>
+            <div class="tab-content" id="body-content-tab-content">
+                <div class="tab-pane fade show active" id="nav-studi" role="tabpanel" aria-labelledby="nav-tab-studi">
+                    <!-- Put Content Here -->
+                    <!-- Welcome and Todo Section -->
+                    <h3>Hi, <span class="username">Juinal William</span>.</h3>
                     
-                    <!-- Data section-activity-marketplace- -->
-                    <div class="grid">
-                        <!-- Jumlah orang -->
-                        <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-orang">15</span> orang</p>
-                        
-                        <!-- Waktu -->
-                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-waktu">20 menit</span></p>
-                        
-                        <!-- Duit -->
-                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
-                        <p>Rp. <span class="section-activity-marketplace-duit">250.000</span></p>
-                        
-                        <!-- Tanggal -->
-                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-tanggal">17 Agustus 2018</span></p>
+                    <!-- 3 titik -->
+                    <img class="img-3-dots" src="src/assets/dot.png">
+                    
+                    <!-- Studi Marketplace -->
+                    <div class="section-activity">
+                        <h6>Saat ini, belum ada studi yang tersedia bagi kamu</h6>
+                        <div class="text-center">
+                            <img class="img-fluid" src="src/assets/berenang-icon.png" width="250">
+                        </div>
                     </div>
-                    
-                    <!-- Button Ambil Studi -->
-                    <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
+                </div>
+                <div class="tab-pane fade" id="nav-riwayat" role="tabpanel" aria-labelledby="nav-tab-riwayat">
+                    <!-- Put Content Here -->
+                    Riwayat
                 </div>
             </div>
+            <!-- Tab End -->
         </div>
     </div>
     

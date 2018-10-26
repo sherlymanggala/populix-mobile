@@ -1,43 +1,60 @@
 /**
- * h1 untuk header welcome user
- * Contoh: Hi, Juinal. Selamat datang.
+ * h1 untuk header superbesar (28sp)
+ * Contoh: Verifikasi email
  *
- * h2 untuk header activity
+ * h2 untuk header login atau signup (20sp)
+ * Contoh: Selamat bergabung dengan Populix
+ * 
+ * h3 untuk header welcome user (16sp)
+ * Contoh: Hi, Juinal. Selamat datang.
+ * 
+ * h4 untuk header activity (15sp)
  * Contoh: Studi marketplace tentang pengguna teknologi
- * 
- * h3 untuk nama perusahaan dari activity
+ *
+ * h5 untuk nama perusahaan dari activity (14sp)
  * Contoh: Tokopedia, East Ventures, dll
- * 
- * h4 untuk header warna grey
+ *
+ * h6 untuk header warna grey (12sp)
  * Contoh: Aktivitas yang bisa kamu lakukan, Riwayat Aktivitas, dll
  *
- * p umumnya digunakan yang lain-lain
+ * p umumnya digunakan yang lain-lain (13sp)
  * Contoh: subtitle, konten, dll
  *
  * class f-12 untuk p atau span atau label ukuran 12sp
  */
 
-// 16sp
+// 28sp
 h1 {
+    font-size: 1.75em;
+}
+
+// 20sp
+h2 {
+    font-size: 1.25em;
+}
+
+// 16sp
+h3 {
     font-size: 1em;
     line-height: 20px;
 }
 
 // 15sp
-h2 {
+h4 {
     font-size: 0.93em;
 }
 
 // 14sp
-h3 {
+h5 {
     font-size: 0.87em;
 }
 
 // 12sp
-h4 {
+h6 {
     font-size: 0.75em;
     color: $color-dark-gray;
-    font-weight: $font-semibold;
+    font-weight: $font-semibold !important;
+    line-height: 1em;
 }
 
 // General p with font-size 13sp
@@ -55,4 +72,5 @@ p {
 * {
     font-family: 'Open Sans', sans-serif;
     color: #000000;
+    background-color: $color-white;
 }
