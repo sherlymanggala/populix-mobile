@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="fgd-screening-4">
+<body id="studi-9">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -38,11 +38,11 @@
                         <a class="nav-link link" href="index.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link" href="#">Lihat Studi</a>
+                        <a class="nav-link link active" href="studi.html">Lihat Studi</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link link active dropdown-toggle" data-toggle="dropdown" 
-                        role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
+                        <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
+                        role="button" aria-haspopup="true" aria-expanded="false" href="screening.html">Screening</a>
                         <div class="dropdown-menu grid--left">
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
@@ -69,59 +69,53 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="section-screening">
-                <h3>Screening &bull; Studi kualitatif</h3>
+            <!-- Welcome and Todo Section -->
+            <h3>Hi, <span class="username">Juinal</span>.<br>Selamat datang :)</h3>
+            
+            <!-- 3 titik -->
+            <img class="img-3-dots" src="src/assets/dot.png">
+            
+            <div id="section-activity">
+                <h6 class="text-uppercase">Aktivitas yang bisa kamu lakukan:</h6>
                 
-                <!-- Bersedia mengikuti studi -->
-                <div id="studi-kualitatif">
-                    <div class="grid-2">
-                        <img class="icon" src="src/assets/favicon.png">
-                        <div>
-                            <label class="question">Apakah kamu bersedia mengikuti studi kualitatif ?<br><br>
-                                Populix memerlukan kehadiran kamu dalam melakukan studi ini.
-                            </label>
-                            <select class="option">
-                                <option value="yes">Saya bersedia</option>
-                                <option value="no">Saya tidak bersedia</option>
-                            </select>
-                            <a href="#" class="text--light-blue float-right">Edit</a>
-                        </div>
-                    </div>
+                <!-- Verifikasi Email -->
+                <div id="section-activity-verifikasi" class="body-content-section-activity">
+                    <h4>Studi baru untuk kamu</h4>
+                    <p>Email kamu belum terverifikasi.</p>
+                    <a class="text--light-blue" href="#">Verifikasi sekarang</a>
                 </div>
-                
-                <!-- Bersedia mengikuti FGD -->
-                <div id="studi-kualitatif-fgd">
-                    <div class="studi-kualitatif-question">
-                        <p>Fokus grup diskusi adalah metode riset kualitatif tatap muka secara 
-                            <strong class="text-highlight--cream">berkelompok</strong> (4-6 orang / grup) dengan seorang 
-                            moderator sebagai pewawancara untuk <strong class="text-highlight--cream">mengumpulkan informasi</strong>
-                            suatu masalah tertentu.
-                        </p>
-                        <label class="question f-12">Apakah kamu bersedia mengikuti Forum Grup Diskusi ?</label>
+            </div>
+            
+            <!-- Studi Marketplace -->
+            <div class="section-activity">
+                <div id="section-activity-marketplace">
+                    <!-- Icon here -->
+                    <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
+                    <h4>Studi marketplace tentang pengguna teknologi</h4>
+                    <h5><span class="section-activity-marketplace-name">Tokopedia</span></h5>
+                    <p class="text--gray"><span class="section-activity-marketplace-detail">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
+                    
+                    <!-- Data section-activity-marketplace- -->
+                    <div class="grid-4">
+                        <!-- Jumlah orang -->
+                        <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                        <p><span class="section-activity-marketplace-orang">15</span> orang</p>
+                        
+                        <!-- Waktu -->
+                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
+                        <p><span class="section-activity-marketplace-waktu">20 menit</span></p>
+                        
+                        <!-- Duit -->
+                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
+                        <p>Rp. <span class="section-activity-marketplace-duit">250.000</span></p>
+                        
+                        <!-- Tanggal -->
+                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                        <p><span class="section-activity-marketplace-tanggal">17 Agustus 2018</span></p>
                     </div>
-                    <div class="studi-kualitatif-toggle">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-                
-                <!-- Bersedia mengikuti interview -->
-                <div id="studi-kualitatif-interview">
-                    <div class="studi-kualitatif-question">
-                        <p>In-depth interview adalah metodologi riset kualitatif <strong class="text-highlight--cream">tatap muka</strong>
-                             yang digunakan untuk mendapatkan <strong class="text-highlight--cream">wawasan mendalam</strong>
-                              dan eksploratif dari seorang responden.
-                        </p>
-                        <label class="question f-12">Apakah kamu bersedia menerima pemberitahuan via email saat ada studi baru ?</label>
-                    </div>
-                    <div class="studi-kualitatif-toggle">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
+                    
+                    <!-- Button Ambil Studi -->
+                    <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,14 @@
 /* Layout Icons */
-.grid {
+// Grid with 2 columns
+.grid-2 {
     display: grid;
     grid-template-columns: 50px auto;
+    vertical-align: middle;
+}
+
+// Grid with 4 columns
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
     vertical-align: middle;
 }

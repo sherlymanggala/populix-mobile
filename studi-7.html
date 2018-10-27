@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="fgd-screening-6">
+<body id="studi-7">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -35,10 +35,10 @@
                 <!-- Link starts here -->
                 <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
                     <li id="sidebar-nav-link-dashboard" class="nav-item">
-                        <a class="nav-link link active" href="index.html">Dashboard</a>
+                        <a class="nav-link link" href="index.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link" href="#">Lihat Studi</a>
+                        <a class="nav-link link active" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
@@ -78,110 +78,114 @@
             </nav>
             <div class="tab-content" id="body-content-tab-content">
                 <div class="tab-pane fade show active" id="nav-studi" role="tabpanel" aria-labelledby="nav-tab-studi">
-                    <h4 class="fgd-screening-header">Jadwal Forum Grup Diskusi (FGD)</h4>
+                    <!-- Put Content Here -->
+                    <!-- Welcome and Todo Section -->
+                    <h3>Hi, <span class="username">Juinal</span>.<br>Selamat datang :)</h3>
                     
-                    <!-- FGD Group List -->
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 1</h4>
-                            <span class="fgd-group-header-status status--normal float-right">20 Slot</span>
-                        </div>
-                        <div class="fgd-group-content">
+                    <!-- 3 titik -->
+                    <img class="img-3-dots" src="src/assets/dot.png">
+                    
+                    <!-- Studi Marketplace -->
+                    <div class="section-activity">
+                        <h6 class="text-uppercase">Studi yang tersedia buat kamu</h6>
+                        
+                        <div id="section-activity-marketplace">
+                            <!-- Icon here -->
+                            <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
+                            <h4>Studi marketplace tentang pengguna teknologi</h4>
+                            <h5><span id="section-activity-marketplace-title" class="studi-activity-title">Tokopedia</span></h5>
+                            <p class="text--gray"><span id="section-activity-marketplace-subtitle" class="section-activity-subtitle">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
+                            
+                            <!-- Data section-activity-marketplace- -->
                             <div class="grid-4">
+                                <!-- Jumlah orang -->
+                                <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                                <p><span id="section-activity-marketplace-orang" class="section-activity-value">15</span> orang</p>
+                                
                                 <!-- Waktu -->
                                 <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                <p><span id="section-activity-marketplace-waktu" class="section-activity-value">20 menit</span></p>
+                                
+                                <!-- Duit -->
+                                <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
+                                <p>Rp. <span id="section-activity-marketplace-duit" class="section-activity-value">250.000</span></p>
                                 
                                 <!-- Tanggal -->
                                 <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                <p><span id="section-activity-marketplace-tanggal" class="section-activity-value">17 Agustus 2018</span></p>
+                            </div>
+                            
+                            <!-- Button Ambil Studi -->
+                            <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
+                        </div>
+                        
+                        <!-- FGD -->
+                        <div id="section-activity-fgd">
+                            <!-- Icon here -->
+                            <img id="icon-studi-fgd" src="src/assets/fgd.png" width="55">
+                            <h4>Forum Grup Diskusi</h4>
+                            <h5><span id="section-activity-fgd-name" class="studi-activity-title">East Ventures</span></h5>
+                            <p class="text--gray"><span id="section-activity-fgd-subtitle" class="section-activity-subtitle">Perusahaan Startup dan Teknologi Indonesia</span></p>
+                            
+                            <!-- Data section-activity-marketplace- -->
+                            <div class="grid-4">
+                                <!-- Jumlah orang -->
+                                <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                                <p><span id="section-activity-fgd-orang" class="section-activity-value">15</span> orang</p>
+                                
+                                <!-- Duit -->
+                                <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
+                                <p>Rp. <span id="section-activity-fgd-duit" class="section-activity-value">250.000</span></p>
+                                
+                                <!-- Tanggal -->
+                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                <p><span id="section-activity-fgd-tanggal" class="section-activity-value">17 Agustus 2018</span></p>
                                 
                                 <!-- Tempat -->
                                 <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                <p><span id="section-activity-fgd-tempat" class="section-activity-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                             </div>
+                            
+                            <!-- Button Ambil Studi -->
+                            <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
                         </div>
-                        <div class="fgd-group-footer">
-                            <a href="#" class="btn btn-primary btn--light-blue btn--fullwidth text--white">Ambil Slot</a>
+                        
+                        <!-- In Depth Interview -->
+                        <div id="section-activity-interview">
+                            <!-- Icon here -->
+                            <img id="icon-studi-interview" src="src/assets/fgd.png" width="55">
+                            <h4>Wawancara Mendalam<br>(In Depth Interview)</h4>
+                            <h5><span id="section-activity-fgd-name" class="studi-activity-title">East Ventures</span></h5>
+                            <p class="text--gray"><span id="section-activity-fgd-subtitle" class="section-activity-subtitle">Perusahaan Startup dan Teknologi Indonesia</span></p>
+                            
+                            <!-- Data section-activity-marketplace- -->
+                            <div class="grid-4">
+                                <!-- Jumlah orang -->
+                                <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                                <p><span id="section-activity-interview-orang" class="section-activity-value">15</span> orang</p>
+                                
+                                <!-- Duit -->
+                                <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
+                                <p>Rp. <span id="section-activity-interview-duit" class="section-activity-value">250.000</span></p>
+                                
+                                <!-- Tanggal -->
+                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                <p><span id="section-activity-interview-tanggal" class="section-activity-value">17 Agustus 2018</span></p>
+                                
+                                <!-- Tempat -->
+                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                <p><span id="section-activity-interview-tempat" class="section-activity-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                            </div>
+                            
+                            <!-- Button Ambil Studi -->
+                            <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
                         </div>
                     </div>
-                    
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 2</h4>
-                            <span class="fgd-group-header-status status--full float-right">Penuh</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
-                            </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <a href="#" class="btn btn-primary btn--light-blue btn--fullwidth text--white">Ambil Slot</a>
-                        </div>
-                    </div>
-                    
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 3</h4>
-                            <span class="fgd-group-header-status status--normal float-right">8 Slot</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
-                            </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <a href="#" class="btn btn-primary btn--light-blue btn--fullwidth text--white">Ambil Slot</a>
-                        </div>
-                    </div>
-                    
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 4</h4>
-                            <span class="fgd-group-header-status status--normal float-right">3 Slot</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
-                            </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <a href="#" class="btn btn-primary btn--light-blue btn--fullwidth text--white">Ambil Slot</a>
-                        </div>
+                    <div class="section-activity-footer">
+                        <a href="#" class="btn btn--text text--light-blue float-right fgd-screening-btn--muat-lainnya">Muat lainnya</a>
                     </div>
                 </div>
-                
+
                 <!-- Tab Riwayat -->
                 <div class="tab-pane fade" id="nav-riwayat" role="tabpanel" aria-labelledby="nav-tab-riwayat">
                         <!-- Header -->

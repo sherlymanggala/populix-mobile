@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="studi">
+<body id="studi-8">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -78,18 +78,40 @@
             </nav>
             <div class="tab-content" id="body-content-tab-content">
                 <div class="tab-pane fade show active" id="nav-studi" role="tabpanel" aria-labelledby="nav-tab-studi">
-                    <!-- Put Content Here -->
-                    <!-- Welcome and Todo Section -->
-                    <h3>Hi, <span class="username">Juinal William</span>.</h3>
-                    
-                    <!-- 3 titik -->
-                    <img class="img-3-dots" src="src/assets/dot.png">
-                    
                     <!-- Studi Marketplace -->
-                    <div class="section-activity">
-                        <h6 class="text-uppercase">Saat ini, belum ada studi yang tersedia bagi kamu</h6>
-                        <div class="text-center">
-                            <img class="img-fluid" src="src/assets/berenang-icon.png" width="250">
+                    <div class="studi-activity">
+                        <a id="btn-kembali" href="#" class="btn text--light-blue"><span><i class="fas fa-arrow-left"></i></span> Kembali</a>
+                        
+                        <div id="studi-marketplace">
+                            <!-- Icon here -->
+                            <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
+                            <h4>Studi marketplace tentang pengguna teknologi</h4>
+                            <p class="text--dark-gray-2">Studi ini bertujuan untuk mengambil data pengguna teknologi</p>
+                            
+                            <h5><span id="studi-marketplace-title" class="studi-activity-title">Bukalapak</span></h5>
+                            <p id="studi-marketplace-subtitle" class="text--dark-gray-2">Perusahaan Startup dan Teknologi Indonesia</p>
+                            
+                            <!-- Data studi-marketplace- -->
+                            <div class="grid-4">
+                                <!-- Jumlah orang -->
+                                <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                                <p><span id="section-activity-marketplace-orang" class="section-activity-value">15</span> orang</p>
+                                
+                                <!-- Waktu -->
+                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/survey-icon.png" width="50">
+                                <p><span id="section-activity-marketplace-waktu" class="section-activity-value">2 - 3 hari</span></p>
+                                
+                                <!-- Duit -->
+                                <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
+                                <p>Rp. <span id="section-activity-marketplace-duit" class="section-activity-value">150.000</span></p>
+                                
+                                <!-- Tanggal -->
+                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                <p><span id="section-activity-marketplace-tanggal" class="section-activity-value">16 Agustus 2018</span></p>
+                            </div>
+                            
+                            <!-- Button Ambil Studi -->
+                            <a class="btn btn-primary btn--ambil-studi btn--blue btn--fullwidth" href="#">Mulai studi</a>
                         </div>
                     </div>
                 </div>
