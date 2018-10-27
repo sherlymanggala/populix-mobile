@@ -83,6 +83,10 @@ nav .dropdown-item {
   color: #E6E8EA;
 }
 
+.text--dark-gray {
+  color: #A1AFBB;
+}
+
 .text--dark-gray-2 {
   color: #546E7E;
 }
@@ -163,8 +167,28 @@ p {
 
 * {
   font-family: "Open Sans", sans-serif;
-  color: #000000;
+  color: #0D2433;
   background-color: #FFFFFF;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 /* Layout Icons */
@@ -346,6 +370,24 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  cursor: inherit;
+  display: block;
 }
 
 /* Popover */

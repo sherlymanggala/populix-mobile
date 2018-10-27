@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="fgd-screening-4">
+<body id="setting-4">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -41,7 +41,7 @@
                         <a class="nav-link link" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link link active dropdown-toggle" data-toggle="dropdown" 
+                        <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
                         <div class="dropdown-menu grid--left">
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
@@ -69,69 +69,52 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="section-screening">
-                <h3>Screening &bull; Studi kualitatif</h3>
-                
-                <!-- Bersedia mengikuti studi -->
-                <div id="studi-kualitatif">
-                    <div class="grid-2">
-                        <img class="icon" src="src/assets/favicon.png">
-                        <div>
-                            <label class="question">Apakah kamu bersedia mengikuti studi kualitatif ?<br><br>
-                                Populix memerlukan kehadiran kamu dalam melakukan studi ini.
-                            </label>
-                            <select class="option">
-                                <option value="yes">Saya bersedia</option>
-                                <option value="no">Saya tidak bersedia</option>
-                            </select>
-                            <a href="#" class="text--light-blue float-right">Edit</a>
-                        </div>
+            <div class="setting-header">
+                <h3>Kata sandi</h3>
+            </div>
+            <div class="setting-body">
+                <label for="setting-password--old">Kata sandi lama</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" id="setting-password--old">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
+                        </span>
                     </div>
                 </div>
                 
-                <!-- Bersedia mengikuti FGD -->
-                <div id="studi-kualitatif-fgd">
-                    <div class="studi-kualitatif-question">
-                        <p>Fokus grup diskusi adalah metode riset kualitatif tatap muka secara 
-                            <strong class="text-highlight--cream">berkelompok</strong> (4-6 orang / grup) dengan seorang 
-                            moderator sebagai pewawancara untuk <strong class="text-highlight--cream">mengumpulkan informasi</strong>
-                            suatu masalah tertentu.
-                        </p>
-                        <label class="question f-12">Apakah kamu bersedia mengikuti Forum Grup Diskusi ?</label>
-                        <div class="studi-kualitatif-toggle">
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
+                <!-- TODO: Visibility Toggle -->
+                <label for="setting-password--new">Kata sandi baru</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" id="setting-password--new">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
+                        </span>
                     </div>
                 </div>
                 
-                <!-- Bersedia mengikuti interview -->
-                <div id="studi-kualitatif-interview">
-                    <div class="studi-kualitatif-question">
-                        <p>In-depth interview adalah metodologi riset kualitatif <strong class="text-highlight--cream">tatap muka</strong>
-                            yang digunakan untuk mendapatkan <strong class="text-highlight--cream">wawasan mendalam</strong>
-                            dan eksploratif dari seorang responden.
-                        </p>
-                        <label class="question f-12">Apakah kamu bersedia menerima pemberitahuan via email saat ada studi baru ?</label>
-                        <div class="studi-kualitatif-toggle">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
+                <label for="setting-password--confirm">Konfirmasi kata sandi baru</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" id="setting-password--confirm">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
+                        </span>
                     </div>
+                </div>
+                
+                <button id="setting-password-btn--save" class="btn btn-primary btn--light-blue">Simpan</button>
+                <p class="f-12">Apakah kamu lupa dengan kata sandi yang ada saat ini? <a href="#" class="text--light-blue">Atur ulang kata sandi via email</p>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="src/scripts/script.js"></script>
-</body>
-</html>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="src/scripts/script.js"></script>
+    </body>
+    </html>

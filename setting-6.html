@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="studi">
+<body id="setting-6">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -34,11 +34,11 @@
                 
                 <!-- Link starts here -->
                 <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
-                    <li id="sidebar-nav-link-dashboard" class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link link" href="index.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link active" href="#">Lihat Studi</a>
+                        <a class="nav-link link" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
@@ -69,67 +69,46 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <!-- Client Tab -->
-            <nav id="body-content-tab">
-                <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-tab-studi" data-toggle="tab" href="#nav-studi" role="tab" aria-controls="nav-studi" aria-selected="true">Studi</a>
-                    <a class="nav-item nav-link" id="nav-tab-riwayat" data-toggle="tab" href="#nav-riwayat" role="tab" aria-controls="nav-riwayat" aria-selected="false">Riwayat</a>
-                </div>
-            </nav>
-            <div class="tab-content" id="body-content-tab-content">
-                <div class="tab-pane fade show active" id="nav-studi" role="tabpanel" aria-labelledby="nav-tab-studi">
-                    <!-- Put Content Here -->
-                    <!-- Welcome and Todo Section -->
-                    <h3>Hi, <span class="username">Juinal William</span>.</h3>
-                    
-                    <!-- 3 titik -->
-                    <img class="img-3-dots" src="src/assets/dot.png">
-                    
-                    <!-- Studi Marketplace -->
-                    <div class="section-activity">
-                        <h6 class="text-uppercase">Saat ini, belum ada studi yang tersedia bagi kamu</h6>
-                        <div class="text-center">
-                            <img class="img-fluid" src="src/assets/berenang-icon.png" width="250">
-                        </div>
+            <div class="setting-header">
+                <h3>Notifikasi</h3>
+            </div>
+            <div class="setting-body">
+                <!-- Notifikasi Email -->
+                <div id="setting-notifikasi-email">
+                    <h4>Notifikasi email</h4>
+                    <p>
+                        Populix dapat memberitahukan kamu jika ada informasi mengenai <strong class='text-highlight--cream'>studi baru</strong>
+                        atau <strong class="text-highlight--cream">informasi terbaru</strong> dari Populix.
+                    </p>
+                    <label class="question f-12">Apakah kamu ingin menerima pemberitahuan via email saat ada studi baru ?</label>
+                    <div class="setting-notifikasi-toggle">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <label class="question f-12">Apakah kamu ingin menerima pemberitahuan via email saat ada info atau update terbaru ?</label>
+                    <div class="setting-notifikasi-toggle">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
                     </div>
                 </div>
                 
-                <!-- Tab Riwayat -->
-                <div class="tab-pane fade" id="nav-riwayat" role="tabpanel" aria-labelledby="nav-tab-riwayat">
-                    <!-- Header -->
-                    <div class="riwayat-header">
-                        <h6 class="text-uppercase">Riwayat Aktivitas</h6>
-                    </div>
-                    <!-- Body -->
-                    <div class="riwayat-body">
-                        <div id="riwayat-penarikan-dana" class="riwayat-body-content">
-                            <img src="src/assets/screening-tab-icons/penarikan-dana-icon.png">
-                            <h4>Kamu melakukan penarikan sebesar Rp <span id="riwayat-penarikan-dana-value">30.000</span></h4>
-                            <p><span id="riwayat-penarikan-dana-date">3 hari lalu</span></p>
-                        </div>
-                        <div id="riwayat-prescreening" class="riwayat-body-content">
-                            <img src="src/assets/screening-tab-icons/prescreening-icon.png">
-                            <h4>Kamu telah melengkapi pre screening.</h4>
-                            <p><span id="riwayat-prescreening-date">3 hari lalu</span></p>
-                        </div>
-                        <div id="riwayat-survey" class="riwayat-body-content">
-                            <img src="src/assets/screening-tab-icons/survey-icon.png">
-                            <h4>Kamu mengikuti survey untuk: <span id="riwayat-survey-value">Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</span></h4>
-                            <p><span id="riwayat-survey-date">3 hari lalu</span></p>
-                        </div>
-                        <div id="riwayat-penerimaan-dana" class="riwayat-body-content">
-                            <img src="src/assets/screening-tab-icons/penerimaan-dana-icon.png">
-                            <h4>Kamu baru saja menerima dana sebesar Rp <span id="riwayat-penerimaan-dana-value">250.000</span></h4>
-                            <p><span id="riwayat-penerimaan-dana-date">3 hari lalu</span></p>
-                        </div>
-                    </div>
-                    <!-- Footer -->
-                    <div class="riwayat-footer">
-                        <a href="#" class="btn btn--text text--light-blue float-right">Muat lainnya</a>
+                <!-- Notifikasi SMS -->
+                <div id="setting-notifikasi-sms">
+                    <h4>Notifikasi sms</h4>
+                    <p>Populix dapat mengirimkan kamu informasi mengenai <strong class="text-highlight--cream">studi baru</strong> via SMS.</p>
+                    <label class="question f-12">Apakah kamu ingin menerima pemberitahuan via sms saat ada studi baru ?</label>
+                    <div class="setting-notifikasi-toggle">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
                     </div>
                 </div>
             </div>
-            <!-- Tab End -->
         </div>
     </div>
     

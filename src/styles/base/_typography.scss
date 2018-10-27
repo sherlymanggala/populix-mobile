@@ -71,6 +71,31 @@ p {
 
 * {
     font-family: 'Open Sans', sans-serif;
-    color: #000000;
+    color: $color-dark-blue;
     background-color: $color-white;
+}
+
+// Font Weight: 300
+.font-light {
+    font-weight: $font-light;
+}
+
+// Font Weight: 400
+.font-regular {
+    font-weight: $font-regular;
+}
+
+// Font Weight: 600
+.font-semibold {
+    font-weight: $font-semibold;
+}
+
+// Font Weight: 700
+.font-bold {
+    font-weight: $font-bold;
+}
+
+// Font Weight: 800
+.font-extrabold {
+    font-weight: $font-extrabold;
 }

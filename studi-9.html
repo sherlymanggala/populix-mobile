@@ -62,60 +62,46 @@
                     <span class="navbar-icon"><i class="fas fa-bell"></i></span>
                 </button>
                 <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
-                    <span class="navbar-icon"><img src="src/assets/profile-picture.png" width=24></span>
+                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
                 </button>
             </div>
         </nav>
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <!-- Welcome and Todo Section -->
-            <h3>Hi, <span class="username">Juinal</span>.<br>Selamat datang :)</h3>
-            
-            <!-- 3 titik -->
-            <img class="img-3-dots" src="src/assets/dot.png">
-            
-            <div id="section-activity">
-                <h6 class="text-uppercase">Aktivitas yang bisa kamu lakukan:</h6>
-                
-                <!-- Verifikasi Email -->
-                <div id="section-activity-verifikasi" class="body-content-section-activity">
-                    <h4>Studi baru untuk kamu</h4>
-                    <p>Email kamu belum terverifikasi.</p>
-                    <a class="text--light-blue" href="#">Verifikasi sekarang</a>
+            <!-- Header (ID dan Durasi Waktu) -->
+            <div class="studi-header grid--left">
+                <div class="header-id">
+                    <p class="f-12 text-uppercase">ID Populix:</p>
+                    <span id="studi-user-id" class="f-12">56323sgdacgsjd200019d</span>
+                    <a href="#"><img src="src/assets/embed-icon.png" width=16></a>
+                </div>
+                <div class="header-waktu">
+                    <img src="src/assets/screening-tab-icons/durasi-icon.png">
+                    <span id="studi-waktu" class="f-12">15:59</span>
                 </div>
             </div>
-            
-            <!-- Studi Marketplace -->
-            <div class="section-activity">
-                <div id="section-activity-marketplace">
-                    <!-- Icon here -->
-                    <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
-                    <h4>Studi marketplace tentang pengguna teknologi</h4>
-                    <h5><span class="section-activity-marketplace-name">Tokopedia</span></h5>
-                    <p class="text--gray"><span class="section-activity-marketplace-detail">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
-                    
-                    <!-- Data section-activity-marketplace- -->
-                    <div class="grid-4">
-                        <!-- Jumlah orang -->
-                        <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-orang">15</span> orang</p>
-                        
-                        <!-- Waktu -->
-                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/durasi-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-waktu">20 menit</span></p>
-                        
-                        <!-- Duit -->
-                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
-                        <p>Rp. <span class="section-activity-marketplace-duit">250.000</span></p>
-                        
-                        <!-- Tanggal -->
-                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-tanggal">17 Agustus 2018</span></p>
-                    </div>
-                    
-                    <!-- Button Ambil Studi -->
-                    <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
+
+            <!-- Body (question) -->
+            <div class="studi-content">
+                <div id="question-header">
+                    <h3>qualtrics</h3>
+                </div>
+                <div id="question-body">
+                    <form>
+                        <label>Please enter your Prolific ID</label>
+                        <input type="text">
+                        <label>What are your overall impressions of the new design?</label>
+                        <input type="text">
+                        <label>Was it clear how to take the study?</label>
+                        <input type="text">
+                        <label>Did the site work well on your device & what is your device?</label>
+                        <input type="text">
+                        <label>Were the names and menu items easy to understand?</label>
+                        <input type="text">
+                        <label>Was anything particularly confusing/problematic?</label>
+                        <button type="submit"><span><i class="fas fa-arrow-right"></i></span></button>
+                    </form>
                 </div>
             </div>
         </div>

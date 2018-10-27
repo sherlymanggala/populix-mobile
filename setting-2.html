@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles/main.css">
+    
+    <!-- Bootstrap FA Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <title>Populix</title>
+</head>
+
+<body id="setting-2">
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="topnav navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Sidebar -->
+            <div class="sidebar collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Brand Logo -->
+                <a class="sidebar-header" href="#">
+                    <img class="img-fluid" src="src/assets/image.png">
+                </a>
+                
+                <!-- Link starts here -->
+                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Lihat Studi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
+                        role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
+                        <div class="dropdown-menu grid--left">
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"></span>Hubungan Keluarga</a>
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/status-sosial-icon.png"></span>Status Sosial</a>
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hobi-icon.png"></span>Hobi</a>
+                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"></span>Studi Kualitatif</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Notif and Avatar -->
+            <div class="topnav-notif-avatar">
+                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
+                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
+                </button>
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
+                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Body Starts Here -->
+        <div class="body-content">
+            <div class="setting-header">
+                <h3>Edit profile</h3>
+            </div>
+            <div class="setting-body">
+                <div id="setting-foto-profil">
+                    <h4>Foto Profil</h4>
+                    <img id="setting-foto-profil-avatar" class="img-avatar" src="src/assets/profile-picture.png">
+                    <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
+                    <span class="btn btn-delete text--dark-gray">Delete</span>
+                </div>
+                <div id="setting-biodata">
+                    <form>
+                        <div class="form-group">
+                            <label for="setting-biodata-name-first">Nama depan</label>
+                            <input type="text" class="form-control" id="setting-biodata-name-first">
+                            
+                            <label for="setting-biodata-name-last">Nama belakang</label>
+                            <input type="text" class="form-control" id="setting-biodata-name-last">
+                            
+                            <label for="setting-biodata-gender">Jenis kelamin</label><br>
+                            <select id="setting-biodata-gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select><br>
+                            
+                            <label for="setting-biodata-tgl-lahir">Tanggal lahir</label>
+                            <input type="date" class="form-control" id="setting-biodata-tgl-lahir">
+                            
+                            <label for="setting-biodata-etnis">Etnis</label><br>
+                            <select id="setting-biodata-etnis">
+                                <option value="Sunda">Sunda</option>
+                                <option value="Jawa">Jawa</option>
+                                <option value="Tionghoa">Tionghoa</option>
+                            </select><br>
+                            
+                            <label for="setting-biodata-agama">Agama</label><br>
+                            <select id="setting-biodata-agama">
+                                <option value="Kristen">Kristen</option>
+                                <option value="Khatolik">Khatolik</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Hindu">Hindu</option>
+                            </select><br>
+                            
+                            <label for="setting-biodata-kewarganegaraan">Kewarganegaraan</label><br>
+                            <select id="setting-biodata-kewarganegaraan">
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Luar Negeri">Luar Negeri</option>
+                            </select><br>
+                            
+                            <label for="setting-biodata-alamat">Alamat</label>
+                            <input type="text" class="form-control" id="setting-biodata-alamat">
+                            
+                            <label for="setting-biodata-kota">Kota</label><br>
+                            <select id="setting-biodata-kota">
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Tangerang">Tangerang</option>
+                                <option value="Depok">Depok</option>
+                                <option value="Bogor">Bogor</option>
+                                <option value="Bekasi">Bekasi</option>
+                            </select><br>
+                            
+                            <label for="setting-biodata-provinsi">provinsi</label><br>
+                            <select id="setting-biodata-provinsi">
+                                <option value="DKI Jakarta">DKI Jakarta</option>
+                                <option value="Banten">Banten</option>
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="Jawa Tengah">Jawa Tengah</option>
+                                <option value="DI Yogyakarta">DI Yogyakarta</option>
+                            </select><br>
+                            
+                            <label for="setting-biodata-ktp">Informasi KTP</label><br>
+                            <span id="setting-biodata-ktp" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
+                            <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                            <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="setting-footer">
+                    <button id="setting-biodata-btn--save" class="btn btn-primary btn--light-blue">Simpan</button>
+                    <button id="setting-biodata-btn--cancel" class="btn btn-secondary">Batal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>
