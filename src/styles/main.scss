@@ -27,12 +27,14 @@
   'components/cover',
   'components/dropdown',
   'components/inputs',
-  'components/popover';
+  'components/popover',
+  'components/progressbar';
 
 @import
   'pages/dashboard',
   'pages/login',
-  'pages/screening';
+  'pages/screening',
+  'pages/prescreening';
 
 @import
   'themes/theme';

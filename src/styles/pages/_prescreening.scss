@@ -1,0 +1,33 @@
+#prescreening {
+    .body-content-gender {
+        .option {
+            .col:nth-child(1) {
+                margin-right: 10px !important;
+            }
+
+            input {
+                display: none;
+                margin:0;
+                padding: 0;
+            }
+
+            label {
+                cursor: pointer;
+                background-size: contain;
+                border: 5px solid $color-light-gray;
+                border-radius: 5px;
+                padding-top: 28px; //sementara
+                padding-bottom: 28px;
+                width: 100%;
+
+                &:hover {
+                    border: 5px solid $color-light-blue;
+                }
+            }
+
+            input:checked + label {
+                border: 5px solid $color-light-blue;
+            }
+        }
+    }
+}

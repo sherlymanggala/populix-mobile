@@ -30,7 +30,7 @@
         
         <!-- Welcome User -->
         <div class="body-header">
-            <p class="text--black">Hi, <span class="username">Juinal William</span></p>
+            <p class="text--black">Hi, <span class="user-fullname">Juinal William</span></p>
         </div>
         
         <img src="src/assets/dot.png">
@@ -41,7 +41,7 @@
             <p>Semakin banyak kamu menjawab pertanyaan screening 
                 maka semakin besar juga peluang kamu untuk bisa 
                 mengikuti studi dari kami.<br><br>
-                Dengan <span class="text-highlight--cream">minimal 50% kelengkapan</span>
+                Dengan <strong class="text-highlight--cream">minimal 50% kelengkapan</strong>
                 kamu bisa mulai mendapatkan studi.
             </p>
         </div>
@@ -57,9 +57,9 @@
         
         <!-- Progress Bar -->
         <div class="body-content-progress progress">
-            <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <p class="f-12"><span id="progress-bar-value">5%</span> kelengkapan sebelum mengambil survey</p>
+        <p class="f-12"><span id="progress-bar-value">50</span>% kelengkapan sebelum mengambil survey</p>
         
         <!-- Gender -->
         <div class="body-content-gender">
@@ -67,11 +67,15 @@
                 <span class="icon">Icon</span>
                 <label class="question">Saya adalah...</label><br>
             </div>            
-            <div class="radio-option option">
-                <input id="radio-option-male" type="radio" name="gender" value="male" />
-                <label for="radio-option-male"><img src="src/assets/man.png"></label>
-                <input id="radio-option-female" type="radio" name="gender" value="female" />
-                <label for="radio-option-female"><img src="src/assets/women.png"></label>
+            <div class="radio-option option text-center row">
+                <div class="col">
+                    <input id="radio-option-male" type="radio" name="gender" value="male"/>
+                    <label for="radio-option-male" class="font-bold"><img src="src/assets/man.png"><br>Pria</label>
+                </div>
+                <div class="col">
+                    <input id="radio-option-female" type="radio" name="gender" value="female" />
+                    <label for="radio-option-female" class="font-bold"><img src="src/assets/women.png"><br>Wanita</label>
+                </div>
             </div>
         </div>
         
@@ -156,7 +160,7 @@
                 <label class="question">Informasi KTP</label><br>
             </div>            
             <div class="input-file-option option">
-                <input type="file">
+                <span class="btn btn-file text--light-blue">Pilih foto<input type="file"></span>
                 <label>Maksimal file <strong>1 MB</strong></label><br>
                 <label class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</label>
             </div>

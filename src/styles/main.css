@@ -134,45 +134,45 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
  * class f-12 untuk p atau span atau label ukuran 12sp
  */
 h1 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 20px;
 }
 
 h4 {
-  font-size: 0.93em;
+  font-size: 0.93rem;
 }
 
 h5 {
-  font-size: 0.87em;
+  font-size: 0.87rem;
 }
 
 h6 {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   color: #A1AFBB;
   font-weight: 600 !important;
-  line-height: 1em;
+  line-height: 1rem;
 }
 
 p, label {
-  font-size: 0.81em;
+  font-size: 0.81rem;
   line-height: 20px;
   font-weight: 400;
 }
 
 .f-12 {
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
 .f-13 {
-  font-size: 0.81em;
+  font-size: 0.81rem;
 }
 
 * {
@@ -287,41 +287,32 @@ p, label {
   }
 }
 /* Button Primary for Blue Colored Button */
-.btn-primary {
+.btn-primary, .btn--orange, .btn-secondary {
   border: 0px;
-  padding: 0.75em 1.12em 0.87em;
+  padding: 0.75rem 1.12rem 0.87rem;
   border-radius: 5px;
-  font-size: 0.93em;
-  background-color: #179DFE !important;
+  font-size: 0.93rem;
+  background-color: #179DFE;
 }
 
 .btn-secondary {
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 0.93em;
   background-color: #f9fafc;
   border: 1px solid #A1AFBB;
   color: #0D2433;
 }
 
 .btn--orange {
-  border: 0px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 0.93em;
   background-color: #FAAF40;
 }
 
 /* Button berbentuk text */
-.btn--text {
+.btn--text, button.navbar-toggler {
   background-color: transparent !important;
   border: 0px;
 }
 
 /* Button navbar toggler */
 button.navbar-toggler {
-  border: 0px;
-  background-color: #FFFFFF;
   padding-left: 0;
 }
 
@@ -385,19 +376,21 @@ input:checked + .slider:before {
 .btn-file {
   position: relative;
   overflow: hidden;
+  margin: 0 10px 0 0;
+  padding: 0;
 }
 .btn-file input[type=file] {
   position: absolute;
   top: 0;
   right: 0;
+  left: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  text-align: right;
   filter: alpha(opacity=0);
   opacity: 0;
-  outline: none;
-  cursor: inherit;
   display: block;
+  cursor: pointer !important;
 }
 
 /* TODO: need to style select box to look like design */
@@ -423,6 +416,14 @@ input[type=date] {
   display: none;
 }
 
+.progress, .progress-bar {
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background-color: #FAAF40;
+}
+
 .body-content h3, .body-content h4 {
   font-weight: 700;
 }
@@ -440,6 +441,30 @@ input[type=date] {
 /* section buat aktivitas yg bisa dilakukan */
 .body-content-section-activity {
   margin: 30px 0;
+}
+
+#prescreening .body-content-gender .option .col:nth-child(1) {
+  margin-right: 10px !important;
+}
+#prescreening .body-content-gender .option input {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+#prescreening .body-content-gender .option label {
+  cursor: pointer;
+  background-size: contain;
+  border: 5px solid #EDEFF2;
+  border-radius: 5px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  width: 100%;
+}
+#prescreening .body-content-gender .option label:hover {
+  border: 5px solid #179DFE;
+}
+#prescreening .body-content-gender .option input:checked + label {
+  border: 5px solid #179DFE;
 }
 
 span {

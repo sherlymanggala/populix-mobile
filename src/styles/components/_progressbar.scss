@@ -1,0 +1,8 @@
+.progress {
+    border-radius: 10px;
+}
+
+.progress-bar {
+    @extend .progress;
+    background-color: $color-orange;
+}

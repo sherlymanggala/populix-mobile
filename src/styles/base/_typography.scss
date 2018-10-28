@@ -25,53 +25,53 @@
 
 // 28sp
 h1 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
 }
 
 // 20sp
 h2 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 // 16sp
 h3 {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 20px;
 }
 
 // 15sp
 h4 {
-    font-size: 0.93em;
+    font-size: 0.93rem;
 }
 
 // 14sp
 h5 {
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 // 12sp
 h6 {
-    font-size: 0.75em;
+    font-size: 0.75rem;
     color: $color-dark-gray;
     font-weight: $font-semibold !important;
-    line-height: 1em;
+    line-height: 1rem;
 }
 
 // General p and label and span with font-size 13sp
 p, label{
-    font-size: 0.81em;
+    font-size: 0.81rem;
     line-height: 20px;
     font-weight: $font-regular;
 }
 
 // For all that has font-size 12sp
 .f-12 {
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
 
 // For all that has font-size 12sp
 .f-13 {
-    font-size: 0.81em;
+    font-size: 0.81rem;
 }
 
 * {
