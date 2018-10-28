@@ -1,26 +1,28 @@
-// for blue bg color
-.btn--blue {
-  background-color: $color-light-blue;
+/* Button Primary for Blue Colored Button */
+.btn-primary {
   border: 0px;
+  padding: 0.75em 1.12em 0.87em;
+  border-radius: 5px;
+  font-size: 0.93em;
+  background-color: $color-light-blue !important;
 }
 
-// for orange bg color
-.btn--orange {
-  background-color: $color-orange;
-}
-
-/* Button 'Muat Lainnya' */
-a.btn--muat-lainnya {
-  display: block !important;
-  float: right;
-  margin-bottom: 30px;
-}
-
-/* Button 'Ambil Studi' */
-.btn--ambil-studi {
+// Button Secondary for Orange Colored Button
+.btn-secondary {
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 0.95em;
+  font-size: 0.93em;
+  background-color: #f9fafc;
+  border: 1px solid $color-dark-gray;
+  color: $color-dark-blue;
+}
+
+.btn--orange {
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.93em;
+  background-color: $color-orange;
 }
 
 /* Button berbentuk text */
@@ -34,12 +36,6 @@ button.navbar-toggler {
   border: 0px;
   background-color: $color-white;
   padding-left: 0;
-}
-
-/* All Fullwdith Button */
-.btn--fullwidth {
-  width: 100%;
-  padding: 10px;
 }
 
 // Toggle Switch Button

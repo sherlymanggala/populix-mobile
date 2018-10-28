@@ -18,7 +18,19 @@
 }
 
 nav {
-    .dropdown-item {
+    &.dropdown-item {
         color: $color-dark-blue !important;
+    }
+}
+
+//Remove all fas and fab background color
+i.fas, i.fab {
+    background-color: transparent;
+    
+    // for fa arrow right
+    &.fa-arrow-right {
+        color: $color-white;
+        float: right;
+        vertical-align: middle !important;
     }
 }

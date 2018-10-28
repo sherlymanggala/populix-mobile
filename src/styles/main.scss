@@ -1,42 +1,38 @@
-// Google Font Roboto
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-/**
- * import all styles
- */
 @import 
-    'abstracts/functions',
-    'abstracts/mixins',
-    'abstracts/placeholders',
-    'abstracts/variables';
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/placeholders';
 
 @import
-    'vendors/bootstrap';
+  'vendors/bootstrap';
 
 @import
-    'base/animations',
-    'base/color',
-    'base/typography';
+  'base/animations',
+  'base/color',
+  'base/typography';
 
 @import
-    'layout/footer',
-    'layout/forms',
-    'layout/grid',
-    'layout/header',
-    'layout/navigation',
-    'layout/sidebar';
+  'layout/navigation',
+  'layout/grid',
+  'layout/header',
+  'layout/footer',
+  'layout/sidebar',
+  'layout/forms';
 
 @import
-    'components/buttons',
-    'components/cover',
-    'components/dropdown',
-    'components/popover',
-    'components/inputs';
+  'components/buttons',
+  'components/cover',
+  'components/dropdown',
+  'components/inputs',
+  'components/popover';
 
 @import
-    'pages/dashboard',
-    'pages/login',
-    'pages/screening';
+  'pages/dashboard',
+  'pages/login',
+  'pages/screening';
 
 @import
-    'themes/theme';
+  'themes/theme';

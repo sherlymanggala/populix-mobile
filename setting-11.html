@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="setting-11">
+<body id="setting-11" class="setting">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -88,7 +88,40 @@
                         <p class="font-bold">Hapus akun Populix</p>
                         <p>Semua data kamu akan terhapus dan tidak bisa dikembalikan</p>
                         <p class="f-12">Note: kamu tidak perlu menghapus akun Populix yang saat ini kamu gunakan, jika kamu hanya ingin <a href="#" class="text--light-blue">mengganti alamat email</a></p>
-                        <button id="btn-setting--delete" class="btn btn-secondary">Hapus akun</button>
+                        <button type="button" id="btn-setting--delete" class="btn btn-secondary" data-toggle="modal" data-target="#setting-akun-delete-modal">Hapus akun</button>
+                        
+                        <!-- Delete Account Modal -->
+                        <div class="modal fade" id="setting-akun-delete-modal" tabindex="-1" aria-labelledby="setting-akun-delete-modal-title" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4 class="font-bold">Kamu yakin mau menghapus akun Populix ?</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="setting-akun-delete-modal-password" class="font-bold">Kata sandi</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="password" class="form-control form-password" id="setting-akun-delete-modal-password">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">
+                                                            <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer modal-footer-type-2">
+                                        <button type="button" class="btn btn-primary">Konfirmasi</button>
+                                        <button type="button" class="btn btn--text text--light-blue" data-dismiss="modal">Batal</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

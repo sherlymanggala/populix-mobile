@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="dashboard">
+<body id="fgd-screening" class="fgd-screening">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -116,7 +116,7 @@
                             </div>
                             
                             <!-- Button Ambil Studi -->
-                            <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
+                            <a class="btn btn-primary" href="#">Ambil studi</a>
                         </div>
                         
                         <!-- FGD -->
@@ -147,18 +147,18 @@
                             </div>
                             
                             <!-- Button Ambil Studi -->
-                            <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
+                            <a class="btn btn-primary" href="#">Ambil studi</a>
                         </div>
                         
                         <!-- In Depth Interview -->
                         <div id="section-activity-interview">
                             <!-- Icon here -->
-                            <img id="icon-studi-interview" src="src/assets/fgd.png" width="55">
+                            <img id="icon-studi-interview" src="src/assets/wawancara.png" width="55">
                             <h4>Wawancara Mendalam<br>(In Depth Interview)</h4>
                             <h5><span id="section-activity-fgd-name" class="studi-activity-title">East Ventures</span></h5>
                             <p class="text--gray"><span id="section-activity-fgd-subtitle" class="section-activity-subtitle">Perusahaan Startup dan Teknologi Indonesia</span></p>
                             
-                            <!-- Data section-activity-marketplace- -->
+                            <!-- Data Marketplace -->
                             <div class="grid-4">
                                 <!-- Jumlah orang -->
                                 <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
@@ -178,48 +178,112 @@
                             </div>
                             
                             <!-- Button Ambil Studi -->
-                            <a class="btn btn-primary btn--ambil-studi btn--blue" href="#">Ambil studi</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" id="fgd-screening-interview-btn" class="btn btn-primary" data-toggle="modal" data-target="#fgd-screening-interview-modal">
+                                Ambil studi
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="fgd-screening-interview-modal" tabindex="-1" role="dialog" aria-labelledby="fgd-screening-interview-modal-title" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <img id="icon-studi-interview" src="src/assets/wawancara.png" width="55">
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>Wawancara Mendalam<br>(In Depth Interview)</h4>
+                                            <h5><span id="section-activity-fgd-name" class="studi-activity-title">East Ventures</span></h5>
+                                            <p class="text--gray"><span id="section-activity-fgd-subtitle" class="section-activity-subtitle">Perusahaan Startup dan Teknologi Indonesia</span></p>
+                                            
+                                            <!-- Data Marketplace -->
+                                            <div class="grid-2">
+                                                <!-- Jumlah orang -->
+                                                <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
+                                                <p><span id="section-activity-interview-orang" class="section-activity-value">15</span> orang</p>
+                                                
+                                                <!-- Duit -->
+                                                <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
+                                                <p>Rp. <span id="section-activity-interview-duit" class="section-activity-value">250.000</span></p>
+                                                
+                                                <!-- Tanggal -->
+                                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                                <p><span id="section-activity-interview-tanggal" class="section-activity-value">17 Agustus 2018</span></p>
+                                                
+                                                <!-- Tempat -->
+                                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                                <p><span id="section-activity-interview-tempat" class="section-activity-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer modal-footer-type-2">
+                                            <button type="button" id="fgd-screening-interview-modal-btn--change" class="btn btn--text text--light-blue font-semibold" data-toggle="modal" data-target="#pindah-jadwal-modal">Pindah Jadwal</button>
+                                            <button type="button" id="fgd-screening-interview-modal-btn--close" class="btn btn--text text--light-blue font-semibold" data-dismiss="modal">Batalkan</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Modal Pindah Jadwal -->
+                            <div class="modal fade" id="pindah-jadwal-modal" tabindex="-1" role="dialog" aria-labelledby="pindah-jadwal-modal-title" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <img class="img-fluid" src="src/assets/pindah-jadwal.png">
+                                            <h4>Pindah jadwal tidak dapat dilakukan</h4>
+                                            <p class="f-12">Kamu hanya bisa pindah jadwal 2 hari sebelum wawancara. Mohon hubungi, <a href="#" class="text--light-blue">support@populix.co</a>
+                                             untuk pertanyaan lebih lanjut.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" id="pindah-jadwal-modal-btn--close" class="btn btn-primary btn-block" data-dismiss="modal">Tutup</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="section-activity-footer">
                         <a href="#" class="btn btn--text text--light-blue float-right fgd-screening-btn--muat-lainnya">Muat lainnya</a>
                     </div>
                 </div>
-
+                
                 <!-- Tab Riwayat -->
                 <div class="tab-pane fade" id="nav-riwayat" role="tabpanel" aria-labelledby="nav-tab-riwayat">
-                        <!-- Header -->
-                        <div class="riwayat-header">
-                            <h6 class="text-uppercase">Riwayat Aktivitas</h6>
+                    <!-- Header -->
+                    <div class="riwayat-header">
+                        <h6 class="text-uppercase">Riwayat Aktivitas</h6>
+                    </div>
+                    <!-- Body -->
+                    <div class="riwayat-body">
+                        <div id="riwayat-penarikan-dana" class="riwayat-body-content">
+                            <img src="src/assets/screening-tab-icons/penarikan-dana-icon.png">
+                            <h4>Kamu melakukan penarikan sebesar Rp <span id="riwayat-penarikan-dana-value">30.000</span></h4>
+                            <p><span id="riwayat-penarikan-dana-date">3 hari lalu</span></p>
                         </div>
-                        <!-- Body -->
-                        <div class="riwayat-body">
-                            <div id="riwayat-penarikan-dana" class="riwayat-body-content">
-                                <img src="src/assets/screening-tab-icons/penarikan-dana-icon.png">
-                                <h4>Kamu melakukan penarikan sebesar Rp <span id="riwayat-penarikan-dana-value">30.000</span></h4>
-                                <p><span id="riwayat-penarikan-dana-date">3 hari lalu</span></p>
-                            </div>
-                            <div id="riwayat-prescreening" class="riwayat-body-content">
-                                <img src="src/assets/screening-tab-icons/prescreening-icon.png">
-                                <h4>Kamu telah melengkapi pre screening.</h4>
-                                <p><span id="riwayat-prescreening-date">3 hari lalu</span></p>
-                            </div>
-                            <div id="riwayat-survey" class="riwayat-body-content">
-                                <img src="src/assets/screening-tab-icons/survey-icon.png">
-                                <h4>Kamu mengikuti survey untuk: <span id="riwayat-survey-value">Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</span></h4>
-                                <p><span id="riwayat-survey-date">3 hari lalu</span></p>
-                            </div>
-                            <div id="riwayat-penerimaan-dana" class="riwayat-body-content">
-                                <img src="src/assets/screening-tab-icons/penerimaan-dana-icon.png">
-                                <h4>Kamu baru saja menerima dana sebesar Rp <span id="riwayat-penerimaan-dana-value">250.000</span></h4>
-                                <p><span id="riwayat-penerimaan-dana-date">3 hari lalu</span></p>
-                            </div>
+                        <div id="riwayat-prescreening" class="riwayat-body-content">
+                            <img src="src/assets/screening-tab-icons/prescreening-icon.png">
+                            <h4>Kamu telah melengkapi pre screening.</h4>
+                            <p><span id="riwayat-prescreening-date">3 hari lalu</span></p>
                         </div>
-                        <!-- Footer -->
-                        <div class="riwayat-footer">
-                            <a href="#" class="btn btn--text text--light-blue float-right">Muat lainnya</a>
+                        <div id="riwayat-survey" class="riwayat-body-content">
+                            <img src="src/assets/screening-tab-icons/survey-icon.png">
+                            <h4>Kamu mengikuti survey untuk: <span id="riwayat-survey-value">Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</span></h4>
+                            <p><span id="riwayat-survey-date">3 hari lalu</span></p>
+                        </div>
+                        <div id="riwayat-penerimaan-dana" class="riwayat-body-content">
+                            <img src="src/assets/screening-tab-icons/penerimaan-dana-icon.png">
+                            <h4>Kamu baru saja menerima dana sebesar Rp <span id="riwayat-penerimaan-dana-value">250.000</span></h4>
+                            <p><span id="riwayat-penerimaan-dana-date">3 hari lalu</span></p>
                         </div>
                     </div>
+                    <!-- Footer -->
+                    <div class="riwayat-footer">
+                        <a href="#" class="btn btn--text text--light-blue float-right">Muat lainnya</a>
+                    </div>
+                </div>
             </div>
             <!-- Tab End -->
         </div>

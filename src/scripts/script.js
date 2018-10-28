@@ -22,14 +22,10 @@ $(function() {
     $('#icon-eye').on('click', function() {
         if($(this).hasClass("fa-eye")) {
             $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye'); // toggle our classes for the eye icon
-            $('#form-password').attr("type","text");
-            $('#setting-password--old').attr("type","text");
-            $('#setting-password--new').attr("type","text");
+            $('.form-password').attr("type","text");
         } else {
             $(this).toggleClass('fa-eye').toggleClass('fa-eye-slash'); // toggle our classes for the eye icon
-            $('#form-password').attr("type","password");
-            $('#setting-password--old').attr("type","password");
-            $('#setting-password--new').attr("type","password");
+            $('.form-password').attr("type","password");
         }
     });
 });
