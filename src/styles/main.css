@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .container {
-  padding: 32px 24px 76px 24px !important;
+  padding: 32px 24px 76px 24px;
 }
 
 .navbar,
@@ -30,8 +30,8 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 
 @media (max-width: 768px) {
   /**
-   * Sidebar animation from left to right
-   */
+  * Sidebar animation from left to right
+  */
   .navbar-collapse.collapsing {
     -webkit-transition: left 0.17s linear;
     -o-transition: left 0.17s linear;
@@ -69,6 +69,8 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     transform: translateX(65vw) rotate(135deg);
     position: absolute;
     top: 10px;
+    background-color: #546E7E;
+    height: 4px;
   }
 
   .navbar-toggler:not(.collapsed) span:nth-child(3) {
@@ -78,6 +80,8 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     transform: translateX(65vw) rotate(-135deg);
     position: absolute;
     top: 10px;
+    background-color: #546E7E;
+    height: 4px;
   }
 
   /* Garis kedua untuk hilang saat aktif*/
@@ -265,7 +269,7 @@ p, label {
     left: 0;
     opacity: 1;
     z-index: 999;
-    border-radius: 3px;
+    border-radius: 10px;
   }
   .topnav .navbar-collapse {
     position: absolute;
@@ -274,12 +278,38 @@ p, label {
     background-color: #FFFFFF !important;
     height: 100vh;
   }
-
-  .sidebar-nav {
-    /* Kasih Jarak antara brand logo dan dashboard */
+  .topnav .navbar-collapse.show {
+    box-shadow: 200px -10px rgba(13, 36, 51, 0.5);
   }
-  .sidebar-nav #sidebar-nav-link-dashboard {
-    margin-top: 32px;
+
+  .sidebar {
+    margin-top: -32px !important;
+    padding: 32px 0 0 0;
+  }
+
+  .sidebar-nav li:nth-child(1) {
+    margin-top: 24px;
+  }
+  .sidebar-nav li a {
+    font-size: 0.93rem;
+  }
+  .sidebar-nav .dropdown-menu {
+    border: 0px;
+    padding: 0;
+  }
+  .sidebar-nav .dropdown-menu a {
+    font-size: 0.81rem;
+    margin: 10px 0;
+    color: #0D2433;
+  }
+  .sidebar-nav .dropdown-menu a:hover, .sidebar-nav .dropdown-menu a:active {
+    color: #179DFE;
+  }
+  .sidebar-nav .dropdown-menu a img {
+    padding: 0 15px 0 10px;
+    width: 100%;
+    height: auto;
+    text-align: center !important;
   }
   .sidebar-nav .grid--left a {
     display: grid;

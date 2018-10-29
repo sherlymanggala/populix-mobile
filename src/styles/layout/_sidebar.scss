@@ -1,18 +1,20 @@
 @media (max-width: 768px) {
     /* Kondisi awal */
     .topnav {
-        .navbar-toggler span {
-            @include rotate(0deg);
-            display: block;
-            background-color: $color-dark-blue;
-            height: 3px;
-            width: 25px;
-            margin-bottom: 4px;
-            position: relative;
-            left: 0;
-            opacity: 1;
-            z-index: 999;
-            border-radius: 3px;
+        .navbar-toggler {
+            span {
+                @include rotate(0deg);
+                display: block;
+                background-color: $color-dark-blue;
+                height: 3px;
+                width: 25px;
+                margin-bottom: 4px;
+                position: relative;
+                left: 0;
+                opacity: 1;
+                z-index: 999;
+                border-radius: 10px;
+            }
         }
         
         .navbar-collapse {
@@ -22,12 +24,46 @@
             background-color: $color-white !important;
             height: 100vh;
         }
+        
+        // Set Overlay for behind sidebar
+        .navbar-collapse.show {
+            box-shadow: 200px -10px rgba(13, 36, 51, .5);
+        }
+    }
+    .sidebar {
+        margin-top: -32px !important;
+        padding: 32px 0 0 0;
     }
     
     .sidebar-nav {
-        /* Kasih Jarak antara brand logo dan dashboard */
-        #sidebar-nav-link-dashboard {
-            margin-top: 32px;
+        // Kasih Jarak antara brand logo dan dashboard
+        li:nth-child(1) {
+            margin-top: 24px;
+        }
+        
+        li a {
+            font-size: 0.93rem;
+        }
+        
+        .dropdown-menu {
+            border: 0px;
+            padding: 0;
+            
+            a {
+                font-size: 0.81rem;
+                margin: 10px 0;
+                color: $color-dark-blue;
+                &:hover, &:active {
+                    color: $color-light-blue;
+                }
+                
+                img {
+                    padding: 0 15px 0 10px;
+                    width: 100%;
+                    height: auto;
+                    text-align: center !important;
+                }
+            }
         }
         
         .grid--left {

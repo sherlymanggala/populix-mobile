@@ -1,9 +1,9 @@
 // For Small Devices
 @media (max-width: 768px) {
     /**
-     * Sidebar animation from left to right
-     */
-     // Collapsed sidebar
+    * Sidebar animation from left to right
+    */
+    // Collapsed sidebar
     .navbar-collapse.collapsing {
         @include transition(left, .17s , linear);
         height: auto;
@@ -32,6 +32,8 @@
         @include rotate-translate(65vw, 135deg);
         position: absolute;
         top: 10px;
+        background-color: $color-dark-gray-2;
+        height: 4px;
     }
     
     // Third hamburger bar while active
@@ -39,6 +41,8 @@
         @include rotate-translate(65vw, -135deg);
         position: absolute;
         top: 10px;
+        background-color: $color-dark-gray-2;
+        height: 4px;
     }
     
     /* Garis kedua untuk hilang saat aktif*/
