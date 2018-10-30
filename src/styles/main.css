@@ -279,7 +279,7 @@ p, label {
     height: 100vh;
   }
   .topnav .navbar-collapse.show {
-    box-shadow: 200px -10px rgba(13, 36, 51, 0.5);
+    box-shadow: 200px -10px rgba(13, 36, 51, 0.6);
   }
 
   .sidebar {
@@ -466,11 +466,6 @@ input[type=date] {
   padding-bottom: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #EDEFF2;
-}
-
-/* section buat aktivitas yg bisa dilakukan */
-.body-content-section-activity {
-  margin: 30px 0;
 }
 
 #prescreening .body-content-gender .option .col:nth-child(1) {

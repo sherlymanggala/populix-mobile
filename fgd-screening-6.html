@@ -70,234 +70,236 @@
         <!-- Body Starts Here -->
         <div class="body-content">
             <!-- Client Tab -->
-            <nav id="body-content-tab">
+            <nav class="tab">
                 <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-tab-studi" data-toggle="tab" href="#nav-studi" role="tab" aria-controls="nav-studi" aria-selected="true">Studi</a>
-                    <a class="nav-item nav-link" id="nav-tab-riwayat" data-toggle="tab" href="#nav-riwayat" role="tab" aria-controls="nav-riwayat" aria-selected="false">Riwayat</a>
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-study" role="tab" aria-controls="nav-study" aria-selected="true">Studi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">Riwayat</a>
                 </div>
             </nav>
             <div class="tab-content" id="body-content-tab-content">
-                <div class="tab-pane fade show active" id="nav-studi" role="tabpanel" aria-labelledby="nav-tab-studi">
+                <div class="tab-pane fade show active" id="nav-study" role="tabpanel" aria-labelledby="nav-tab-study">
                     <h4 class="fgd-screening-header">Jadwal Forum Grup Diskusi (FGD)</h4>
                     
                     <!-- FGD Group List -->
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 1</h4>
-                            <span class="fgd-group-header-status status--normal float-right">20 Slot</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                    <div class="fgd-group-list">
+                        <div class="fgd-group">
+                            <div class="fgd-group-header">
+                                <h4>Group 1</h4>
+                                <span class="fgd-group-header-status status--normal float-right">20 Slot</span>
                             </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <!-- Button Trigger Modal -->
-                            <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-1-modal">Ambil Slot</button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="fgd-screening-group-1-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-1-title" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <img class="modal-title" src="src/assets/image.png">
-                                        </div>
-                                        <div class="modal-body">
-                                            <h4 class="modal-body-header font-bold">Kamu memilih sesi 1</h4>
-                                            <div class="grid-2">
-                                                <!-- Waktu -->
-                                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                                
-                                                <!-- Tanggal -->
-                                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                                
-                                                <!-- Tempat -->
-                                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                            <div class="fgd-group-content">
+                                <div class="grid-2">
+                                    <!-- Waktu -->
+                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                    
+                                    <!-- Tanggal -->
+                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                    
+                                    <!-- Tempat -->
+                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                </div>
+                            </div>
+                            <div class="fgd-group-footer">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-1-modal">Ambil Slot</button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="fgd-screening-group-1-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-1-title" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img class="modal-title" src="src/assets/image.png">
                                             </div>
-                                        </div>
-                                        <div class="modal-footer ">
-                                            <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            <div class="modal-body">
+                                                <h4 class="modal-body-header font-bold">Kamu memilih sesi 1</h4>
+                                                <div class="grid-2">
+                                                    <!-- Waktu -->
+                                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                                    
+                                                    <!-- Tanggal -->
+                                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                                    
+                                                    <!-- Tempat -->
+                                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 2</h4>
-                            <span class="fgd-group-header-status status--full float-right">Penuh</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                        
+                        <div class="fgd-group">
+                            <div class="fgd-group-header">
+                                <h4>Group 2</h4>
+                                <span class="fgd-group-header-status status--full float-right">Penuh</span>
                             </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <!-- Button Trigger Modal -->
-                            <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-2-modal">Ambil Slot</button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="fgd-screening-group-2-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-2-title" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <img class="modal-title" src="src/assets/image.png">
-                                        </div>
-                                        <div class="modal-body">
-                                            <h4 class="modal-body-header font-bold">Kamu memilih sesi 2</h4>
-                                            <div class="grid-2">
-                                                <!-- Waktu -->
-                                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                                
-                                                <!-- Tanggal -->
-                                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                                
-                                                <!-- Tempat -->
-                                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                            <div class="fgd-group-content">
+                                <div class="grid-2">
+                                    <!-- Waktu -->
+                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                    
+                                    <!-- Tanggal -->
+                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                    
+                                    <!-- Tempat -->
+                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                </div>
+                            </div>
+                            <div class="fgd-group-footer">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-2-modal">Ambil Slot</button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="fgd-screening-group-2-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-2-title" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img class="modal-title" src="src/assets/image.png">
                                             </div>
-                                        </div>
-                                        <div class="modal-footer ">
-                                            <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            <div class="modal-body">
+                                                <h4 class="modal-body-header font-bold">Kamu memilih sesi 2</h4>
+                                                <div class="grid-2">
+                                                    <!-- Waktu -->
+                                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                                    
+                                                    <!-- Tanggal -->
+                                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                                    
+                                                    <!-- Tempat -->
+                                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 3</h4>
-                            <span class="fgd-group-header-status status--normal float-right">8 Slot</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                        
+                        <div class="fgd-group">
+                            <div class="fgd-group-header">
+                                <h4>Group 3</h4>
+                                <span class="fgd-group-header-status status--normal float-right">8 Slot</span>
                             </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <!-- Button Trigger Modal -->
-                            <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-3-modal">Ambil Slot</button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="fgd-screening-group-3-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-3-title" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <img class="modal-title" src="src/assets/image.png">
-                                        </div>
-                                        <div class="modal-body">
-                                            <h4 class="modal-body-header font-bold">Kamu memilih sesi 3</h4>
-                                            <div class="grid-2">
-                                                <!-- Waktu -->
-                                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                                
-                                                <!-- Tanggal -->
-                                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                                
-                                                <!-- Tempat -->
-                                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                            <div class="fgd-group-content">
+                                <div class="grid-2">
+                                    <!-- Waktu -->
+                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                    
+                                    <!-- Tanggal -->
+                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                    
+                                    <!-- Tempat -->
+                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                </div>
+                            </div>
+                            <div class="fgd-group-footer">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-3-modal">Ambil Slot</button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="fgd-screening-group-3-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-3-title" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img class="modal-title" src="src/assets/image.png">
                                             </div>
-                                        </div>
-                                        <div class="modal-footer ">
-                                            <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            <div class="modal-body">
+                                                <h4 class="modal-body-header font-bold">Kamu memilih sesi 3</h4>
+                                                <div class="grid-2">
+                                                    <!-- Waktu -->
+                                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                                    
+                                                    <!-- Tanggal -->
+                                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                                    
+                                                    <!-- Tempat -->
+                                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="fgd-group">
-                        <div class="fgd-group-header">
-                            <h4>Group 4</h4>
-                            <span class="fgd-group-header-status status--normal float-right">3 Slot</span>
-                        </div>
-                        <div class="fgd-group-content">
-                            <div class="grid-2">
-                                <!-- Waktu -->
-                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                
-                                <!-- Tanggal -->
-                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                
-                                <!-- Tempat -->
-                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                        
+                        <div class="fgd-group">
+                            <div class="fgd-group-header">
+                                <h4>Group 4</h4>
+                                <span class="fgd-group-header-status status--normal float-right">3 Slot</span>
                             </div>
-                        </div>
-                        <div class="fgd-group-footer">
-                            <!-- Button Trigger Modal -->
-                            <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-4-modal">Ambil Slot</button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="fgd-screening-group-4-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-4-title" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <img class="modal-title" src="src/assets/image.png">
-                                        </div>
-                                        <div class="modal-body">
-                                            <h4 class="modal-body-header font-bold">Kamu memilih sesi 4</h4>
-                                            <div class="grid-2">
-                                                <!-- Waktu -->
-                                                <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
-                                                
-                                                <!-- Tanggal -->
-                                                <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
-                                                
-                                                <!-- Tempat -->
-                                                <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                            <div class="fgd-group-content">
+                                <div class="grid-2">
+                                    <!-- Waktu -->
+                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                    
+                                    <!-- Tanggal -->
+                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                    
+                                    <!-- Tempat -->
+                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                </div>
+                            </div>
+                            <div class="fgd-group-footer">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="btn btn-primary  btn-block text--white" data-toggle="modal" data-target="#fgd-screening-group-4-modal">Ambil Slot</button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="fgd-screening-group-4-modal" tabindex="-1" role="dialog" aria-labelledby="modal-group-4-title" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img class="modal-title" src="src/assets/image.png">
                                             </div>
-                                        </div>
-                                        <div class="modal-footer ">
-                                            <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            <div class="modal-body">
+                                                <h4 class="modal-body-header font-bold">Kamu memilih sesi 4</h4>
+                                                <div class="grid-2">
+                                                    <!-- Waktu -->
+                                                    <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-waktu" class="fgd-group-content-value">13:00 - 15:00</span></p>
+                                                    
+                                                    <!-- Tanggal -->
+                                                    <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tanggal" class="fgd-group-content-value">10 Desember 2018</span></p>
+                                                    
+                                                    <!-- Tempat -->
+                                                    <img id="grid-icon-tempat" class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
+                                                    <p><span id="fgd-group-content-tempat" class="fgd-group-content-value">Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <p class="f-12">Harap datang lebih awal untuk melakukan registrasi ulang</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -307,7 +309,7 @@
                 </div>
                 
                 <!-- Tab Riwayat -->
-                <div class="tab-pane fade" id="nav-riwayat" role="tabpanel" aria-labelledby="nav-tab-riwayat">
+                <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-tab-riwayat">
                     <!-- Header -->
                     <div class="riwayat-header">
                         <h6 class="text-uppercase">Riwayat Aktivitas</h6>

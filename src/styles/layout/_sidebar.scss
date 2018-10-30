@@ -25,9 +25,9 @@
             height: 100vh;
         }
         
-        // Set Overlay for behind sidebar
+        // Set Backdrop for behind sidebar
         .navbar-collapse.show {
-            box-shadow: 200px -10px rgba(13, 36, 51, .5);
+            box-shadow: 200px -10px rgba(13, 36, 51, .6);
         }
     }
     .sidebar {

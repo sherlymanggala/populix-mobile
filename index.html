@@ -69,53 +69,59 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <!-- Welcome and Todo Section -->
-            <h3>Hi, <span class="user-name--first">Juinal</span>.<br>Selamat datang :)</h3>
-            
-            <!-- 3 titik -->
-            <img class="img-3-dots" src="src/assets/dot.png">
-            
-            <div id="section-activity">
+            <div class="dashboard-header">
+                <!-- Welcome and Todo Section -->
+                <h3>Hi, Juinal.<br>Selamat datang :)</h3>
+                
+                <!-- 3 titik -->
+                <img class="img-3-dots" src="src/assets/dot.png">
+                
                 <h6 class="text-uppercase">Aktivitas yang bisa kamu lakukan:</h6>
                 
                 <!-- Verifikasi Email -->
-                <div id="section-activity-verifikasi" class="body-content-section-activity">
+                <div>
                     <h4>Studi baru untuk kamu</h4>
                     <p>Email kamu belum terverifikasi.</p>
                     <a class="text--light-blue" href="verifikasi-akun.html">Verifikasi sekarang</a>
                 </div>
             </div>
             
-            <!-- Studi Marketplace -->
-            <div class="section-activity">
-                <div id="section-activity-marketplace">
-                    <!-- Icon here -->
-                    <img id="icon-studi-marketplace" src="src/assets/studi-marketplace-xxxhd.png" width="55">
-                    <h4>Studi marketplace tentang pengguna teknologi</h4>
-                    <h5><span class="section-activity-marketplace-name">Tokopedia</span></h5>
-                    <p class="text--gray"><span class="section-activity-marketplace-detail">section-activity-marketplace- startup dan Teknologi Indonesia</span></p>
+            <!-- Study Marketplace -->
+            <div class="study-list">
+                <div class="study-item">
+                    <!-- Study Header -->
+                    <div class="study-header">
+                        <img class="study-icon" src="src/assets/studi-marketplace-xxxhd.png">
+                        <h4>Studi marketplace tentang pengguna teknologi</h4>
+                    </div>
+
+                    <!-- Researcher Name -->
+                    <h5><span class="researcher-name">Tokopedia</span></h5>
+
+                    <!-- Study Short Description -->
+                    <p class="text--gray"><span class="study-short-description">Perusahaan startup dan Teknologi Indonesia</span></p>
                     
-                    <!-- Data section-activity-marketplace- -->
-                    <div class="grid-4">
+                    <!-- Study Details and Reward -->
+                    <div class="grid-4 study-details-and-reward">
                         <!-- Jumlah orang -->
-                        <img id="grid-icon-orang" class="icon" src="src/assets/screening-tab-icons/profesi-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-orang">15</span> orang</p>
+                        <img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png">
+                        <p><span>15</span> orang</p>
                         
                         <!-- Waktu -->
-                        <img id="grid-icon-waktu" class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-waktu">20 menit</span></p>
+                        <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                        <p><span>20 menit</span></p>
                         
                         <!-- Duit -->
-                        <img id="grid-icon-duit" class="icon" src="src/assets/screening-tab-icons/uang-icon.png" width="50">
-                        <p>Rp. <span class="section-activity-marketplace-duit">250.000</span></p>
+                        <img class="icon" src="src/assets/screening-tab-icons/uang-icon.png">
+                        <p>Rp. <span>250.000</span></p>
                         
                         <!-- Tanggal -->
-                        <img id="grid-icon-tanggal" class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                        <p><span class="section-activity-marketplace-tanggal">17 Agustus 2018</span></p>
+                        <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                        <p><span>17 Agustus 2018</span></p>
                     </div>
                     
                     <!-- Button Ambil Studi -->
-                    <a class="btn btn-primary btn--ambil-studi " href="#">Ambil studi</a>
+                    <a role="button" class="btn btn-primary" href="#">Ambil studi</a>
                 </div>
             </div>
         </div>

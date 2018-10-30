@@ -69,25 +69,31 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="section-screening">
+            <!-- Header -->
+            <div class="header-screening-cluster">
                 <h3>Screening &bull; Profesi</h3>
+            </div>
+
+            <!-- Screening List -->
+            <div class="screening-list">                
                 <!-- Saya bekerja -->
-                <div class="section-screening-time">
-                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening grid-2">
+                    <img class="section-screening__icon" src="src/assets/favicon.png">
                     <form>
-                        <label>Saya bekerja...</label><br>
-                        <select>
+                        <label class="section-screening__question">Saya bekerja...</label><br>
+                        <select class="section-screening__option">
                             <option value="fulltime">Full time</option>
                             <option value="parttime">Part time</option>
                         </select>
                     </form>
                 </div>
+
                 <!-- Jabatan saya -->
-                <div class="section-screening-jabatan">
-                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening grid-2">
+                        <img class="section-screening__icon" src="src/assets/favicon.png">
                     <form>
-                        <label>Jabatan saya sebagai...</label><br>
-                        <select>
+                        <label class="section-screening__question">Jabatan saya sebagai...</label><br>
+                        <select class="section-screening__option">
                             <option value="designer">Designer</option>
                             <option value="programmer">Programmer</option>
                             <option value="administrator">Administrator</option>
@@ -95,12 +101,13 @@
                         </select>
                     </form>
                 </div>
+
                 <!-- Bidang section-activity-marketplace- -->
-                <div class="section-screening-marketplace">
-                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening grid-2">
+                    <img class="section-screening__icon" src="src/assets/favicon.png">
                     <form>
-                        <label>Perusahaan saya bergerak di bidang...</label><br>
-                        <select>
+                        <label class="section-screening__question">Perusahaan saya bergerak di bidang...</label><br>
+                        <select class="section-screening__option">
                             <option value="software">Teknologi perangkat lunak</option>
                             <option value="hardware">Teknologi perangkat keras</option>
                             <option value="electric">Elektronik</option>
@@ -108,29 +115,32 @@
                         </select>
                     </form>
                 </div>
+
                 <!-- Cuti -->
-                <div class="section-screening-cuti">
-                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening grid-2">
+                    <img class="section-screening__icon" src="src/assets/favicon.png">
                     <form>
-                        <label>Saya pernah mengambil cuti...</label><br>
-                        <select>
+                        <label class="section-screening__question">Saya pernah mengambil cuti...</label><br>
+                        <select class="section-screening__option">
                             <option value="pernah">Pernah</option>
                             <option value="tidakpernah">Tidak pernah</option>
                         </select>
-                        <label>Cuti yang saya ambil dalam 1 tahun...</label><br>
-                        <select>
+
+                        <label class="section-screening__question">Cuti yang saya ambil dalam 1 tahun...</label><br>
+                        <select class="section-screening__option">
                             <option value="14">14 hari</option>
                             <option value="21">21 hari</option>
                             <option value="28">28 hari</option>
                         </select>
                     </form>
                 </div>
+
                 <!-- Installed Marketplace App -->
-                <div class="section-screening-app">
-                    <img src="src/assets/favicon.png" alt="Marketplace" width=32>
+                <div class="section-screening grid-2">
+                    <img class="section-screening__icon" src="src/assets/favicon.png">
                     <form>
-                        <label>Marketplace apa saja yang teriinstal di handphone anda?</label><br>
-                        <select> 
+                        <label class="section-screening__question">Marketplace apa saja yang terinstal di handphone anda?</label><br>
+                        <select class="section-screening__option"> 
                             <option value="a">A. Tokopedia, Bukalapak</option>
                             <option value="b">B. Zalora, JD.ID, Bukalapak</option>
                             <option value="c">C. Tokopedia, Zalora, JD.ID</option>
@@ -138,19 +148,6 @@
                             <option value="e">E. Tokopedia, Zalora, JD.ID, Bukalapak</option>
                         </select>
                     </form>
-                    <!-- <div class="select-ctr">
-                        <label>Marketplace apa saja yang teriinstal di handphone anda?</label>
-                        <div class="selected-input input-preview">
-                            Pilih <i class="fas fa-caret-down"></i>
-                        </div>
-                        <div class="select-box">
-                            <div class="input input1" grid-icon-value="1">A. Tokopedia, Bukalapak</div>
-                            <div class="input input2" grid-icon-value="2">B. Zalora, JD.ID, Bukalapak</div>
-                            <div class="input input3" grid-icon-value="3">C. Tokopedia, Zalora, JD.ID</div>
-                            <div class="input input4" grid-icon-value="4">D. JD.ID, Bukalapak, Zalora</div>
-                            <div class="input input5" grid-icon-value="5">E. Tokopedia, Zalora, JD.ID, Bukalapak</div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
