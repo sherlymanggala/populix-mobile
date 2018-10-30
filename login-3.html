@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="login-3" class="login">
+<body id="login-3" class="login">        
     <!-- Body Starts Here -->
     <div class="container">
         <!-- Top Nav Logo dan Link register -->
@@ -23,26 +23,33 @@
             <div class="col nav-brand">
                 <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="col-7 topnav-btn-text-register">
+            <div class="float-right">
                 <p>Kembali ke halaman <a class="text--blue" href="#">Login</a></p>
             </div>
         </div>
         
         <div class="body-content">
             <!-- Header -->
-            <div class="body-header">
-                <h2>Atur ulang kata sandi</h2>
-                <p>Kamu mengirimkan instruksi untuk mengatur ulang kata sandi. Klik "ubah kata sandi" untuk membuat kata sandi yang baru.</p>
+            <div class="login-header">
+                <h2 class="font-bold">Atur ulang kata sandi</h2>
+                <p>Kamu mengirimkan instruksi untuk mengatur ulang kata sandi. 
+                    Klik "ubah kata sandi" untuk membuat kata sandi yang baru.
+                </p>
             </div>
             
             <!-- Login Form -->
-            <form class="body-content-form">
-                <button id="form-btn-email--resend" type="submit" class="btn btn-primary  btn-block">Kirim Ulang Kata Sandi</button>
-                <div class="form-group">
-                    <label for="login-email--reset">Alamat email</label>
-                    <input type="email" class="form-control" id="login-email--reset" placeholder="Masukkan email">
-                </div>                
-            </form>
+            <div class="login-form">
+                <form>                    
+                    <!-- Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Ulang Kata Sandi</button>
+                    
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label class="login__question font-bold">Alamat email</label>
+                        <input type="email" class="form-control login__input" placeholder="Masukkan email">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     

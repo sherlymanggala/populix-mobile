@@ -23,31 +23,34 @@
             <div class="col nav-brand">
                 <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="col-7 topnav-btn-text-register">
+            <div class="float-right">
                 <p>Kembali ke halaman <a class="text--blue" href="#">Login</a></p>
             </div>
         </div>
         
         <div class="body-content">
             <!-- Header -->
-            <div class="body-header">
-                <h2>Lupa kata sandi? Tetap tenang.</h2>
+            <div class="login-header">
+                <h2 class="font-bold">Lupa kata sandi? Tetap tenang.</h2>
                 <p>Silahkan masukkan email yang kamu gunakan untuk akun Populix dan kami akan mengirimkan instruksi selanjutnya.</p>
             </div>
             
             <!-- Box Notification -->
-            <div class="body-notification-box">
-                <p>Kami telah mengirimkan instruksi selanjutnya ke email <span id="login-1-email">juinalwilliam@studioalva.co.id</span></p>
+            <div class="notification-box">
+                <p>Kami telah mengirimkan instruksi selanjutnya ke email <span class="font-bold">juinalwilliam@studioalva.co.id</span></p>
             </div>
             
             <!-- Login Form -->
-            <form class="body-content-form">
-                <div class="form-group">
-                    <label for="login-email--reset">Alamat email</label>
-                    <input type="email" class="form-control" id="login-email--reset" placeholder="Masukkan email">
-                </div>
-                <button id="login-btn-email--reset" type="submit" class="btn btn-primary  btn-block">Kirim Ulang Kata Sandi</button>
-            </form>
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <label class="login__question font-bold">Alamat email</label>
+                        <input type="email" class="form-control login__input" placeholder="Masukkan email">
+                    </div>
+                    <!-- Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Ulang Kata Sandi</button>
+                </form>
+            </div>
         </div>
     </div>
     

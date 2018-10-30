@@ -13,13 +13,13 @@ $(function() {
     });
     
     //box notif di signup
-    //$('.body-notification-box').hide();
-    $('#form-btn-email--reset').click(function() {
-        $('.body-notification-box').show();
+    //$('.notification-box').hide();
+    $('#login-btn-email--reset').click(function() {
+        $('.notification-box').show();
     })
     
     // toggle password visibility
-    $('#icon-eye').on('click', function() {
+    $('.form-icon-eye').on('click', function() {
         if($(this).hasClass("fa-eye")) {
             $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye'); // toggle our classes for the eye icon
             $('.form-password').attr("type","text");

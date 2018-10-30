@@ -33,6 +33,7 @@
     .sidebar {
         margin-top: -32px !important;
         padding: 32px 0 0 0;
+        z-index: 998;
     }
     
     .sidebar-nav {
@@ -63,13 +64,6 @@
                     height: auto;
                     text-align: center !important;
                 }
-            }
-        }
-        
-        .grid--left {
-            a {
-                display: grid;
-                grid-template-columns: 50px 1fr;
             }
         }
     }

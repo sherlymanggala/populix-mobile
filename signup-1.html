@@ -22,14 +22,14 @@
             <div class="col nav-brand">
                 <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="col-7 topnav-btn-text-register">
+            <div class="float-right">
                 <p>Belum punya akun? <a class="text--blue" href="#">Daftar</a></p>
             </div>
         </div>
         
         <div class="body-content">
             <!-- Header -->
-            <div class="body-header">
+            <div class="signup-header">
                 <h2>Mari bergabung dengan Populix</h2>
                 <p>Populix adalah platform kolaborasi bagi peneliti dan partisipan studi yang 
                     bertujuan agar memperoleh data yang akurat. Dengan bergabung menjadi partisipan 
@@ -38,7 +38,7 @@
             </div>
             
             <!-- Box Notification 1 -->
-            <div class="body-notification-box">
+            <div class="notification-box">
                 <p class="f-12">Alamat email sudah terdaftar, silahkan hubungi
                     <span class="text--blue">support@populix.co</span>
                     untuk mengaktifkan kembali.
@@ -46,7 +46,7 @@
             </div>
             
             <!-- Box Notification 2 -->
-            <div class="body-notification-box">
+            <div class="notification-box">
                 <p class="f-12">Alamat email sudah terdaftar, silahkan
                     <a class="text--blue" href="#">Login</a>
                     untuk mengakses semua fitur di Populix.
@@ -54,41 +54,49 @@
             </div>
             
             <!-- Signup Form -->
-            <form class="body-content-form">
-                <div class="form-group">
-                    <label for="signup-name-front">Nama depan</label>
-                    <input type="text" class="form-control" id="signup-name-front" placeholder="Masukkan nama depan">
-                    
-                    <label for="signup-name-family">Nama belakang</label>
-                    <input type="text" class="form-control" id="signup-name-family" placeholder="Masukkan nama belakang">
-                    
-                    <label for="signup-email">Alamat email</label>
-                    <input type="email" class="form-control" id="signup-email" placeholder="Masukkan email">
-                    
-                    <label for="signup-password">Buat kata sandi</label>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control" id="signup-password" placeholder="Masukkan kata sandi">
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
-                            </span>
+            <div class="signup-form">
+                <form>
+                    <div class="form-group">
+                        <!-- Signup First Name -->
+                        <label class="signup__question" for="signup-name-first">Nama depan</label>
+                        <input type="text" class="form-control signup__input" id="signup-name-first" placeholder="Masukkan nama depan">
+                        
+                        <!-- Signup Last Name -->
+                        <label class="signup__question" for="signup-name-last">Nama belakang</label>
+                        <input type="text" class="form-control signup__input" id="signup-name-last" placeholder="Masukkan nama belakang">
+                        
+                        <!-- Signup Email -->
+                        <label class="signup__question" for="signup-email">Alamat email</label>
+                        <input type="email" class="form-control signup__input" id="signup-email" placeholder="Masukkan email">
+                        
+                        <!-- Signup Password -->
+                        <label class="signup__question" for="signup-password">Buat kata sandi</label>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control signup__input" id="signup-password" placeholder="Masukkan kata sandi">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="form-control-feedback fas fa-eye form-icon-eye" id="icon-eye"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <button type="submit" class="btn btn-primary  btn-block">Daftar</button>
-                <small>Dengan menekan tombol daftar kamu menyetujui <a class="text--blue" href="#">Syarat dan Ketentuan</a> Populix</small><br>
-                
-                <div class="text-center">
-                    <img src="src/assets/dot.png">
-                </div>
-                
-                <p>Daftar dengan akun 
-                    <a class="text--blue" href="#">Facebook</a>, 
-                    <a class="text--blue" href="#">Google</a>, 
-                    <a class="text--blue" href="#">Linkedin</a>
-                </p>
-            </form>
+                    
+                    <!-- Signup Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Daftar</button>
+                    <small>Dengan menekan tombol daftar kamu menyetujui <a class="text--blue" href="#">Syarat dan Ketentuan</a> Populix</small><br>
+                    
+                    <div class="text-center">
+                        <img src="src/assets/dot.png">
+                    </div>
+                    
+                    <!-- Signup Socmed Button List -->
+                    <p>Daftar dengan akun 
+                        <a class="text--blue" href="#">Facebook</a>, 
+                        <a class="text--blue" href="#">Google</a>, 
+                        <a class="text--blue" href="#">Linkedin</a>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
     

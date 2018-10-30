@@ -23,28 +23,35 @@
             <div class="col nav-brand">
                 <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="col-7 topnav-btn-text-register">
+            <div class="float-right">
                 <p>Kembali ke halaman <a class="text--blue" href="#">Login</a></p>
             </div>
         </div>
         
         <div class="body-content">
             <!-- Header -->
-            <div class="body-header">
-                <h2>Masukkan kata sandi yang baru.</h2>
+            <div class="login-header">
+                <h2 class="font-bold">Masukkan kata sandi yang baru.</h2>
                 <p>Silahkan masukkan kata sandi yang baru. Untuk kamu gunakan ketika ingin melakukan login pada akun Populix.</p>
             </div>
             
             <!-- Login Form -->
-            <form class="body-content-form">
-                <div class="form-group">
-                    <label for="login-password--new">Kata sandi baru</label>
-                    <input type="password" class="form-control form-password" id="login-password--new" placeholder="Masukkan kata sandi yang baru">
-                    <label for="login-password--confirm">Konfirmasi kata sandi baru</label>
-                    <input type="password" class="form-control form-password" id="login-password--confirm" placeholder="Masukkan kembali kata sandi yang baru">
-                </div>
-                <button id="login-btn-password--reset" type="submit" class="btn btn-primary  btn-block">Kirim kata sandi</button>
-            </form>
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <!-- New Password -->
+                        <label class="login__question font-bold">Kata sandi baru</label>
+                        <input type="password" class="form-control form-password login__input" placeholder="Masukkan kata sandi yang baru">
+
+                        <!-- Confirm New Password -->
+                        <label class="login__question font-bold">Konfirmasi kata sandi baru</label>
+                        <input type="password" class="form-control form-password login__input" placeholder="Masukkan kembali kata sandi yang baru">
+                    </div>
+
+                    <!-- Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Kirim kata sandi</button>
+                </form>
+            </div>
         </div>
     </div>
     

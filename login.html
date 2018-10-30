@@ -23,45 +23,50 @@
             <div class="col nav-brand">
                 <img src="src/assets/logo.png" alt="Populix" width="100">
             </div>
-            <div class="float-right topnav-btn-text-register">
+            <div class="float-right">
                 <p class="f-12">Belum punya akun? <a class="text--blue" href="#">Daftar</a></p>
             </div>
         </div>
         
         <div class="body-content">
             <!-- Header -->
-            <div class="body-header">
+            <div class="login-header">
                 <h2 class="font-bold">Selamat datang kembali.</h2>
                 <p>Silahkan masuk ke dalam akun Populix</p>
             </div>
             
             <!-- Login Form -->
-            <form class="body-content-form">
-                <div class="form-group">
-                    <label for="login-email" class="font-bold">Alamat email</label>
-                    <input type="email" class="form-control" id="login-email" placeholder="Masukkan email">
-                </div>
-                <div class="form-group">
-                    <label for="login-password" class="font-bold">Kata sandi</label>
-                    <span class="text--blue">
-                        <a href="#" class="float-right f-13">Lupa kata sandi?</a>
-                    </span>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control form-password" id="login-password" placeholder="Masukkan kata sandi">
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
-                            </span>
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <!-- Email -->
+                        <label for="login-email" class="font-bold login__question">Alamat email</label>
+                        <input type="email" class="form-control login__input" id="login-email" placeholder="Masukkan email">
+                        
+                        <!-- Password -->
+                        <label for="login-password" class="font-bold login__question">Kata sandi</label>
+                        <span class="text--blue"><a href="#" class="float-right f-13">Lupa kata sandi?</a></span>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control form-password login__input" id="login-password" placeholder="Masukkan kata sandi">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="form-control-feedback fas fa-eye form-icon-eye" ></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary  btn-block">Masuk</button>
-                <hr>
-                <span class="text--middle">atau dengan</span>
-                <a role="button" class="btn btn-primary btn-facebook btn-block" href="#"><span><i class="fab fa-facebook-f"></i>Facebook</span></a>
-                <a role="button" class="btn btn-primary btn-google btn-block" href="#"><span><i class="fab fa-google"></i>Google</span></a>
-                <a role="button" class="btn btn-primary btn-linkedin btn-block" href="#"><span><i class="fab fa-linkedin-in"></i>Linkedin</span></a>
-            </form>
+
+                        <!-- Login Button -->
+                        <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                        <hr>
+                        <span class="text--middle">atau dengan</span>
+
+                        <!-- Socmed Login Button -->
+                        <a role="button" class="btn btn-primary btn-facebook btn-block" href="#"><span><i class="fab fa-facebook-f"></i> Facebook</span></a>
+                        <a role="button" class="btn btn-primary btn-google btn-block" href="#"><span><img class="socmed-icon" src="src/assets/google.png"> Google</span></a>
+                        <a role="button" class="btn btn-primary btn-linkedin btn-block" href="#"><span><i class="fab fa-linkedin-in"></i> Linkedin</span></a>
+                    </div>                    
+                </form>
+            </div>
         </div>
     </div>
     

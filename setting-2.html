@@ -19,14 +19,14 @@
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="sidebar collapse navbar-collapse" id="navbar-content">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
                     <img class="img-fluid" src="src/assets/image.png">
@@ -43,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
-                        <div class="dropdown-menu grid--left">
+                        <div class="dropdown-menu">
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
@@ -69,9 +69,12 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
+            <!-- Settings Header -->
             <div class="settings-header">
                 <h3>Edit profile</h3>
             </div>
+
+            <!-- Profile Settings Form -->
             <div class="profile-settings-form">
                 <!-- Profile Picture -->
                 <h4>Foto Profil</h4>
@@ -81,46 +84,55 @@
 
                 <form>
                     <div class="form-group">
+                        <!-- First Name -->
                         <label for="profile-name-first" class="settings__question">Nama depan</label>
                         <input type="text" class="form-control settings__input" id="profile-name-first">
                         
+                        <!-- Last Name -->
                         <label for="profile-name-last" class="settings__question">Nama belakang</label>
                         <input type="text" class="form-control settings__input" id="profile-name-last">
                         
+                        <!-- Gender -->
                         <label for="profile-gender" class="settings__question">Jenis kelamin</label><br>
                         <select id="profile-gender" class="form-control settings__option">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
                         
+                        <!-- Birthday -->
                         <label for="profile-birthday" class="settings__question">Tanggal lahir</label>
                         <input type="date" class="form-control settings__input" id="profile-birthday">
                         
-                        <label for="profile-race" class="settings__question">Etnis</label>
-                        <select id="profile-race" class="form-control settings__option">
+                        <!-- Ethnic -->
+                        <label for="profile-ethnic" class="settings__question">Etnis</label>
+                        <select id="profile-ethnic" class="form-control settings__option">
                             <option value="Sunda">Sunda</option>
                             <option value="Jawa">Jawa</option>
                             <option value="Tionghoa">Tionghoa</option>
                         </select>
                         
+                        <!-- Religion -->
                         <label for="profile-religion" class="settings__question">Agama</label>
                         <select id="profile-religion" class="form-control settings__option">
                             <option value="Kristen">Kristen</option>
-                            <option value="Khatolik">Khatolik</option>
+                            <option value="Katolik">Katolik</option>
                             <option value="Islam">Islam</option>
                             <option value="Buddha">Buddha</option>
                             <option value="Hindu">Hindu</option>
                         </select>
                         
+                        <!-- Nationality -->
                         <label for="profile-nationality" class="settings__question">Kewarganegaraan</label>
                         <select id="profile-nationality" class="form-control settings__option">
                             <option value="Indonesia">Indonesia</option>
                             <option value="Luar Negeri">Luar Negeri</option>
                         </select>
                         
+                        <!-- Address -->
                         <label for="profile-address" class="settings__question">Alamat</label>
                         <input type="text" class="form-control settings__input" id="profile-address">
                         
+                        <!-- City -->
                         <label for="profile-city" class="settings__question">Kota</label>
                         <select id="profile-city" class="form-control settings__option">
                             <option value="Jakarta">Jakarta</option>
@@ -130,6 +142,7 @@
                             <option value="Bekasi">Bekasi</option>
                         </select>
                         
+                        <!-- Province -->
                         <label for="profile-province" class="settings__question">Provinsi</label>
                         <select id="profile-province" class="form-control settings__option">
                             <option value="DKI Jakarta">DKI Jakarta</option>
@@ -139,15 +152,21 @@
                             <option value="DI Yogyakarta">DI Yogyakarta</option>
                         </select>
                         
+                        <!-- ID Card -->
                         <label for="profile-id-card" class="settings__question">Informasi KTP</label><br>
                         <span id="profile-id-card" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
                         <p class="f-12">Maksimal file <strong>1 MB</strong></p>
                         <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
                     </div>
                 </form>
-                <div class="setting-footer">
-                    <button id="profile-btn--save" class="btn btn-primary ">Simpan</button>
-                    <button id="profile-btn--cancel" class="btn btn-secondary">Batal</button>
+
+                <!-- Settings Footer -->
+                <div class="settings-footer">
+                    <!-- Button Save -->
+                    <button class="btn btn-primary">Simpan</button>
+
+                    <!-- Button Cancel -->
+                    <button class="btn btn-secondary">Batal</button>
                 </div>
             </div>
         </div>

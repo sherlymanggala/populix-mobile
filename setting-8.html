@@ -15,18 +15,18 @@
     <title>Populix</title>
 </head>
 
-<body id="setting-8" class="setting">
+<body id="setting-8" class="settings">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="sidebar collapse navbar-collapse" id="navbar-content">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
                     <img class="img-fluid" src="src/assets/image.png">
@@ -43,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
-                        <div class="dropdown-menu grid--left">
+                        <div class="dropdown-menu">
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
@@ -72,27 +72,27 @@
             <div class="settings-header">
                 <h3>Rekening bank</h3>
             </div>
-            <div class="setting-body">
-                <div id="setting-rekening">
-                    <form>
-                        <div class="form-group">
-                            <label for="setting-rekening-name">Nama pemilik rekening</label>
-                            <input type="text" class="form-control" id="setting-rekening-name">
-                            <p class="f-12">Nama yang tertera harus sesuai dengan yang terdaftar di Bank</p>
-
-                            <label for="setting-rekening-number">No. rekening</label>
-                            <input type="text" class="form-control" id="setting-rekening-number">
-
-                            <label for="setting-rekening-bank">Nama bank</label>
-                            <input type="text" class="form-control" id="setting-rekening-bank">
-
-                            <label for="setting-rekening-bank-cabang">Cabang</label>
-                            <input type="text" class="form-control" id="setting-rekening-bank-cabang">
-                            
-                            <button id="setting-rekening-btn--save" class="btn btn-primary ">Simpan</button>
-                        </div>
-                    </form>
-                </div>
+            
+            <!-- Bank Account -->
+            <div class="bank-account-settings-form">
+                <form>
+                    <div class="form-group">
+                        <label class="settings__question" for="bank-account-name">Nama pemilik rekening</label>
+                        <input type="text" class="form-control settings__input" id="bank-account-name">
+                        <small class="f-12">Nama yang tertera harus sesuai dengan yang terdaftar di Bank</small>
+                        
+                        <label class="settings__question" for="bank-account-number">No. rekening</label>
+                        <input type="text" class="form-control settings__input" id="bank-account-number">
+                        
+                        <label class="settings__question" for="bank-account-bank-name">Nama bank</label>
+                        <input type="text" class="form-control settings__input" id="bank-account-bank-name">
+                        
+                        <label class="settings__question" for="bank-account-bank-branch">Cabang</label>
+                        <input type="text" class="form-control settings__input" id="bank-account-bank-branch">
+                        
+                        <button class="btn btn-primary">Simpan</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -15,18 +15,18 @@
     <title>Populix</title>
 </head>
 
-<body id="setting-11" class="setting">
+<body id="setting-11" class="settings">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="sidebar collapse navbar-collapse" id="navbar-content">
                 <!-- Brand Logo -->
                 <a class="sidebar-header" href="#">
                     <img class="img-fluid" src="src/assets/image.png">
@@ -43,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
-                        <div class="dropdown-menu grid--left">
+                        <div class="dropdown-menu">
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
                             <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
@@ -72,53 +72,63 @@
             <div class="settings-header">
                 <h3>Akun</h3>
             </div>
-            <div class="setting-body">
-                <div id="setting-akun">
-                    <div id="setting-akun-email">
-                        <p class="font-bold">Email</p>
-                        <p>Email yang kamu gunakan saat ini adalah <span id="user-email" class="font-bold">juinalwilliam@alva.com</span></p>
-                        <button id="btn-setting--email" class="btn btn-secondary">Ubah</button>
-                    </div>
-                    <div id="setting-akun-phone">
-                        <p class="font-bold">No. handphone</p>
-                        <p>Nomor handphone yang kamu gunakan saat ini adalah <span id="user-phone" class="font-bold">081253438213</span></p>
-                        <button id="btn-setting--phone" class="btn btn-secondary">Ubah</button>
-                    </div>
-                    <div id="setting-akun-delete">
-                        <p class="font-bold">Hapus akun Populix</p>
-                        <p>Semua data kamu akan terhapus dan tidak bisa dikembalikan</p>
-                        <p class="f-12">Note: kamu tidak perlu menghapus akun Populix yang saat ini kamu gunakan, jika kamu hanya ingin <a href="#" class="text--light-blue">mengganti alamat email</a></p>
-                        <button type="button" id="btn-setting--delete" class="btn btn-secondary" data-toggle="modal" data-target="#setting-akun-delete-modal">Hapus akun</button>
-                        
-                        <!-- Delete Account Modal -->
-                        <div class="modal fade" id="setting-akun-delete-modal" tabindex="-1" aria-labelledby="setting-akun-delete-modal-title" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h4 class="font-bold">Kamu yakin mau menghapus akun Populix ?</h4>
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="setting-akun-delete-modal-password" class="font-bold">Kata sandi</label>
-                                                <div class="input-group mb-3">
-                                                    <input type="password" class="form-control form-password" id="setting-akun-delete-modal-password">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">
-                                                            <i class="form-control-feedback fas fa-eye" id="icon-eye"></i>
-                                                        </span>
-                                                    </div>
+            
+            <!-- Account Settings Form -->
+            <div class="account-settings-form">
+                <!-- Email -->
+                <div>
+                    <p class="font-bold">Email</p>
+                    <p>Email yang kamu gunakan saat ini adalah <span class="font-bold">juinalwilliam@alva.com</span></p>
+                    <button class="btn btn-secondary">Ubah</button>
+                </div>
+
+                <!-- No Handphone -->
+                <div>
+                    <p class="font-bold">No. handphone</p>
+                    <p>Nomor handphone yang kamu gunakan saat ini adalah <span class="font-bold">081253438213</span></p>
+                    <button class="btn btn-secondary">Ubah</button>
+                </div>
+
+                <!-- Delete Account -->
+                <div>
+                    <p class="font-bold">Hapus akun Populix</p>
+                    <p>Semua data kamu akan terhapus dan tidak bisa dikembalikan</p>
+                    <p class="f-12">Note: kamu tidak perlu menghapus akun Populix yang saat ini kamu gunakan, jika kamu hanya ingin <a href="#" class="text--light-blue">mengganti alamat email</a></p>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#delete-account-modal">Hapus akun</button>
+                    
+                    <!-- Delete Account Modal -->
+                    <div class="modal fade" id="delete-account-modal" tabindex="-1" aria-labelledby="delete-account-modal-title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <h4 class="font-bold">Kamu yakin mau menghapus akun Populix ?</h4>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="delete-account-modal-password" class="font-bold">Kata sandi</label>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control form-password settings__input" id="delete-account-modal-password">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">
+                                                        <i class="form-control-feedback fas fa-eye form-icon-eye" ></i>
+                                                    </span>
                                                 </div>
                                             </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer modal-footer-type-2">
-                                        <button type="button" class="btn btn-primary">Konfirmasi</button>
-                                        <button type="button" class="btn btn--text text--light-blue" data-dismiss="modal">Batal</button>
-                                    </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Modal Footer -->
+                                <div class="modal-footer modal-footer-type-2">
+                                    <button type="button" class="btn btn-primary">Konfirmasi</button>
+                                    <button type="button" class="btn btn--text text--light-blue" data-dismiss="modal">Batal</button>
                                 </div>
                             </div>
                         </div>
