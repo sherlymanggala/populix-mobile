@@ -1,6 +1,6 @@
 /* TODO: need to style select box to look like design */
-select,
-input[type=date] {
+select:not(.settings__option),
+input[type=date]:not(.settings__input) {
     border: none;
     font-weight: $font-bold;
     color: $color-light-blue;

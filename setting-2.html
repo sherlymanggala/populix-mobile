@@ -15,7 +15,7 @@
     <title>Populix</title>
 </head>
 
-<body id="setting-2" class="setting">
+<body id="setting-2" class="settings">
     <div class="container">
         <!-- Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
@@ -69,87 +69,85 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="setting-header">
+            <div class="settings-header">
                 <h3>Edit profile</h3>
             </div>
-            <div class="setting-body">
-                <div id="setting-foto-profil">
-                    <h4>Foto Profil</h4>
-                    <img id="setting-foto-profil-avatar" class="img-avatar" src="src/assets/profile-picture.png">
-                    <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
-                    <span class="btn btn-delete text--dark-gray">Delete</span>
-                </div>
-                <div id="setting-biodata">
-                    <form>
-                        <div class="form-group">
-                            <label for="setting-biodata-name-first">Nama depan</label>
-                            <input type="text" class="form-control" id="setting-biodata-name-first">
-                            
-                            <label for="setting-biodata-name-last">Nama belakang</label>
-                            <input type="text" class="form-control" id="setting-biodata-name-last">
-                            
-                            <label for="setting-biodata-gender">Jenis kelamin</label><br>
-                            <select id="setting-biodata-gender">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select><br>
-                            
-                            <label for="setting-biodata-tgl-lahir">Tanggal lahir</label>
-                            <input type="date" class="form-control" id="setting-biodata-tgl-lahir">
-                            
-                            <label for="setting-biodata-etnis">Etnis</label><br>
-                            <select id="setting-biodata-etnis">
-                                <option value="Sunda">Sunda</option>
-                                <option value="Jawa">Jawa</option>
-                                <option value="Tionghoa">Tionghoa</option>
-                            </select><br>
-                            
-                            <label for="setting-biodata-agama">Agama</label><br>
-                            <select id="setting-biodata-agama">
-                                <option value="Kristen">Kristen</option>
-                                <option value="Khatolik">Khatolik</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Buddha">Buddha</option>
-                                <option value="Hindu">Hindu</option>
-                            </select><br>
-                            
-                            <label for="setting-biodata-kewarganegaraan">Kewarganegaraan</label><br>
-                            <select id="setting-biodata-kewarganegaraan">
-                                <option value="Indonesia">Indonesia</option>
-                                <option value="Luar Negeri">Luar Negeri</option>
-                            </select><br>
-                            
-                            <label for="setting-biodata-alamat">Alamat</label>
-                            <input type="text" class="form-control" id="setting-biodata-alamat">
-                            
-                            <label for="setting-biodata-kota">Kota</label><br>
-                            <select id="setting-biodata-kota">
-                                <option value="Jakarta">Jakarta</option>
-                                <option value="Tangerang">Tangerang</option>
-                                <option value="Depok">Depok</option>
-                                <option value="Bogor">Bogor</option>
-                                <option value="Bekasi">Bekasi</option>
-                            </select><br>
-                            
-                            <label for="setting-biodata-provinsi">provinsi</label><br>
-                            <select id="setting-biodata-provinsi">
-                                <option value="DKI Jakarta">DKI Jakarta</option>
-                                <option value="Banten">Banten</option>
-                                <option value="Jawa Barat">Jawa Barat</option>
-                                <option value="Jawa Tengah">Jawa Tengah</option>
-                                <option value="DI Yogyakarta">DI Yogyakarta</option>
-                            </select><br>
-                            
-                            <label for="setting-biodata-ktp">Informasi KTP</label><br>
-                            <span id="setting-biodata-ktp" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
-                            <p class="f-12">Maksimal file <strong>1 MB</strong></p>
-                            <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
-                        </div>
-                    </form>
-                </div>
+            <div class="profile-settings-form">
+                <!-- Profile Picture -->
+                <h4>Foto Profil</h4>
+                <img id="setting-foto-profil-avatar" class="img-avatar" src="src/assets/profile-picture.png">
+                <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
+                <span class="btn btn-delete text--dark-gray">Delete</span>
+
+                <form>
+                    <div class="form-group">
+                        <label for="profile-name-first" class="settings__question">Nama depan</label>
+                        <input type="text" class="form-control settings__input" id="profile-name-first">
+                        
+                        <label for="profile-name-last" class="settings__question">Nama belakang</label>
+                        <input type="text" class="form-control settings__input" id="profile-name-last">
+                        
+                        <label for="profile-gender" class="settings__question">Jenis kelamin</label><br>
+                        <select id="profile-gender" class="form-control settings__option">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        
+                        <label for="profile-birthday" class="settings__question">Tanggal lahir</label>
+                        <input type="date" class="form-control settings__input" id="profile-birthday">
+                        
+                        <label for="profile-race" class="settings__question">Etnis</label>
+                        <select id="profile-race" class="form-control settings__option">
+                            <option value="Sunda">Sunda</option>
+                            <option value="Jawa">Jawa</option>
+                            <option value="Tionghoa">Tionghoa</option>
+                        </select>
+                        
+                        <label for="profile-religion" class="settings__question">Agama</label>
+                        <select id="profile-religion" class="form-control settings__option">
+                            <option value="Kristen">Kristen</option>
+                            <option value="Khatolik">Khatolik</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Hindu">Hindu</option>
+                        </select>
+                        
+                        <label for="profile-nationality" class="settings__question">Kewarganegaraan</label>
+                        <select id="profile-nationality" class="form-control settings__option">
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Luar Negeri">Luar Negeri</option>
+                        </select>
+                        
+                        <label for="profile-address" class="settings__question">Alamat</label>
+                        <input type="text" class="form-control settings__input" id="profile-address">
+                        
+                        <label for="profile-city" class="settings__question">Kota</label>
+                        <select id="profile-city" class="form-control settings__option">
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Tangerang">Tangerang</option>
+                            <option value="Depok">Depok</option>
+                            <option value="Bogor">Bogor</option>
+                            <option value="Bekasi">Bekasi</option>
+                        </select>
+                        
+                        <label for="profile-province" class="settings__question">Provinsi</label>
+                        <select id="profile-province" class="form-control settings__option">
+                            <option value="DKI Jakarta">DKI Jakarta</option>
+                            <option value="Banten">Banten</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="DI Yogyakarta">DI Yogyakarta</option>
+                        </select>
+                        
+                        <label for="profile-id-card" class="settings__question">Informasi KTP</label><br>
+                        <span id="profile-id-card" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
+                        <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                        <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
+                    </div>
+                </form>
                 <div class="setting-footer">
-                    <button id="setting-biodata-btn--save" class="btn btn-primary ">Simpan</button>
-                    <button id="setting-biodata-btn--cancel" class="btn btn-secondary">Batal</button>
+                    <button id="profile-btn--save" class="btn btn-primary ">Simpan</button>
+                    <button id="profile-btn--cancel" class="btn btn-secondary">Batal</button>
                 </div>
             </div>
         </div>

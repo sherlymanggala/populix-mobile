@@ -72,12 +72,12 @@
             <!-- Client Tab -->
             <nav class="tab">
                 <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
-                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-study" role="tab" aria-controls="nav-study" aria-selected="true">Studi</a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">Riwayat</a>
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-study" role="tab" aria-controls="tab-study" aria-selected="true">Studi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-history" role="tab" aria-controls="tab-history" aria-selected="false">Riwayat</a>
                 </div>
             </nav>
             <div class="tab-content" id="body-content-tab-content">
-                <div class="tab-pane fade show active" id="nav-study" role="tabpanel" aria-labelledby="nav-tab-study">
+                <div class="tab-pane fade show active" id="tab-study" role="tabpanel" aria-labelledby="nav-tab-study">
                     <h4 class="fgd-screening-header">Jadwal Forum Grup Diskusi (FGD)</h4>
                     
                     <!-- FGD Group List -->
@@ -308,42 +308,38 @@
                     </div>
                 </div>
                 
-                <!-- Tab Riwayat -->
-                <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-tab-riwayat">
-                    <!-- Header -->
-                    <div class="riwayat-header">
+                <!-- Tab History -->
+                <div class="tab-pane fade" id="tab-history" role="tabpanel" aria-labelledby="nav-tab-history">
+                    <div class="history-list">
                         <h6 class="text-uppercase">Riwayat Aktivitas</h6>
-                    </div>
-                    <!-- Body -->
-                    <div class="riwayat-body">
-                        <div id="riwayat-penarikan-dana" class="riwayat-body-content">
+                        
+                        <div class="history-item">
                             <img src="src/assets/screening-tab-icons/penarikan-dana-icon.png">
-                            <h4>Kamu melakukan penarikan sebesar Rp <span id="riwayat-penarikan-dana-value">30.000</span></h4>
-                            <p><span id="riwayat-penarikan-dana-date">3 hari lalu</span></p>
+                            <h4>Kamu melakukan penarikan sebesar Rp <span>30.000</span></h4>
+                            <p>3 hari lalu</p>
                         </div>
-                        <div id="riwayat-prescreening" class="riwayat-body-content">
+                        <div class="history-item">
                             <img src="src/assets/screening-tab-icons/prescreening-icon.png">
                             <h4>Kamu telah melengkapi pre screening.</h4>
-                            <p><span id="riwayat-prescreening-date">3 hari lalu</span></p>
+                            <p>3 hari lalu</p>
                         </div>
-                        <div id="riwayat-survey" class="riwayat-body-content">
+                        <div class="history-item">
                             <img src="src/assets/screening-tab-icons/survey-icon.png">
-                            <h4>Kamu mengikuti survey untuk: <span id="riwayat-survey-value">Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</span></h4>
-                            <p><span id="riwayat-survey-date">3 hari lalu</span></p>
+                            <h4>Kamu mengikuti survey untuk: <span>Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</span></h4>
+                            <p>3 hari lalu</p>
                         </div>
-                        <div id="riwayat-penerimaan-dana" class="riwayat-body-content">
+                        <div class="history-item">
                             <img src="src/assets/screening-tab-icons/penerimaan-dana-icon.png">
-                            <h4>Kamu baru saja menerima dana sebesar Rp <span id="riwayat-penerimaan-dana-value">250.000</span></h4>
-                            <p><span id="riwayat-penerimaan-dana-date">3 hari lalu</span></p>
+                            <h4>Kamu baru saja menerima dana sebesar Rp <span>250.000</span></h4>
+                            <p>3 hari lalu</p>
                         </div>
-                    </div>
-                    <!-- Footer -->
-                    <div class="riwayat-footer">
-                        <a href="#" class="btn btn--text text--light-blue float-right">Muat lainnya</a>
+                        <!-- Footer -->
+                        <div class="history-footer">
+                            <a href="#" class="btn btn--text text--light-blue float-right">Muat lainnya</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Tab End -->
         </div>
     </div>
     
