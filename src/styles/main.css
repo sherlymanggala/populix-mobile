@@ -205,6 +205,10 @@ p, label {
   font-weight: 800;
 }
 
+body {
+  height: 100%;
+}
+
 .nav-link {
   color: #0D2433 !important;
   font-weight: 500;
