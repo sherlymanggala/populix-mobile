@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px;
+}
+
 /**
  * h1 untuk header superbesar (28sp)
  * Contoh: Verifikasi email
@@ -53,7 +57,7 @@ h5 {
 h6 {
     font-size: 0.75rem;
     color: $color-dark-gray;
-    font-weight: $font-semibold !important;
+    font-weight: $font-semibold;
     line-height: 1rem;
 }
 

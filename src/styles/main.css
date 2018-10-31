@@ -84,6 +84,10 @@
   background-color: #F9E4B8;
 }
 
+:root {
+  font-size: 16px;
+}
+
 /**
  * h1 untuk header superbesar (28sp)
  * Contoh: Verifikasi email
@@ -132,7 +136,7 @@ h5 {
 h6 {
   font-size: 0.75rem;
   color: #A1AFBB;
-  font-weight: 600 !important;
+  font-weight: 600;
   line-height: 1rem;
 }
 
@@ -244,14 +248,14 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 /* Layout Icons */
 .grid-2 {
   display: grid;
-  grid-template-columns: 50px auto;
-  vertical-align: middle;
+  grid-template-columns: 40px auto;
+  grid-row-gap: 17px;
 }
 
 .grid-4 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr 3fr;
-  vertical-align: middle;
+  grid-row-gap: 17px;
 }
 
 .dropdown-menu a {
@@ -316,7 +320,12 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     padding: 0 15px 0 10px;
     width: 100%;
     height: auto;
-    text-align: center !important;
+    align-self: center;
+    justify-self: center;
+  }
+  .sidebar-nav .dropdown-menu a span {
+    align-self: center;
+    justify-self: start;
   }
 }
 /* Button Primary for Blue Colored Button */
@@ -326,12 +335,15 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   border-radius: 5px;
   font-size: 0.93rem;
   background-color: #179DFE;
+  width: 50%;
+  margin-top: 32px;
 }
 
 .btn-secondary {
   background-color: #f9fafc;
   border: 1px solid #A1AFBB;
   color: #0D2433;
+  margin-top: 0;
 }
 
 .btn--orange {
@@ -342,6 +354,10 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 .btn--text, button.navbar-toggler {
   background-color: transparent !important;
   border: 0px;
+}
+
+.btn-block {
+  width: 100%;
 }
 
 /* Button navbar toggler */
@@ -434,6 +450,22 @@ input[type=date]:not(.settings__input) {
   color: #179DFE;
 }
 
+.settings__input,
+.settings__option {
+  height: 48px;
+  border: 2px solid #E6E8EA;
+  border-radius: 4px;
+  font-size: 0.81rem;
+  margin-bottom: 24px;
+}
+
+.input-group-text {
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid #E6E8EA;
+  border-left: 0px;
+}
+
 /* Popover */
 .popover-body div {
   padding: 10px 0;
@@ -457,6 +489,53 @@ input[type=date]:not(.settings__input) {
   background-color: #FAAF40;
 }
 
+.tab {
+  font-size: 0.81rem;
+  line-height: 20dp;
+}
+.tab .nav-tabs {
+  border: 0px;
+  border-bottom: 1px solid #EDEFF2;
+  margin-bottom: 24px;
+}
+.tab .nav-tabs a {
+  border: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 4px;
+  margin: 32px 20px -1px 0;
+}
+.tab .nav-tabs a.active {
+  border-bottom: 1px solid #179DFE;
+}
+
+.history-list h6 {
+  margin-top: 48px;
+}
+.history-list p {
+  margin-bottom: 0;
+  color: #10496d;
+}
+.history-list .history-item {
+  border-bottom: 1px solid #EDEFF2;
+  padding: 35px 0 28px;
+}
+.history-list .history-item .history__icon {
+  max-width: 35px;
+  max-height: 30px;
+  margin-bottom: 15px;
+}
+.history-list .history-footer {
+  margin-top: 24px;
+}
+
+.modal-footer {
+  padding-top: 0;
+}
+.modal-footer .modal-footer-type-2 {
+  align-items: center;
+}
+
 .body-content h3, .body-content h4 {
   font-weight: 700;
 }
@@ -469,6 +548,28 @@ input[type=date]:not(.settings__input) {
   padding-bottom: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #EDEFF2;
+}
+
+#screening .header-screening-cluster {
+  margin: 54px 0 16px;
+  border-bottom: 1px solid #EDEFF2;
+}
+#screening .section-screening__icon {
+  max-width: 30px;
+}
+#screening .section-screening {
+  margin: 16px 0;
+  border-bottom: 1px solid #EDEFF2;
+  padding-bottom: 16px;
+}
+#screening .section-screening img {
+  align-self: start;
+  justify-self: start;
+}
+#screening .section-screening form {
+  align-self: center;
+  justify-self: start;
+  font-size: 0.81rem;
 }
 
 #prescreening #prescreening-gender .prescreening__option .col:nth-child(1) {
@@ -495,6 +596,30 @@ input[type=date]:not(.settings__input) {
   border: 5px solid #179DFE;
 }
 
+.fgd-screening .fgd-screening-list .icon,
+.fgd-screening .fgd-group-list .icon {
+  max-width: 24px;
+  max-height: 24px;
+  align-self: center;
+  justify-self: center;
+}
+.fgd-screening .fgd-screening-list .value,
+.fgd-screening .fgd-group-list .value {
+  margin: 0;
+  align-self: center;
+  justify-self: start;
+}
+
+#fgd-screening .fgd-screening-item {
+  margin: 32px 0;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #EDEFF2;
+}
+#fgd-screening .fgd-screening-item .fgd-screening-icon {
+  max-width: 42px;
+  margin: 0 0 26px;
+}
+
 #fgd-screening-4 .fgd-screening__icon {
   max-width: 30px;
 }
@@ -505,10 +630,189 @@ input[type=date]:not(.settings__input) {
 }
 #fgd-screening-4 .fgd-screening-header h4 {
   padding-bottom: 10px;
+  margin-bottom: 32px;
   border-bottom: 1px solid #EDEFF2;
 }
 #fgd-screening-4 .fgd-screening-list {
   margin-top: 30px;
+}
+
+#fgd-screening-6 .fgd-group {
+  padding: 24px;
+  -webkit-box-shadow: 0 0 12px 0 #E6E8EA;
+  -moz-box-shadow: 0 0 12px 0 #E6E8EA;
+  box-shadow: 0 0 12px 0 #E6E8EA;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+#fgd-screening-6 .fgd-group:nth-child(1) {
+  margin-top: 32px;
+}
+#fgd-screening-6 .fgd-group .fgd-group-header {
+  border-bottom: 1px solid #EDEFF2;
+  padding-bottom: 42px;
+  margin-bottom: 27px;
+  text-align: center;
+  vertical-align: center;
+}
+#fgd-screening-6 .fgd-group .fgd-group-header h4 {
+  float: left;
+}
+#fgd-screening-6 .fgd-group .fgd-group-header span {
+  float: right;
+}
+#fgd-screening-6 .fgd-group .fgd-group-header .fgd-group-slot {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  width: 52px;
+  padding: 3px 5px;
+  color: #FFFFFF;
+  background-color: #FAAF40;
+  border-radius: 40px;
+  font-weight: 700;
+}
+#fgd-screening-6 .fgd-group .fgd-group-header .fgd-group-slot.slot--full {
+  background-color: #F14336;
+}
+#fgd-screening-6 .fgd-group .fgd-group-content {
+  border-bottom: 1px solid #EDEFF2;
+  padding-bottom: 24px;
+}
+
+.studi .tab-study-header {
+  margin-top: 32px;
+}
+.studi .study-item {
+  margin: 32px 0;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #EDEFF2;
+}
+.studi .study-icon {
+  max-width: 42px;
+  margin: 0 0 26px;
+}
+.studi .study-list .icon,
+.studi .study-details-and-reward .icon,
+.studi .survey-header__time .icon {
+  max-width: 24px;
+  max-height: 24px;
+  align-self: center;
+  justify-self: center;
+}
+.studi .study-list .value,
+.studi .study-details-and-reward .value,
+.studi .survey-header__time .value {
+  margin: 0;
+  align-self: center;
+  justify-self: start;
+}
+
+#studi .tab-study-header img:not(.img-3-dots) {
+  margin-top: 38px;
+  max-width: 50%;
+}
+
+#studi-8 .fa-arrow-left {
+  color: #179DFE;
+}
+#studi-8 .study-details {
+  margin-top: 40px;
+}
+
+#studi-9 .survey-header__id {
+  display: flex;
+  align-items: center;
+  margin-top: 46px;
+}
+#studi-9 .survey-header__id p {
+  margin: 0 10px 0 0;
+}
+#studi-9 .survey-header__id input {
+  border: 0px;
+  height: 14px;
+  width: 150px;
+}
+#studi-9 .survey-header__time {
+  margin-top: 20px;
+}
+#studi-9 .survey {
+  margin-top: 44px;
+}
+
+.settings {
+  margin-bottom: 76px;
+}
+.settings .form-password {
+  border-right: 0px;
+}
+.settings .settings-header {
+  margin-top: 48px;
+  border-bottom: 1px solid #EDEFF2;
+}
+.settings .profile-settings-form,
+.settings .password-settings-form,
+.settings .notification-settings-form,
+.settings .bank-account-settings-form {
+  margin-top: 32px;
+}
+.settings .settings__question {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#setting-2 .profile-settings-picture {
+  display: flex;
+  align-items: flex-end;
+  margin: 8px 0 32px;
+}
+#setting-2 .profile-settings-picture button {
+  margin: 0;
+  padding: 0;
+}
+#setting-2 .profile-settings-picture #profile-avatar {
+  max-width: 72px;
+  max-height: 72px;
+  border-radius: 50px;
+}
+#setting-2 .profile-settings-picture > * {
+  margin-right: 1rem;
+}
+#setting-2 .profile-settings-id-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#setting-2 .profile-settings-id-card p {
+  margin: 0 0 0 24px;
+}
+#setting-2 form {
+  border-bottom: 1px solid #EDEFF2;
+}
+#setting-2 .settings-footer {
+  display: inline;
+}
+#setting-2 .settings-footer .btn {
+  width: 47%;
+}
+
+#setting-4 .btn-primary, #setting-4 .btn-secondary, #setting-4 .btn--orange {
+  margin: 30px 0 16px;
+}
+
+#setting-6 h4 {
+  margin: 32px 0 16px;
+}
+
+#setting-8 input#bank-account-name {
+  margin-bottom: 8px;
+}
+#setting-8 #bank-account-bank-branch {
+  margin-bottom: 0 !important;
+}
+
+#setting-11 .account-settings-item {
+  padding: 32px 0;
+  border-bottom: 1px solid #EDEFF2;
 }
 
 span {

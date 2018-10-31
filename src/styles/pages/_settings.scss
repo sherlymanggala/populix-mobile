@@ -1,0 +1,111 @@
+// All Setting Pages
+.settings {
+    margin-bottom: 76px;
+
+    //Remove input password border-right
+    .form-password {
+        border-right: 0px;
+    }
+
+    .settings-header {
+        margin-top: 48px;
+        border-bottom: $border-line--gray;
+    }
+    
+    .profile-settings-form,
+    .password-settings-form,
+    .notification-settings-form,
+    .bank-account-settings-form {
+        margin-top: 32px;
+    }
+
+    .settings__question {
+        font-weight: $font-bold;
+        margin-bottom: 12px;
+    }
+}
+
+// Setting-2 Only
+#setting-2 {
+    .profile-settings-picture {
+        display: flex;
+        align-items: flex-end;
+        margin: 8px 0 32px;
+
+        // Reset delete button's margin and padding
+        button {
+            margin: 0;
+            padding: 0;
+        }
+
+        // Profile Picture
+        #profile-avatar {
+            max-width: 72px;
+            max-height: 72px;
+            border-radius: 50px;
+        }
+
+        & > * {
+            margin-right: 1rem;
+        }
+    }
+
+    // Input ID Card
+    .profile-settings-id-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        //remove p margin-bottom
+        p {
+            margin: 0 0 0 24px;
+        }
+    }
+
+    //add border bottom for Form
+    form {
+        border-bottom: $border-line--gray;
+    }
+
+    .settings-footer {
+        display: inline;
+
+        .btn {
+            width: 47%;            
+        }
+    }
+}
+
+// Setting-4 Only
+#setting-4 {
+    .btn-primary {
+        margin: 30px 0 16px;
+    }
+}
+
+// Setting-6 Only
+#setting-6 {
+    h4 {
+        margin: 32px 0 16px;
+    }
+}
+
+// Setting-8 Only
+#setting-8 {
+    input#bank-account-name {
+        margin-bottom: 8px;
+    }
+
+    // Remove last input margin bottom
+    #bank-account-bank-branch {
+        margin-bottom: 0 !important;
+    }
+}
+
+// Setting 11 only
+#setting-11 {
+    .account-settings-item {
+        padding: 32px 0;
+        border-bottom: $border-line--gray;
+    }
+}

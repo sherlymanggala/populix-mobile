@@ -29,14 +29,18 @@
   'components/dropdown',
   'components/inputs',
   'components/popover',
-  'components/progressbar';
+  'components/progressbar',
+  'components/tab',
+  'components/modal';
 
 @import
   'pages/dashboard',
   'pages/login',
   'pages/screening',
   'pages/prescreening',
-  'pages/fgd-screening';
+  'pages/fgd-screening',
+  'pages/studi',
+  'pages/settings';
 
 @import
   'themes/theme';

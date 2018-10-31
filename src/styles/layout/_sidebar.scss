@@ -62,7 +62,13 @@
                     padding: 0 15px 0 10px;
                     width: 100%;
                     height: auto;
-                    text-align: center !important;
+                    align-self: center;
+                    justify-self: center;
+                }
+                
+                span {
+                    align-self: center;
+                    justify-self: start;
                 }
             }
         }

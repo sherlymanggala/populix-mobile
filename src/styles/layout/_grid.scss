@@ -2,15 +2,15 @@
 // Grid with 2 columns
 .grid-2 {
     display: grid;
-    grid-template-columns: 50px auto;
-    vertical-align: middle;
+    grid-template-columns: 40px auto;
+    grid-row-gap: 17px;
 }
 
 // Grid with 4 columns
 .grid-4 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr;
-    vertical-align: middle;
+    grid-row-gap: 17px;
 }
 
 // Grid for Sidebar Only

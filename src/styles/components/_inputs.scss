@@ -5,3 +5,20 @@ input[type=date]:not(.settings__input) {
     font-weight: $font-bold;
     color: $color-light-blue;
 }
+
+.settings__input,
+.settings__option {
+    height: 48px;
+    border: 2px solid $color-gray;
+    border-radius: 4px;
+    font-size: 0.81rem;
+    margin-bottom: 24px;
+}
+
+// Eye Toggle for Password
+.input-group-text {
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid $color-gray;
+    border-left: 0px;
+}

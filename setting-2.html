@@ -44,13 +44,13 @@
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"></span>Hubungan Keluarga</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/status-sosial-icon.png"></span>Status Sosial</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hobi-icon.png"></span>Hobi</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"></span>Studi Kualitatif</a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
                         </div>
                     </li>
                 </ul>
@@ -73,15 +73,17 @@
             <div class="settings-header">
                 <h3>Edit profile</h3>
             </div>
-
+            
             <!-- Profile Settings Form -->
             <div class="profile-settings-form">
                 <!-- Profile Picture -->
                 <h4>Foto Profil</h4>
-                <img id="setting-foto-profil-avatar" class="img-avatar" src="src/assets/profile-picture.png">
-                <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
-                <span class="btn btn-delete text--dark-gray">Delete</span>
-
+                <div class="profile-settings-picture">
+                    <img id="profile-avatar" class="img-avatar" src="src/assets/profile-picture.png">
+                    <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
+                    <button class="btn btn--text text--dark-gray">Delete</button>
+                </div>
+                
                 <form>
                     <div class="form-group">
                         <!-- First Name -->
@@ -154,19 +156,21 @@
                         
                         <!-- ID Card -->
                         <label for="profile-id-card" class="settings__question">Informasi KTP</label><br>
-                        <span id="profile-id-card" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
-                        <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                        <div class="profile-settings-id-card">
+                            <span id="profile-id-card" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
+                            <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                        </div>
                         <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
                     </div>
                 </form>
-
+                
                 <!-- Settings Footer -->
-                <div class="settings-footer">
+                <div class="settings-footer row">
                     <!-- Button Save -->
-                    <button class="btn btn-primary">Simpan</button>
-
+                    <button class="btn btn-primary float-left font-semibold">Simpan</button>
+                    
                     <!-- Button Cancel -->
-                    <button class="btn btn-secondary">Batal</button>
+                    <button class="btn btn-secondary float-right font-semibold">Batal</button>
                 </div>
             </div>
         </div>

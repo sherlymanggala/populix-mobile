@@ -1,23 +1,113 @@
+// All FGD Screening
+.fgd-screening {
+    // Asign all icons' width and make it center to grid cell
+    .fgd-screening-list,
+    .fgd-group-list {
+        .icon {
+            max-width: 24px;
+            max-height: 24px;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .value {
+            margin: 0; //remove p margin-bottom
+            align-self: center;
+            justify-self: start;
+        }
+    }
+}
+
+// FGD Screening Only
+#fgd-screening {
+    .fgd-screening-item {
+        margin: 32px 0;
+        padding: 0 0 32px;
+        border-bottom: $border-line--gray;
+        
+        .fgd-screening-icon {
+            max-width: 42px;
+            margin: 0 0 26px;
+        }
+    }
+}
+
 // FGD Screening 4 Only
 #fgd-screening-4 {
-    // Icon Favicon
+    // Assign all favicon icons
     .fgd-screening__icon {
         max-width: 30px;
     }
-
+    
     // Header
     .fgd-screening-header {
         border-bottom: $border-line--gray;
         margin: 32px 0;
         padding-bottom: 16px;
-
+        
         h4 {
             padding-bottom: 10px;
+            margin-bottom: 32px;
             border-bottom: $border-line--gray;
         }
     }
-
+    
     .fgd-screening-list {
         margin-top: 30px;
+    }
+}
+
+// FGD Screening 6 Only
+#fgd-screening-6 {
+    .fgd-group {
+        padding: 24px;
+
+        // Shadow for each group
+        -webkit-box-shadow: 0 0 12px 0 $color-gray;
+        -moz-box-shadow: 0 0 12px 0 $color-gray;
+        box-shadow: 0 0 12px 0 $color-gray;
+        border-radius: 8px;
+        margin-bottom: 24px;
+
+        // Add margin for the first FGD Group
+        &:nth-child(1) {
+            margin-top: 32px;
+        }
+
+        .fgd-group-header {
+            border-bottom: $border-line--gray;
+            padding-bottom: 42px;
+            margin-bottom: 27px;
+            text-align: center;
+            vertical-align: center;
+
+            h4 {
+                float: left;
+            }
+            span {
+                float: right;
+            }
+
+            .fgd-group-slot {
+                text-transform: uppercase;
+                font-size: 0.625rem;
+                width: 52px;
+                padding: 3px 5px;
+                color: $color-white;
+                background-color: $color-orange;
+                border-radius: 40px;
+                font-weight: $font-bold;
+
+                // Group's status when full slot
+                &.slot--full {
+                    background-color: $color-red;
+                }
+            }
+        }
+
+        .fgd-group-content {
+            border-bottom: $border-line--gray;
+            padding-bottom: 24px;
+        }
     }
 }

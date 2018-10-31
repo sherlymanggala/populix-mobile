@@ -44,13 +44,13 @@
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"></span>Hubungan Keluarga</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/status-sosial-icon.png"></span>Status Sosial</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hobi-icon.png"></span>Hobi</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"></span>Studi Kualitatif</a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
                         </div>
                     </li>
                 </ul>
@@ -87,21 +87,25 @@
                         <div class="fgd-group">
                             <div class="fgd-group-header">
                                 <h4>Group 1</h4>
-                                <span class="fgd-group-header-status status--normal float-right">20 Slot</span>
+                                <span class="fgd-group-slot">20 Slot</span>
                             </div>
+                            
+                            <!-- To Clear Float after Header -->
+                            <div style="clear: both;"></div>
+                            
                             <div class="fgd-group-content">
                                 <div class="grid-2">
                                     <!-- Waktu -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                    <p><span>13:00 - 15:00</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                    <p class="value"><span>13:00 - 15:00</span></p>
                                     
                                     <!-- Tanggal -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                    <p><span>10 Desember 2018</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                    <p class="value"><span>10 Desember 2018</span></p>
                                     
                                     <!-- Tempat -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                 </div>
                             </div>
                             <div class="fgd-group-footer">
@@ -119,16 +123,16 @@
                                                 <h4 class="modal-body-header font-bold">Kamu memilih sesi 1</h4>
                                                 <div class="grid-2">
                                                     <!-- Waktu -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                    <p><span>13:00 - 15:00</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                                    <p class="value"><span>13:00 - 15:00</span></p>
                                                     
                                                     <!-- Tanggal -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                    <p><span>10 Desember 2018</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                                    <p class="value"><span>10 Desember 2018</span></p>
                                                     
                                                     <!-- Tempat -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                                 </div>
                                             </div>
                                             <div class="modal-footer ">
@@ -143,21 +147,25 @@
                         <div class="fgd-group">
                             <div class="fgd-group-header">
                                 <h4>Group 2</h4>
-                                <span class="fgd-group-header-status status--full float-right">Penuh</span>
+                                <span class="fgd-group-slot slot--full">Penuh</span>
                             </div>
+                            
+                            <!-- To Clear Float after Header -->
+                            <div style="clear: both;"></div>
+                            
                             <div class="fgd-group-content">
                                 <div class="grid-2">
                                     <!-- Waktu -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                    <p><span>13:00 - 15:00</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                    <p class="value"><span>13:00 - 15:00</span></p>
                                     
                                     <!-- Tanggal -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                    <p><span>10 Desember 2018</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                    <p class="value"><span>10 Desember 2018</span></p>
                                     
                                     <!-- Tempat -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                 </div>
                             </div>
                             <div class="fgd-group-footer">
@@ -175,16 +183,16 @@
                                                 <h4 class="modal-body-header font-bold">Kamu memilih sesi 2</h4>
                                                 <div class="grid-2">
                                                     <!-- Waktu -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                    <p><span>13:00 - 15:00</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                                    <p class="value"><span>13:00 - 15:00</span></p>
                                                     
                                                     <!-- Tanggal -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                    <p><span>10 Desember 2018</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                                    <p class="value"><span>10 Desember 2018</span></p>
                                                     
                                                     <!-- Tempat -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                                 </div>
                                             </div>
                                             <div class="modal-footer ">
@@ -199,21 +207,25 @@
                         <div class="fgd-group">
                             <div class="fgd-group-header">
                                 <h4>Group 3</h4>
-                                <span class="fgd-group-header-status status--normal float-right">8 Slot</span>
+                                <span class="fgd-group-slot">8 Slot</span>
                             </div>
+                            
+                            <!-- To Clear Float after Header -->
+                            <div style="clear: both;"></div>
+                            
                             <div class="fgd-group-content">
                                 <div class="grid-2">
                                     <!-- Waktu -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                    <p><span>13:00 - 15:00</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                    <p class="value"><span>13:00 - 15:00</span></p>
                                     
                                     <!-- Tanggal -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                    <p><span>10 Desember 2018</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                    <p class="value"><span>10 Desember 2018</span></p>
                                     
                                     <!-- Tempat -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                 </div>
                             </div>
                             <div class="fgd-group-footer">
@@ -231,16 +243,16 @@
                                                 <h4 class="modal-body-header font-bold">Kamu memilih sesi 3</h4>
                                                 <div class="grid-2">
                                                     <!-- Waktu -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                    <p><span>13:00 - 15:00</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                                    <p class="value"><span>13:00 - 15:00</span></p>
                                                     
                                                     <!-- Tanggal -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                    <p><span>10 Desember 2018</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                                    <p class="value"><span>10 Desember 2018</span></p>
                                                     
                                                     <!-- Tempat -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                                 </div>
                                             </div>
                                             <div class="modal-footer ">
@@ -255,21 +267,25 @@
                         <div class="fgd-group">
                             <div class="fgd-group-header">
                                 <h4>Group 4</h4>
-                                <span class="fgd-group-header-status status--normal float-right">3 Slot</span>
+                                <span class="fgd-group-slot">3 Slot</span>
                             </div>
+                            
+                            <!-- To Clear Float after Header -->
+                            <div style="clear: both;"></div>
+                            
                             <div class="fgd-group-content">
                                 <div class="grid-2">
                                     <!-- Waktu -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                    <p><span>13:00 - 15:00</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                    <p class="value"><span>13:00 - 15:00</span></p>
                                     
                                     <!-- Tanggal -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                    <p><span>10 Desember 2018</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                    <p class="value"><span>10 Desember 2018</span></p>
                                     
                                     <!-- Tempat -->
-                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                 </div>
                             </div>
                             <div class="fgd-group-footer">
@@ -287,16 +303,16 @@
                                                 <h4 class="modal-body-header font-bold">Kamu memilih sesi 4</h4>
                                                 <div class="grid-2">
                                                     <!-- Waktu -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png" width="50">
-                                                    <p><span>13:00 - 15:00</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                                                    <p class="value"><span>13:00 - 15:00</span></p>
                                                     
                                                     <!-- Tanggal -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png" width="50">
-                                                    <p><span>10 Desember 2018</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                                                    <p class="value"><span>10 Desember 2018</span></p>
                                                     
                                                     <!-- Tempat -->
-                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png" width="50">
-                                                    <p><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
+                                                    <img class="icon" src="src/assets/screening-tab-icons/tempat-icon.png">
+                                                    <p class="value"><span>Concrete Co-working Space (Pluit), Jakarta Utara</span></p>
                                                 </div>
                                             </div>
                                             <div class="modal-footer ">

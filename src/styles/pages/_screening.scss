@@ -1,0 +1,28 @@
+#screening {
+    .header-screening-cluster {
+        margin: 54px 0 16px;
+        border-bottom: $border-line--gray;
+    }
+
+    // Assign all favicon icons
+    .section-screening__icon {
+        max-width: 30px;
+    }
+    
+    .section-screening {
+        margin: 16px 0;
+        border-bottom: $border-line--gray;
+        padding-bottom: 16px;
+
+        img {
+            align-self: start;
+            justify-self: start;
+        }
+        
+        form {
+            align-self: center;
+            justify-self: start;
+            font-size: 0.81rem;
+        }
+    }
+}

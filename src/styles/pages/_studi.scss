@@ -1,0 +1,83 @@
+// All Studi Page
+.studi {
+    .tab-study-header {
+        margin-top: 32px;
+    }
+    
+    .study-item {
+        margin: 32px 0;
+        padding: 0 0 32px;
+        border-bottom: $border-line--gray;
+    }
+    
+    .study-icon {
+        max-width: 42px;
+        margin: 0 0 26px;
+    }
+    
+    .study-list,
+    .study-details-and-reward,
+    .survey-header__time {
+        .icon {
+            max-width: 24px;
+            max-height: 24px;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .value {
+            margin: 0; //remove p margin-bottom
+            align-self: center;
+            justify-self: start;
+        }
+    }
+}
+
+// Studi Page Only
+#studi {
+    .tab-study-header {
+        // Swimming Icon
+        img:not(.img-3-dots) {
+            margin-top: 38px;
+            max-width: 50%;
+        }
+    }
+}
+
+// Studi-8 Only
+#studi-8 {
+    .fa-arrow-left{
+        color: $color-light-blue;
+    }
+    
+    .study-details {
+        margin-top: 40px;
+    }
+}
+
+// Studi-9 Only
+#studi-9 {
+    .survey-header__id {
+        display : flex;
+        align-items : center;
+        margin-top: 46px;
+
+        p {
+            margin: 0 10px 0 0;
+        }
+        
+        input {
+            border: 0px;
+            height: 14px;
+            width: 150px; // Sementara
+        }
+    }
+
+    .survey-header__time {
+        margin-top: 20px;
+    }
+
+    .survey {
+        margin-top: 44px;
+    }
+}

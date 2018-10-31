@@ -5,6 +5,8 @@
   border-radius: 5px;
   font-size: 0.93rem;
   background-color: $color-light-blue;
+  width: 50%;
+  margin-top: 32px;
 }
 
 // Button Secondary for Orange Colored Button
@@ -13,6 +15,7 @@
   background-color: #f9fafc;
   border: 1px solid $color-dark-gray;
   color: $color-dark-blue;
+  margin-top: 0;
 }
 
 .btn--orange {
@@ -24,6 +27,10 @@
 .btn--text {
   background-color: transparent !important;
   border: 0px;
+}
+
+.btn-block {
+  width: 100%;
 }
 
 /* Button navbar toggler */

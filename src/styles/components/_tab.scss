@@ -1,0 +1,50 @@
+.tab {
+    font-size: 0.81rem;
+    line-height: 20dp;
+
+    .nav-tabs {
+        border: 0px;
+        border-bottom: $border-line--gray;
+        margin-bottom: 24px;
+        a {
+            border: 0px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 4px;
+            margin: 32px 20px -1px 0;
+
+            &.active {
+                border-bottom: 1px solid $color-light-blue;
+            }
+        }
+    }
+}
+
+// Tab History
+.history-list {
+    h6 {
+        margin-top: 48px;
+    }
+
+    //remove p margin-bottom
+    p {
+        margin-bottom: 0;
+        color: #10496d;
+    }
+
+    .history-item {
+        border-bottom: $border-line--gray;
+        padding: 35px 0 28px;
+
+        // History icon
+        .history__icon {
+            max-width: 35px;
+            max-height: 30px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .history-footer {
+        margin-top: 24px;
+    }
+}
