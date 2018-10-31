@@ -1,3 +1,40 @@
 body {
     height: 100%;
 }
+
+// Define padding for all pages
+.container {
+    padding: 32px 24px 76px 24px;
+}
+
+// Remove Navbar Padding
+.navbar,
+.navbar-collapse,
+.navbar-toggler {
+    padding: 0;
+}
+
+// Remove Col and Row Padding and Margin
+.row,
+.col {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    &.dropdown-item {
+        color: $color-dark-blue !important;
+    }
+}
+
+//Remove all fas and fab background color
+i.fas, i.fab {
+    background-color: transparent;
+    
+    // for fa arrow right
+    &.fa-arrow-right {
+        color: $color-white;
+        float: right;
+        vertical-align: middle !important;
+    }
+}

@@ -1,0 +1,23 @@
+// FGD Screening 4 Only
+#fgd-screening-4 {
+    // Icon Favicon
+    .fgd-screening__icon {
+        max-width: 30px;
+    }
+
+    // Header
+    .fgd-screening-header {
+        border-bottom: $border-line--gray;
+        margin: 32px 0;
+        padding-bottom: 16px;
+
+        h4 {
+            padding-bottom: 10px;
+            border-bottom: $border-line--gray;
+        }
+    }
+
+    .fgd-screening-list {
+        margin-top: 30px;
+    }
+}
