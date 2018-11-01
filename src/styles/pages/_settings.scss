@@ -2,11 +2,6 @@
 .settings {
     margin-bottom: 76px;
 
-    //Remove input password border-right
-    .form-password {
-        border-right: 0px;
-    }
-
     .settings-header {
         margin-top: 48px;
         border-bottom: $border-line--gray;
@@ -17,11 +12,6 @@
     .notification-settings-form,
     .bank-account-settings-form {
         margin-top: 32px;
-    }
-
-    .settings__question {
-        font-weight: $font-bold;
-        margin-bottom: 12px;
     }
 }
 
@@ -67,6 +57,7 @@
         border-bottom: $border-line--gray;
     }
 
+    // Settings Footer
     .settings-footer {
         display: inline;
 

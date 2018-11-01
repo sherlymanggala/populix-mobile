@@ -123,10 +123,12 @@ h2 {
 h3 {
   font-size: 1rem;
   line-height: 20px;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 0.93rem;
+  font-weight: 700;
 }
 
 h5 {
@@ -180,6 +182,18 @@ p, label {
   font-weight: 800;
 }
 
+.text--middle {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #EDEFF2;
+  line-height: 0.1rem;
+  margin: 26px 0 26px;
+}
+.text--middle span {
+  background-color: #FFFFFF;
+  padding: 0 34px;
+}
+
 body {
   height: 100%;
 }
@@ -209,7 +223,6 @@ i.fas, i.fab {
 }
 i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   color: #FFFFFF;
-  float: right;
   vertical-align: middle !important;
 }
 
@@ -336,6 +349,9 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   font-size: 0.93rem;
   background-color: #179DFE;
   width: 50%;
+  margin-top: 0;
+}
+.btn-primary:not(.modal-footer-btn):not(.btn-facebook):not(.btn-linkedin):not(.btn-google):not(.btn-linkedin), .btn--orange:not(.modal-footer-btn):not(.btn-facebook):not(.btn-linkedin):not(.btn-google):not(.btn-linkedin), .btn-secondary:not(.modal-footer-btn):not(.btn-facebook):not(.btn-linkedin):not(.btn-google):not(.btn-linkedin) {
   margin-top: 32px;
 }
 
@@ -348,6 +364,39 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 
 .btn--orange {
   background-color: #FAAF40;
+  color: #0D2433;
+}
+
+.btn-facebook, .btn-linkedin {
+  background-color: #475993;
+  margin: 16px 0;
+}
+.btn-facebook span, .btn-linkedin span, .btn-facebook i, .btn-linkedin i {
+  color: #FFFFFF !important;
+}
+.btn-facebook i, .btn-linkedin i {
+  padding-right: 7px;
+}
+.btn-facebook span, .btn-linkedin span {
+  font-weight: 700;
+}
+
+.btn-google {
+  background-color: #FFFFFF;
+  border: 2px solid #000;
+  margin: 16px 0;
+}
+.btn-google img {
+  max-width: 24px;
+  padding-right: 7px;
+  background-color: transparent;
+}
+.btn-google span {
+  font-weight: 700;
+}
+
+.btn-linkedin {
+  background-color: #0077b7;
 }
 
 /* Button berbentuk text */
@@ -442,7 +491,6 @@ input:checked + .slider:before {
   cursor: pointer !important;
 }
 
-/* TODO: need to style select box to look like design */
 select:not(.settings__option),
 input[type=date]:not(.settings__input) {
   border: none;
@@ -450,8 +498,16 @@ input[type=date]:not(.settings__input) {
   color: #179DFE;
 }
 
+.settings__question,
+.signup__question {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 .settings__input,
-.settings__option {
+.settings__option,
+.signup__input,
+.login__input {
   height: 48px;
   border: 2px solid #E6E8EA;
   border-radius: 4px;
@@ -459,11 +515,18 @@ input[type=date]:not(.settings__input) {
   margin-bottom: 24px;
 }
 
+.form-password {
+  border-right: 0px;
+}
+
 .input-group-text {
   height: 48px;
   background-color: transparent;
   border: 2px solid #E6E8EA;
   border-left: 0px;
+}
+.input-group-text .fa-eye {
+  color: #d7dadb;
 }
 
 /* Popover */
@@ -529,25 +592,81 @@ input[type=date]:not(.settings__input) {
   margin-top: 24px;
 }
 
+.modal-header {
+  border: 0;
+}
+.modal-header button {
+  font-size: 35px;
+  color: #C9CCCE !important;
+}
+
 .modal-footer {
   padding-top: 0;
-}
-.modal-footer .modal-footer-type-2 {
-  align-items: center;
+  border: 0;
 }
 
-.body-content h3, .body-content h4 {
-  font-weight: 700;
-}
-.body-content .img-3-dots {
-  margin: 24px 0;
+.modal-footer-type-2 {
+  display: flex;
+  justify-content: space-between !important;
 }
 
-/* buat section besar */
-.section {
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+.study-list .icon,
+.study-details-and-reward .icon,
+.survey-header__time .icon {
+  max-width: 24px;
+  max-height: 24px;
+  align-self: center;
+  justify-self: center;
+}
+.study-list .value,
+.study-details-and-reward .value,
+.survey-header__time .value {
+  margin: 0;
+  align-self: center;
+  justify-self: start;
+}
+
+.study-icon {
+  max-width: 42px;
+  max-height: 42px;
+  margin: 0 0 26px;
+}
+
+.img-3-dots {
+  margin: 24px 0 24px 3px;
+}
+
+.dashboard .body-content {
+  margin: 54px 0 0;
+}
+.dashboard .dashboard-header {
+  margin: 0 0 40px;
+}
+.dashboard .dashboard-header p {
+  margin: 0;
+}
+.dashboard .study-item {
+  margin: 32px 0;
+  padding: 0 0 32px;
   border-bottom: 1px solid #EDEFF2;
+}
+
+.login .body-content {
+  margin: 48px 0;
+}
+.login .login-header {
+  margin-bottom: 28px;
+}
+.login .notification-box p {
+  background-color: #fff3da;
+  padding: 0.75rem 1rem;
+}
+.login .form-password {
+  border-right: 2px solid #E6E8EA;
+}
+
+#login-3 .form-group {
+  margin-top: 48px;
 }
 
 #screening .header-screening-cluster {
@@ -572,6 +691,18 @@ input[type=date]:not(.settings__input) {
   font-size: 0.81rem;
 }
 
+#prescreening .body-content {
+  margin: 48px 0;
+}
+#prescreening .prescreening-header h2 {
+  margin-top: 24px;
+}
+#prescreening .prescreening-icon img {
+  max-width: 24px;
+}
+#prescreening .prescreening-progress {
+  margin: 32px 0;
+}
 #prescreening #prescreening-gender .prescreening__option .col:nth-child(1) {
   margin-right: 10px !important;
 }
@@ -594,6 +725,27 @@ input[type=date]:not(.settings__input) {
 }
 #prescreening #prescreening-gender .prescreening__option input:checked + label {
   border: 5px solid #179DFE;
+}
+#prescreening .prescreening-id-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#prescreening .prescreening-id-card p {
+  margin: 0 0 0 24px;
+}
+#prescreening .prescreening-footer {
+  margin-top: 32px;
+  border-top: 1px solid #EDEFF2;
+  padding-top: 24px;
+}
+#prescreening .prescreening-footer .prescreening-footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#prescreening .prescreening-footer .prescreening-footer-btn a.btn-primary, #prescreening .prescreening-footer .prescreening-footer-btn a.btn-secondary, #prescreening .prescreening-footer .prescreening-footer-btn a.btn--orange {
+  margin-top: 0 !important;
 }
 
 .fgd-screening .fgd-screening-list .icon,
@@ -687,27 +839,8 @@ input[type=date]:not(.settings__input) {
   padding: 0 0 32px;
   border-bottom: 1px solid #EDEFF2;
 }
-.studi .study-icon {
-  max-width: 42px;
-  margin: 0 0 26px;
-}
-.studi .study-list .icon,
-.studi .study-details-and-reward .icon,
-.studi .survey-header__time .icon {
-  max-width: 24px;
-  max-height: 24px;
-  align-self: center;
-  justify-self: center;
-}
-.studi .study-list .value,
-.studi .study-details-and-reward .value,
-.studi .survey-header__time .value {
-  margin: 0;
-  align-self: center;
-  justify-self: start;
-}
 
-#studi .tab-study-header img:not(.img-3-dots) {
+#studi .tab-study-header .img-swimming {
   margin-top: 38px;
   max-width: 50%;
 }
@@ -742,9 +875,6 @@ input[type=date]:not(.settings__input) {
 .settings {
   margin-bottom: 76px;
 }
-.settings .form-password {
-  border-right: 0px;
-}
 .settings .settings-header {
   margin-top: 48px;
   border-bottom: 1px solid #EDEFF2;
@@ -754,10 +884,6 @@ input[type=date]:not(.settings__input) {
 .settings .notification-settings-form,
 .settings .bank-account-settings-form {
   margin-top: 32px;
-}
-.settings .settings__question {
-  font-weight: 700;
-  margin-bottom: 12px;
 }
 
 #setting-2 .profile-settings-picture {
@@ -813,6 +939,27 @@ input[type=date]:not(.settings__input) {
 #setting-11 .account-settings-item {
   padding: 32px 0;
   border-bottom: 1px solid #EDEFF2;
+}
+
+#signup-1 .img-3-dots {
+  margin: 32px 0;
+}
+#signup-1 .signup-header h2 {
+  margin-top: 0;
+}
+
+.signup .body-content {
+  margin: 48px 0;
+}
+.signup .signup-header h2 {
+  margin-top: 24px;
+}
+.signup .notification-box p {
+  background-color: #fff3da;
+  padding: 0.75rem 1rem;
+}
+.signup button[type=submit] {
+  margin-bottom: 16px;
 }
 
 span {

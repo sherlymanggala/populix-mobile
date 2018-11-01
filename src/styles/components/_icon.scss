@@ -1,0 +1,29 @@
+.study-list,
+.study-details-and-reward,
+.survey-header__time {
+    .icon {
+        max-width: 24px;
+        max-height: 24px;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    // Value is data or info after icon in Study Details and Reward
+    .value {
+        margin: 0; //remove p margin-bottom
+        align-self: center;
+        justify-self: start;
+    }
+}
+
+// For Icon above study item
+.study-icon {
+    max-width: 42px;
+    max-height: 42px;
+    margin: 0 0 26px;
+}
+
+// For 3 Dots Icon
+.img-3-dots {
+    margin: 24px 0 24px 3px; // Add left margin because the image is too left
+}

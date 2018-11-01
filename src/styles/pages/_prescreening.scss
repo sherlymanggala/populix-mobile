@@ -1,16 +1,37 @@
 #prescreening {
+    .body-content {
+        margin: 48px 0;
+    }
+    
+    //Header
+    .prescreening-header {
+        h2 {
+            margin-top: 24px;
+        }
+    }
+    
+    //privacy icon
+    .prescreening-icon img {
+        max-width: 24px;
+    }
+    
+    .prescreening-progress {
+        //add margin
+        margin: 32px 0;
+    }
+    
     #prescreening-gender {
         .prescreening__option {
             .col:nth-child(1) {
                 margin-right: 10px !important;
             }
-
+            
             input {
                 display: none;
                 margin:0;
                 padding: 0;
             }
-
+            
             label {
                 cursor: pointer;
                 background-size: contain;
@@ -19,14 +40,43 @@
                 padding-top: 28px; //sementara
                 padding-bottom: 28px;
                 width: 100%;
-
+                
                 &:hover {
                     border: 5px solid $color-light-blue;
                 }
             }
-
+            
             input:checked + label {
                 border: 5px solid $color-light-blue;
+            }
+        }
+    }
+    
+    // Input ID Card
+    .prescreening-id-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        
+        //remove p margin-bottom
+        p {
+            margin: 0 0 0 24px;
+        }
+    }
+    
+    //prescreening footer
+    .prescreening-footer {
+        margin-top: 32px;
+        border-top: $border-line--gray;
+        padding-top: 24px;
+        
+        .prescreening-footer-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; //make all button float left and right
+
+            a.btn-primary {
+                margin-top: 0 !important;
             }
         }
     }

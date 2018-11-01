@@ -1,9 +1,20 @@
-// Remove Modal Footer Top Padding
-.modal-footer {
-    padding-top: 0;
+.modal-header {
+    border: 0; //remove border bottom
 
-    // TODO
-    .modal-footer-type-2 {
-        align-items: center;
+    //Close button
+    button {
+        font-size: 35px;
+        color: $color-gray-2 !important;
     }
+}
+
+.modal-footer {
+    padding-top: 0; //remove padding-top
+    border: 0; //remove border
+}
+
+// For modal that has 2 content in footer
+.modal-footer-type-2 {
+    display: flex;
+    justify-content: space-between !important; //make button or child float left and right
 }

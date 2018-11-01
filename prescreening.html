@@ -36,7 +36,7 @@
                 <!-- 3 Dot Image -->
                 <img src="src/assets/dot.png">
                 
-                <h2>Kami perlu mengetahui tentang kamu.</h2>
+                <h2 class="font-bold">Kami perlu mengetahui tentang kamu.</h2>
                 <p>Semakin banyak kamu menjawab pertanyaan screening 
                     maka semakin besar juga peluang kamu untuk bisa 
                     mengikuti studi dari kami.<br><br>
@@ -45,18 +45,24 @@
                 </p>
                 
                 <!-- Kebijakan privasi -->
-                <span class="icon"><img src="src/assets/privacy-icon.png"></span>
-                <p class="f-12 question">
-                    Informasi data pribadi kamu aman bersama kami.
-                    <a class="text--blue" href="#">Kebijakan privasi</a>
-                </p>
+                <div class="grid-2">
+                    <span class="prescreening-icon"><img src="src/assets/privacy-icon.png"></span>
+                    <p class="f-12 question">
+                        Informasi data pribadi kamu aman bersama kami.
+                        <a class="text--blue" href="#">Kebijakan privasi</a>
+                    </p>
+                </div>
             </div>
             
             <!-- Progress Bar -->
-            <div class="prescreening-progress progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="prescreening-progress">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="text-center">
+                    <p class="f-12"><span class="font-bold">50%</span> kelengkapan sebelum mengambil survey</p>
+                </div>
             </div>
-            <p class="f-12"><span class="font-bold">50%</span> kelengkapan sebelum mengambil survey</p>
             
             <!-- Prescreening List -->
             <div class="prescreening-list">
@@ -150,8 +156,10 @@
                     <form>
                         <div class="form-group">
                             <label class="prescreening__question">Informasi KTP</label><br>
-                            <span class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
-                            <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                            <div class="prescreening-id-card">
+                                <span class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
+                                <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                            </div>
                             <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
                         </div>
                         
@@ -170,8 +178,10 @@
                     </p>
                     
                     <!-- Button -->
-                    <a role="button" class="btn btn-primary text--white" href="#">Lanjut</a>
-                    <a class="text--light-blue" href="#">Tetap Lewati</a>
+                    <div class="prescreening-footer-btn">
+                        <a role="button" class="btn btn-primary text--white" href="#">Lanjut</a>
+                        <a class="text--light-blue float-right" href="#">Tetap Lewati</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,39 @@
+// For Sign Up 1 Only
+#signup-1 {
+    .img-3-dots {
+        margin: 32px 0;
+    }
+
+    .signup-header h2 {
+        margin-top: 0;
+    }
+}
+
+// for all Sign up pages
+.signup {
+    .body-content {
+        margin: 48px 0;
+    }
+
+    .signup-header {
+        h2 {
+            margin-top: 24px; //add margin to header
+        }
+    }
+
+    .notification-box p {
+        background-color: #fff3da;
+        padding: 0.75rem 1rem;
+    }
+
+    //add margin-bottom for button signup
+    button[type=submit] {
+        margin-bottom: 16px;
+    }
+
+    // //set arrow to the most right 
+    // i.fa-arrow-right {
+    //     float: right;
+    //     vertical-align: middle;
+    // }
+}

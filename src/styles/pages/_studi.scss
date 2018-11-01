@@ -9,35 +9,13 @@
         padding: 0 0 32px;
         border-bottom: $border-line--gray;
     }
-    
-    .study-icon {
-        max-width: 42px;
-        margin: 0 0 26px;
-    }
-    
-    .study-list,
-    .study-details-and-reward,
-    .survey-header__time {
-        .icon {
-            max-width: 24px;
-            max-height: 24px;
-            align-self: center;
-            justify-self: center;
-        }
-        
-        .value {
-            margin: 0; //remove p margin-bottom
-            align-self: center;
-            justify-self: start;
-        }
-    }
 }
 
 // Studi Page Only
 #studi {
     .tab-study-header {
         // Swimming Icon
-        img:not(.img-3-dots) {
+        .img-swimming {
             margin-top: 38px;
             max-width: 50%;
         }
@@ -66,6 +44,7 @@
             margin: 0 10px 0 0;
         }
         
+        // id survey input
         input {
             border: 0px;
             height: 14px;

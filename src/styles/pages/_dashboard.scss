@@ -1,15 +1,20 @@
-.body-content {
-    h3, h4 {
-        font-weight: $font-bold;
+.dashboard {
+    .body-content {
+        margin: 54px 0 0;
     }
-    .img-3-dots {
-        margin: 24px 0;
-    }
-}
 
-/* buat section besar */
-.section {
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    border-bottom: $border-line--gray;
+    .dashboard-header {
+        margin: 0 0 40px;
+        
+        //remove p margin bottom
+        p {
+            margin: 0;
+        }
+    }
+    
+    .study-item {
+        margin: 32px 0;
+        padding: 0 0 32px;
+        border-bottom: $border-line--gray;
+    }
 }

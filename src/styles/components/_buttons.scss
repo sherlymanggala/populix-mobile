@@ -6,7 +6,12 @@
   font-size: 0.93rem;
   background-color: $color-light-blue;
   width: 50%;
-  margin-top: 32px;
+  margin-top: 0;
+
+  // All btn-primary except in modal box have margin-top
+  &:not(.modal-footer-btn):not(.btn-facebook):not(.btn-google):not(.btn-linkedin) {
+    margin-top: 32px;
+  }
 }
 
 // Button Secondary for Orange Colored Button
@@ -18,9 +23,47 @@
   margin-top: 0;
 }
 
+// Orange button
 .btn--orange {
   @extend .btn-primary;
   background-color: $color-orange;
+  color: $color-dark-blue;
+}
+
+//Socmed Button
+.btn-facebook {
+  background-color: #475993;
+  margin: 16px 0;
+  span, i {
+    color: $color-white !important;
+  }
+
+  i {
+    padding-right: 7px; //give more padding for icon to text
+  }
+
+  span {
+    font-weight: $font-bold;
+  }
+}
+.btn-google {
+  background-color: $color-white;
+  border: 2px solid #000;
+  margin: 16px 0;
+
+  img {
+    max-width: 24px;
+    padding-right: 7px;
+    background-color: transparent;
+  }
+  
+  span {
+    font-weight: $font-bold;
+  }
+}
+.btn-linkedin {
+  @extend .btn-facebook;
+  background-color: #0077b7;
 }
 
 /* Button berbentuk text */
@@ -39,8 +82,8 @@ button.navbar-toggler {
   padding-left: 0;
 }
 
-// Toggle Switch Button
-.switch {
+// Slider Start Here
+.switch { // Toggle Switch Button
   position: relative;
   display: inline-block;
   width: 60px;
@@ -99,6 +142,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+// Slider End Here
 
 // Input file button
 .btn-file {

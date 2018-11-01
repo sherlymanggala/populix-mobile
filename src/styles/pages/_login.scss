@@ -1,0 +1,27 @@
+.login {
+    .body-content {
+        margin: 48px 0;
+    }
+
+    //Header
+    .login-header {
+        margin-bottom : 28px; //add more margin 
+    }
+
+    // Notif box
+    .notification-box p {
+        background-color: #fff3da;
+        padding: 0.75rem 1rem;
+    }
+
+    // Add Border-right to Password Input
+    .form-password {
+        border-right: 2px solid $color-gray;
+    }
+}
+
+#login-3 {
+    .form-group {
+        margin-top: 48px;
+    }
+}

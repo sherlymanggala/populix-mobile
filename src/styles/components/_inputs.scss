@@ -1,4 +1,4 @@
-/* TODO: need to style select box to look like design */
+// For input that color is blue and no border
 select:not(.settings__option),
 input[type=date]:not(.settings__input) {
     border: none;
@@ -6,13 +6,28 @@ input[type=date]:not(.settings__input) {
     color: $color-light-blue;
 }
 
+// For All Label
+.settings__question,
+.signup__question {
+    font-weight: $font-bold;
+    margin-bottom: 12px;
+}
+
+// For general input
 .settings__input,
-.settings__option {
+.settings__option,
+.signup__input,
+.login__input {
     height: 48px;
     border: 2px solid $color-gray;
     border-radius: 4px;
     font-size: 0.81rem;
     margin-bottom: 24px;
+}
+
+//Remove input password border-right
+.form-password {
+    border-right: 0px;
 }
 
 // Eye Toggle for Password
@@ -21,4 +36,8 @@ input[type=date]:not(.settings__input) {
     background-color: transparent;
     border: 2px solid $color-gray;
     border-left: 0px;
+    
+    .fa-eye {
+        color: #d7dadb;
+    }
 }
