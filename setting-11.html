@@ -25,15 +25,53 @@
                 <span></span>
             </button>
             
-            <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="navbar-content">
-                <!-- Brand Logo -->
-                <a class="sidebar-header" href="#">
+            <!-- Notif and Avatar -->
+            <div class="topnav-notif-avatar">
+                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
+                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
+                </button>
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
+                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="sidebar">
+            <div class="sidebar-header row">
+                <a  href="#">
                     <img class="img-fluid" src="src/assets/image.png">
                 </a>
-                
-                <!-- Link starts here -->
-                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
+            </div>            
+            
+            <!-- Link starts here -->
+            <div class="sidebar-nav">
+                <ul class=" navbar-nav nav">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Lihat Studi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Screening</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar collapse navbar-collapse" id="navbar-content">
+            <!-- Brand Logo -->
+            <div class="sidebar-header row">
+                <a  href="#">
+                    <img class="img-fluid" src="src/assets/image.png">
+                </a>
+            </div>
+            
+            
+            <!-- Link starts here -->
+            <div class="sidebar-nav">
+                <ul class=" navbar-nav nav">
                     <li class="nav-item">
                         <a class="nav-link link" href="index.html">Dashboard</a>
                     </li>
@@ -55,27 +93,17 @@
                     </li>
                 </ul>
             </div>
-            
-            <!-- Notif and Avatar -->
-            <div class="topnav-notif-avatar">
-                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
-                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
-                </button>
-                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
-                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
-                </button>
-            </div>
-        </nav>
+        </div>
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="settings-header">
+            <div class="settings-header content-header">
                 <h3>Akun</h3>
             </div>
             
             <!-- Account Settings Form -->
             <div class="account-settings-form">
-                <!-- Email -->
+                Email 
                 <div class="account-settings-item">
                     <p class="font-bold">Email</p>
                     <p>Email yang kamu gunakan saat ini adalah <span class="font-bold">juinalwilliam@alva.com</span></p>
@@ -94,6 +122,8 @@
                     <p class="font-bold">Hapus akun Populix</p>
                     <p>Semua data kamu akan terhapus dan tidak bisa dikembalikan</p>
                     <p class="f-12">Note: kamu tidak perlu menghapus akun Populix yang saat ini kamu gunakan, jika kamu hanya ingin <a href="#" class="text--light-blue">mengganti alamat email</a></p>
+                    
+                    <!-- Button trigger modal-->
                     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#delete-account-modal">Hapus akun</button>
                     
                     <!-- Delete Account Modal -->
@@ -133,6 +163,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Modal Backdrop -->
+                    <div id="modal-backdrop" class="modal-backdrop-transparent modal-transition"></div>
                 </div>
             </div>
         </div>

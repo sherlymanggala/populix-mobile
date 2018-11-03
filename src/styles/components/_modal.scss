@@ -1,6 +1,6 @@
 .modal-header {
     border: 0; //remove border bottom
-
+    
     //Close button
     button {
         font-size: 35px;
@@ -13,8 +13,38 @@
     border: 0; //remove border
 }
 
+// Modal that has only 1 button in Footer
+.modal-footer-type-1 {
+    display: block;
+    text-align: center;
+    
+    .modal-footer-btn {
+        text-align: center;
+        width: inherit;
+    }
+}
+
 // For modal that has 2 content in footer
 .modal-footer-type-2 {
     display: flex;
     justify-content: space-between !important; //make button or child float left and right
+}
+
+// Modal Backdrop
+.modal-backdrop {
+    background-color: rgba(13, 36, 51, .6);
+}
+
+// Make backdrop disappear when normal
+.modal-backdrop-transparent {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
 }

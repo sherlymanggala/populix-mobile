@@ -1,4 +1,29 @@
-/* Layout Icons */
+/*
+ * Desktop View Grid Layout
+ */
+
+@media (min-width: 768px) {
+    .topnav {
+        grid-area: topnav;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .body-content {
+        grid-area: body;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "sidebar topnav topnav"
+            "sidebar body body"
+    }
+}
+
 // Grid with 2 columns
 .grid-2 {
     display: grid;

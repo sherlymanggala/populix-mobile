@@ -28,4 +28,10 @@ $(function() {
             $('.form-password').attr("type","password");
         }
     });
+    
+    // for modal backdrop
+    // $('.modal-button').on("click", function (e) {
+    //     // alert(color);
+    //     $('#modal-backdrop').addClass('modal-backdrop');
+    // });
 });
