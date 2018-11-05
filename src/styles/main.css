@@ -292,8 +292,8 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   }
 }
 /*
- * Desktop View Grid Layout
- */
+* Desktop View Grid Layout
+*/
 @media (min-width: 768px) {
   .topnav {
     grid-area: topnav;
@@ -314,6 +314,18 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     grid-template-columns: 250px auto;
     grid-template-areas: "sidebar topnav" "sidebar body";
     grid-column-gap: 49px;
+  }
+
+  .body1 {
+    display: grid;
+    grid-template-columns: auto 220px;
+    grid-template-rows: auto;
+    grid-template-areas: ". floating-card";
+  }
+  .body1 .floating-card {
+    grid-area: floating-card;
+    max-width: 220px !important;
+    width: 220px;
   }
 }
 .grid-2 {
@@ -417,6 +429,7 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   .sidebar .sidebar-profile .sidebar-profile-content {
     background-color: #FFFFFF;
     border-radius: 8px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
     padding: 50px 20px 20px;
     margin-top: -36px;
   }
@@ -747,6 +760,17 @@ input[type=date]:not(.settings__input) {
 
 .img-lg {
   max-width: 50%;
+}
+
+.floating-card .progress-card {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+}
+.floating-card .progress-card .progress, .floating-card .progress-card .progress-bar {
+  height: 10px;
+  margin-bottom: 12px;
 }
 
 .dashboard .body-content {

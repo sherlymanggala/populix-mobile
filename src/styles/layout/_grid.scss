@@ -1,6 +1,6 @@
 /*
- * Desktop View Grid Layout
- */
+* Desktop View Grid Layout
+*/
 
 @media (min-width: 768px) {
     // Assign Topnav, sidebar and body in grid
@@ -21,9 +21,23 @@
         display: grid;
         grid-template-columns: 250px auto;
         grid-template-areas:
-            "sidebar topnav"
-            "sidebar body";
+        "sidebar topnav"
+        "sidebar body";
         grid-column-gap: 49px;
+    }
+    
+    // For Body that has progress card or image
+    .body1 {
+        display: grid;
+        grid-template-columns: auto 220px;
+        grid-template-rows: auto;
+        grid-template-areas: ". floating-card";
+        
+        .floating-card {
+            grid-area: floating-card;
+            max-width: 220px !important;
+            width: 220px;
+        }
     }
 }
 

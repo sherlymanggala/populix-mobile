@@ -26,7 +26,7 @@
             </button>
             
             <div class="content-header mobile-disabled">
-                <h3>Akun</h3>
+                <h3>Hi, Juinal.<br>Selamat datang :)</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -113,60 +113,90 @@
         </div>
         
         <!-- Body Starts Here -->
-        <div class="body-content">
-            <div class="dashboard-header">
-                <!-- Welcome and Todo Section -->
-                <h3>Hi, Juinal.<br>Selamat datang :)</h3>
+        <div class="body-content body1">
+            
+            <!-- Progress / Floating Card -->
+            <div class="floating-card mobile-disabled">
+                <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
                 
-                <!-- 3 titik -->
-                <img class="img-3-dots" src="src/assets/dot.png">
-                
-                <h6 class="text-uppercase">Aktivitas yang bisa kamu lakukan:</h6>
-                
-                <!-- Verifikasi Email -->
-                <div>
-                    <h4>Studi baru untuk kamu</h4>
-                    <p>Email kamu belum terverifikasi.</p>
-                    <a class="text--light-blue f-13" href="verifikasi-akun.html">Verifikasi sekarang</a>
+                <div class="progress-card">
+                    <!-- Progress Bar -->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <!-- Content -->
+                    <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
+                    <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
+                    <div class="progress-screening-list">
+                        <div class="progress-screening-item">
+                            <img>
+                            <h4>Kesehatan</h4>
+                        </div>
+                        <div class="progress-screening-item">
+                            <img>
+                            <h4>Makanan</h4>
+                        </div>
+                    </div>
+                    <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
                 </div>
             </div>
             
-            <!-- Study Marketplace -->
-            <div class="study-list">
-                <div class="study-item">
-                    <!-- Study Header -->
-                    <div class="study-header">
-                        <img class="study-icon" src="src/assets/studi-marketplace-xxxhd.png">
-                        <h4>Studi marketplace tentang pengguna teknologi</h4>
+            <div>
+                <!-- Header -->
+                <div class="dashboard-header">
+                    <!-- Welcome and Todo Section -->
+                    <h3 class="desktop-disabled">Hi, Juinal.<br>Selamat datang :)</h3>
+                    
+                    <!-- 3 titik -->
+                    <img class="img-3-dots" src="src/assets/dot.png">
+                    
+                    <h6 class="text-uppercase">Aktivitas yang bisa kamu lakukan:</h6>
+                    
+                    <!-- Verifikasi Email -->
+                    <div>
+                        <h4>Studi baru untuk kamu</h4>
+                        <p>Email kamu belum terverifikasi.</p>
+                        <a class="text--light-blue f-13" href="verifikasi-akun.html">Verifikasi sekarang</a>
                     </div>
-                    
-                    <!-- Researcher Name -->
-                    <h5><span class="researcher-name font-semibold">Tokopedia</span></h5>
-                    
-                    <!-- Study Short Description -->
-                    <p class="text--gray"><span class="study-short-description">Perusahaan startup dan Teknologi Indonesia</span></p>
-                    
-                    <!-- Study Details and Reward -->
-                    <div class="grid-4 study-details-and-reward">
-                        <!-- Jumlah orang -->
-                        <img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png">
-                        <p class="value"><span>15</span> orang</p>
+                </div>
+                
+                <!-- Study Marketplace -->
+                <div class="study-list">
+                    <div class="study-item">
+                        <!-- Study Header -->
+                        <div class="study-header">
+                            <img class="study-icon" src="src/assets/studi-marketplace-xxxhd.png">
+                            <h4>Studi marketplace tentang pengguna teknologi</h4>
+                        </div>
                         
-                        <!-- Waktu -->
-                        <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
-                        <p class="value"><span>20 menit</span></p>
+                        <!-- Researcher Name -->
+                        <h5><span class="researcher-name font-semibold">Tokopedia</span></h5>
                         
-                        <!-- Duit -->
-                        <img class="icon" src="src/assets/screening-tab-icons/uang-icon.png">
-                        <p class="value">Rp. <span>250.000</span></p>
+                        <!-- Study Short Description -->
+                        <p class="text--gray"><span class="study-short-description">Perusahaan startup dan Teknologi Indonesia</span></p>
                         
-                        <!-- Tanggal -->
-                        <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
-                        <p class="value"><span>17 Agustus 2018</span></p>
+                        <!-- Study Details and Reward -->
+                        <div class="grid-4 study-details-and-reward">
+                            <!-- Jumlah orang -->
+                            <img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png">
+                            <p class="value"><span>15</span> orang</p>
+                            
+                            <!-- Waktu -->
+                            <img class="icon" src="src/assets/screening-tab-icons/jam-icon.png">
+                            <p class="value"><span>20 menit</span></p>
+                            
+                            <!-- Duit -->
+                            <img class="icon" src="src/assets/screening-tab-icons/uang-icon.png">
+                            <p class="value">Rp. <span>250.000</span></p>
+                            
+                            <!-- Tanggal -->
+                            <img class="icon" src="src/assets/screening-tab-icons/kalender-icon.png">
+                            <p class="value"><span>17 Agustus 2018</span></p>
+                        </div>
+                        
+                        <!-- Button Ambil Studi -->
+                        <a role="button" class="btn btn-primary" href="#">Ambil studi</a>
                     </div>
-                    
-                    <!-- Button Ambil Studi -->
-                    <a role="button" class="btn btn-primary" href="#">Ambil studi</a>
                 </div>
             </div>
         </div>
