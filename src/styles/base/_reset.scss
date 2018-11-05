@@ -7,11 +7,22 @@ body {
     .container {
         padding: 32px 24px 76px 24px;
     }
+
+    //hide component for mobile view
+    .mobile-disabled {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 0;
+        padding: 0px;
+        margin: 0;
+    }
+
+    //hide component for desktop view
+    .desktop-disabled {
+        display: none;
     }
 }
 
@@ -27,12 +38,6 @@ body {
 .col {
     padding: 0;
     margin: 0;
-}
-
-nav {
-    &.dropdown-item {
-        color: $color-dark-blue !important;
-    }
 }
 
 //Remove all fas and fab background color

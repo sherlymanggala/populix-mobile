@@ -17,26 +17,29 @@
 
 <body>
     <div class="container settings" id="setting-11">
-        <!-- Navbar -->
+        <!-- Top Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#sidebar-content" aria-controls="sidebar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
+            <div class="content-header mobile-disabled">
+                <h3>Akun</h3>
+            </div>
             
             <!-- Notif and Avatar -->
             <div class="topnav-notif-avatar">
                 <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
                     <span class="navbar-icon"><i class="fas fa-bell"></i></span>
                 </button>
-                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
-                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
-                </button>
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar"></button>
             </div>
         </nav>
         
-        <div class="sidebar">
+        <!-- Sidebar for Desktop -->
+        <div class="sidebar mobile-disabled">
             <div class="sidebar-header row">
                 <a  href="#">
                     <img class="img-fluid" src="src/assets/image.png">
@@ -59,16 +62,15 @@
             </div>
         </div>
         
-        <!-- Sidebar -->
-        <div class="sidebar collapse navbar-collapse" id="navbar-content">
+        <!-- Sidebar for Mobile -->
+        <div class="sidebar collapse navbar-collapse desktop-disabled" id="sidebar-content">
             <!-- Brand Logo -->
             <div class="sidebar-header row">
                 <a  href="#">
                     <img class="img-fluid" src="src/assets/image.png">
                 </a>
             </div>
-            
-            
+
             <!-- Link starts here -->
             <div class="sidebar-nav">
                 <ul class=" navbar-nav nav">
@@ -97,13 +99,13 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="settings-header content-header">
+            <div class="settings-header content-header desktop-disabled">
                 <h3>Akun</h3>
             </div>
             
             <!-- Account Settings Form -->
             <div class="account-settings-form">
-                Email 
+                <!-- Email  -->
                 <div class="account-settings-item">
                     <p class="font-bold">Email</p>
                     <p>Email yang kamu gunakan saat ini adalah <span class="font-bold">juinalwilliam@alva.com</span></p>

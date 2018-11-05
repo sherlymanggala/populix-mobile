@@ -73,3 +73,10 @@
         }
     }
 }
+
+// Large devices (desktop, more than 768px)
+@media screen and (min-width: 768px) {
+    .sidebar {
+        background-color: #f7f7f7;
+    }
+}

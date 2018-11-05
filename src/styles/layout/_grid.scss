@@ -3,24 +3,27 @@
  */
 
 @media (min-width: 768px) {
+    // Assign Topnav, sidebar and body in grid
     .topnav {
         grid-area: topnav;
+        padding: 32px 32px 0 0;
     }
-
     .sidebar {
         grid-area: sidebar;
+        padding: 32px 0 0 32px;
     }
-
     .body-content {
         grid-area: body;
+        // padding-left: 49px;
     }
-
+    // grid template
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 250px auto;
         grid-template-areas:
-            "sidebar topnav topnav"
-            "sidebar body body"
+            "sidebar topnav"
+            "sidebar body";
+        grid-column-gap: 49px;
     }
 }
 

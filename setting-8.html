@@ -17,44 +17,14 @@
 
 <body>
     <div class="container settings" id="setting-8">
-        <!-- Navbar -->
+        <!-- Top Nav -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Hamburger / Toggler Button -->
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#sidebar-content" aria-controls="sidebar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            
-            <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="navbar-content">
-                <!-- Brand Logo -->
-                <a class="sidebar-header" href="#">
-                    <img class="img-fluid" src="src/assets/image.png">
-                </a>
-                
-                <!-- Link starts here -->
-                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link link" href="index.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Lihat Studi</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
-                        role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
             
             <!-- Notif and Avatar -->
             <div class="topnav-notif-avatar">
@@ -66,6 +36,61 @@
                 </button>
             </div>
         </nav>
+        
+        <div class="collapse navbar-collapse flex-column desktop-disabled" id="sidebar-content">
+            <!-- Brand Logo -->
+            <a class="sidebar-header" href="#">
+                <img class="img-fluid" src="src/assets/image.png">
+            </a>
+            
+            <!-- Link starts here -->
+            <ul class="sidebar-nav navbar-nav nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link link" href="index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#">Lihat Studi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
+                    role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
+                        <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Sidebar -->
+        <nav class="sidebar navbar navbar-expand-lg navbar-light mobile-disabled">
+            <div class="collapse navbar-collapse flex-column" id="sidebar-content">
+                
+                <a class="sidebar-header" href="#">
+                    <img class="img-fluid" src="src/assets/image.png">
+                </a>
+                
+                
+                <ul class="sidebar-nav navbar-nav nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Lihat Studi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Screening</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        
         
         <!-- Body Starts Here -->
         <div class="body-content">
