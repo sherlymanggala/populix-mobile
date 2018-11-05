@@ -17,7 +17,7 @@
 
 <body>
     <div class="container studi" id="studi">
-        <!-- Navbar -->
+        <!-- Top Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#sidebar-content" aria-controls="sidebar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -25,35 +25,8 @@
                 <span></span>
             </button>
             
-            <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="sidebar-content">
-                <!-- Brand Logo -->
-                <a class="sidebar-header" href="#">
-                    <img class="img-fluid" src="src/assets/image.png">
-                </a>
-                
-                <!-- Link starts here -->
-                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
-                    <li id="sidebar-nav-link-dashboard" class="nav-item">
-                        <a class="nav-link link" href="index.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link active" href="#">Lihat Studi</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
-                        role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/profesi-icon.png"></span>Profesi</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/pendidikan-icon.png"></span>Pendidikan</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/opini-politik-icon.png"></span>Opini Politik</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"></span>Hubungan Keluarga</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/status-sosial-icon.png"></span>Status Sosial</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/hobi-icon.png"></span>Hobi</a>
-                            <a href="#" class="downdown-item"><span class="icon"><img src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"></span>Studi Kualitatif</a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="content-header mobile-disabled">
+                <h3>Akun</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -61,11 +34,83 @@
                 <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
                     <span class="navbar-icon"><i class="fas fa-bell"></i></span>
                 </button>
-                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
-                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
-                </button>
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar"></button>
             </div>
         </nav>
+        
+        <!-- Sidebar for Desktop -->
+        <div class="sidebar mobile-disabled">
+            <div class="sidebar-header row">
+                <a  href="#">
+                    <img class="img-fluid" src="src/assets/image.png">
+                </a>
+            </div>
+            
+            <!-- Profile -->
+            <div class="sidebar-profile">
+                <img class="sidebar-img-profile" src="src/assets/profile-picture.png">
+                <div class="sidebar-profile-content">
+                    <h4 class="font-bold">Juinal William</h4>
+                    <h6 class="f-13 text-uppercase">Saldo Tersedia</h6>
+                    <span class="profile-balance font-bold">Rp 0</span>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="text--light-blue f-13">Tarik Dana</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Link starts here -->
+            <div class="sidebar-nav">
+                <ul class=" navbar-nav nav">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Lihat Studi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Screening</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Sidebar for Mobile -->
+        <div class="sidebar collapse navbar-collapse desktop-disabled" id="sidebar-content">
+            <!-- Brand Logo -->
+            <div class="sidebar-header row">
+                <a  href="#">
+                    <img class="img-fluid" src="src/assets/image.png">
+                </a>
+            </div>
+            
+            <!-- Link starts here -->
+            <div class="sidebar-nav">
+                <ul class=" navbar-nav nav">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Lihat Studi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
+                        role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
+                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
         
         <!-- Body Starts Here -->
         <div class="body-content">

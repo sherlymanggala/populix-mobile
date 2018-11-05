@@ -257,6 +257,7 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 .topnav-notif-avatar #topnav-btn-avatar {
   background: url("../../src/assets/profile-picture.png");
   background-size: 26px 26px;
+  background-repeat: no-repeat;
 }
 .topnav-notif-avatar button {
   border: 0px;
@@ -270,6 +271,26 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   color: #A1AFBB;
 }
 
+@media screen and (min-width: 768px) {
+  .topnav {
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .topnav-notif-avatar {
+    grid-column-gap: 24px;
+  }
+  .topnav-notif-avatar #topnav-btn-avatar {
+    background-size: 40px 40px;
+  }
+  .topnav-notif-avatar button {
+    width: 40px;
+    height: 40px;
+  }
+  .topnav-notif-avatar button i {
+    font-size: 1.2rem;
+  }
+}
 /*
  * Desktop View Grid Layout
  */
@@ -381,6 +402,26 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 @media screen and (min-width: 768px) {
   .sidebar {
     background-color: #f7f7f7;
+    padding-right: 32px;
+  }
+  .sidebar .sidebar-profile {
+    margin: 40px 0 48px;
+    width: 90%;
+  }
+  .sidebar .sidebar-profile .sidebar-img-profile {
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+    margin-left: 24px;
+  }
+  .sidebar .sidebar-profile .sidebar-profile-content {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 50px 20px 20px;
+    margin-top: -36px;
+  }
+  .sidebar .sidebar-profile .sidebar-profile-content h4 {
+    margin-bottom: 29px;
   }
 }
 /* Button Primary for Blue Colored Button */

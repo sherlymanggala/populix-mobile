@@ -17,7 +17,7 @@
 
 <body>
     <div class="container settings" id="setting-2">
-        <!-- Navbar -->
+        <!-- Top Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#sidebar-content" aria-controls="sidebar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -25,15 +25,55 @@
                 <span></span>
             </button>
             
-            <!-- Sidebar -->
-            <div class="sidebar collapse navbar-collapse" id="sidebar-content">
-                <!-- Brand Logo -->
-                <a class="sidebar-header" href="#">
+            <div class="content-header mobile-disabled">
+                <h3>Akun</h3>
+            </div>
+            
+            <!-- Notif and Avatar -->
+            <div class="topnav-notif-avatar">
+                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
+                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
+                </button>
+                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar"></button>
+            </div>
+        </nav>
+        
+        <!-- Sidebar for Desktop -->
+        <div class="sidebar mobile-disabled">
+            <div class="sidebar-header row">
+                <a  href="#">
                     <img class="img-fluid" src="src/assets/image.png">
                 </a>
-                
-                <!-- Link starts here -->
-                <ul class="sidebar-nav navbar-nav nav d-flex justify-content-end">
+            </div>
+            
+            <!-- Link starts here -->
+            <div class="sidebar-nav">
+                <ul class=" navbar-nav nav">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Lihat Studi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Screening</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Sidebar for Mobile -->
+        <div class="sidebar collapse navbar-collapse desktop-disabled" id="sidebar-content">
+            <!-- Brand Logo -->
+            <div class="sidebar-header row">
+                <a  href="#">
+                    <img class="img-fluid" src="src/assets/image.png">
+                </a>
+            </div>
+            
+            <!-- Link starts here -->
+            <div class="sidebar-nav">
+                <ul class=" navbar-nav nav">
                     <li class="nav-item">
                         <a class="nav-link link" href="index.html">Dashboard</a>
                     </li>
@@ -55,17 +95,7 @@
                     </li>
                 </ul>
             </div>
-            
-            <!-- Notif and Avatar -->
-            <div class="topnav-notif-avatar">
-                <button id="topnav-btn-notif" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-notif">
-                    <span class="navbar-icon"><i class="fas fa-bell"></i></span>
-                </button>
-                <button id="topnav-btn-avatar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-popover-content="#topnav-popover-avatar">
-                    <span class="navbar-icon"><img class="img-avatar" src="src/assets/profile-picture.png" width=24></span>
-                </button>
-            </div>
-        </nav>
+        </div>
         
         <!-- Body Starts Here -->
         <div class="body-content">

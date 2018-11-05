@@ -21,6 +21,7 @@
     #topnav-btn-avatar {
         background: url('../../src/assets/profile-picture.png');
         background-size: 26px 26px;
+        background-repeat: no-repeat;
     }
 
     button {
@@ -30,7 +31,7 @@
         width: 26px;
         height: 26px;
         
-        i {
+        i { //fa-bell
             font-size: 12px;
             color: $color-dark-gray;
         }
@@ -38,11 +39,26 @@
 }
 
 // Desktop view
-// @media screen and (min-width: 768px) {
-//     .topnav {
-//         display: inline-grid;
-//         grid-template-columns: 1fr auto;
-//     }
+@media screen and (min-width: 768px) {
+    .topnav {
+        display: inline-grid;
+        grid-template-columns: 1fr auto;
+    }
 
+    .topnav-notif-avatar {
+        grid-column-gap: 24px;
 
-// }
+        #topnav-btn-avatar {
+            background-size: 40px 40px;
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+
+            i { //fa-bell
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

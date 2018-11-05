@@ -78,5 +78,29 @@
 @media screen and (min-width: 768px) {
     .sidebar {
         background-color: #f7f7f7;
+        padding-right: 32px;
+
+        .sidebar-profile {
+            margin: 40px 0 48px;
+            width: 90%;
+
+            .sidebar-img-profile {
+                width: 72px;
+                height: 72px;
+                border-radius: 50px;
+                margin-left: 24px;
+            }
+
+            .sidebar-profile-content {
+                background-color: $color-white;
+                border-radius: 8px;
+                padding: 50px 20px 20px;
+                margin-top: -36px;
+
+                h4 { //add margin between name and "saldo tersedia"
+                    margin-bottom: 29px;
+                }
+            }
+        }
     }
 }
