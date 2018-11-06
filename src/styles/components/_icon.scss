@@ -1,3 +1,7 @@
+/*
+ * Mobile View (Less than 768px)
+ */
+
 .study-list,
 .study-details-and-reward,
 .survey-header__time {
@@ -31,4 +35,15 @@
 // Large Icon
 .img-lg {
     max-width: 50%;
+}
+
+/*
+ * Desktop View (More than 768px)
+ */
+ 
+@media screen and (min-width: 768px) {
+    //remove margin for 3 dots
+    .img-3-dots {
+        margin: 0;
+    }
 }

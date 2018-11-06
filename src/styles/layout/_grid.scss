@@ -1,46 +1,8 @@
 /*
-* Desktop View Grid Layout
-*/
+ * Mobile View (Less than 768px)
+ */
 
-@media (min-width: 768px) {
-    // Assign Topnav, sidebar and body in grid
-    .topnav {
-        grid-area: topnav;
-        padding: 32px 32px 0 0;
-    }
-    .sidebar {
-        grid-area: sidebar;
-        padding: 32px 0 0 32px;
-    }
-    .body-content {
-        grid-area: body;
-        // padding-left: 49px;
-    }
-    // grid template
-    .container {
-        display: grid;
-        grid-template-columns: 250px auto;
-        grid-template-areas:
-        "sidebar topnav"
-        "sidebar body";
-        grid-column-gap: 49px;
-    }
-    
-    // For Body that has progress card or image
-    .body1 {
-        display: grid;
-        grid-template-columns: auto 220px;
-        grid-template-rows: auto;
-        grid-template-areas: ". floating-card";
-        
-        .floating-card {
-            grid-area: floating-card;
-            max-width: 220px !important;
-            width: 220px;
-        }
-    }
-}
-
+/// Universal grid used by all pages
 // Grid with 2 columns
 .grid-2 {
     display: grid;
@@ -60,5 +22,53 @@
     a {
         display: grid;
         grid-template-columns: 50px 1fr;
+    }
+}
+
+/*
+* Desktop View Grid Layout
+*/
+
+@media (min-width: 768px) {
+    // Assign Topnav, sidebar and body in grid
+    .topnav {
+        grid-area: topnav;
+        padding: 32px 32px 0 0;
+    }
+    .tab {
+        grid-area: tab;
+    }
+    .sidebar {
+        grid-area: sidebar;
+        padding: 32px 0 0 32px;
+    }
+    .body-content {
+        grid-area: body;
+        // padding-left: 49px;
+    }
+    // grid template
+    .container {
+        display: grid;
+        grid-template-columns: 220px auto;
+        grid-template-areas:
+        "sidebar topnav"
+        "sidebar tab"
+        "sidebar body";
+        grid-column-gap: 49px;
+    }
+    
+    // For Body that has progress card or image
+    .body1 {
+        display: grid;
+        grid-template-columns: auto 220px;
+        grid-template-rows: auto;
+        grid-template-areas: ". floating-card";
+        grid-column-gap: 40px;
+        
+        .floating-card {
+            grid-area: floating-card;
+            max-width: 220px !important;
+            width: 220px;
+        }
     }
 }

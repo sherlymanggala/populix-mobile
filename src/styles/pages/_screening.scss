@@ -1,3 +1,6 @@
+/*
+ * Mobile View (Less than 768px)
+ */ 
 #screening {
     .header-screening-cluster {
         margin: 54px 0 16px;
@@ -26,3 +29,18 @@
         }
     }
 }
+
+/*
+ * Desktop View (More than 768px)
+ */
+ @media screen and (min-width: 768px) {
+     #screening {
+        .header-screening-cluster {
+            margin: 0 0 16px;
+        }
+
+        .section-screening:nth-child(1) {
+            margin-top: 0;
+        }
+     }
+ }

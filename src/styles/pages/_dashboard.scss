@@ -1,3 +1,7 @@
+/*
+ * Mobile View (Less than 768px)
+ */
+
 .dashboard {
     .body-content {
         margin: 54px 0 0;
@@ -18,3 +22,58 @@
         border-bottom: $border-line--gray;
     }
 }
+
+/*
+ * Desktop View (More than 768px)
+ */
+
+ @media screen and (min-width: 768px) {
+     .dashboard {
+         .body-content {
+             margin: 0;
+
+             .img-3-dots {
+                 margin: 32px 0;
+             }
+
+             //add margin to floating card to be aligned with dashboard-activity
+             .floating-card {
+                 margin-top: 64px;
+             }
+
+             //Dashboard activity grid
+             .dashboard-activity {
+                 display: grid;
+                 grid-template-columns: 1fr 1fr;
+                 grid-template-areas:
+                 "title ."
+                 "desc button";
+
+                 h4 { //Studi baru untuk kamu
+                    grid-area: title;
+                 }
+
+                 p { //Email kamu belum terverifikasi
+                     grid-area: desc;
+                 }
+
+                 a { //Btn Verifikasi sekarang
+                     grid-area: button;
+                     text-align: right;
+                 }
+             }
+
+             // Study and Rewards
+             .study-item {
+                 display: grid;
+                 grid-template-columns: auto 1fr auto;
+                 grid-column-gap: 30px;
+
+                 a.btn-primary {
+                     justify-self: end;
+                     width: 100%;
+                 }
+             }
+         }
+     }
+ }

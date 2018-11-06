@@ -26,7 +26,7 @@
             </button>
             
             <div class="content-header mobile-disabled">
-                <h3>Akun</h3>
+                <h3>Screening</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -113,147 +113,168 @@
         </div>
         
         <!-- Body Starts Here -->
-        <div class="body-content body1">
-            <!-- Progress / Floating Card -->
-            <div class="floating-card mobile-disabled">
-                <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
-                
-                <div class="progress-card">
-                    <!-- Progress Bar -->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <!-- Content -->
-                    <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
-                    <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
-                    <div class="progress-screening-list">
-                        <div class="progress-screening-item">
-                            <img>
-                            <h4>Kesehatan</h4>
-                        </div>
-                        <div class="progress-screening-item">
-                            <img>
-                            <h4>Makanan</h4>
-                        </div>
-                    </div>
-                    <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
+        <div class="body-content">
+            <!-- Tab -->
+            <nav class="tab mobile-disabled">
+                <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-profesi" role="tab" aria-controls="tab-study" aria-selected="true"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"> Profesi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pendidikan" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"> Pendidikan</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-opini-politik" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"> Opini Politik</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-hubungan-keluarga" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"> Hubungan Keluarga</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-status-sosial" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"> Status Sosial</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-hobi" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"> Hobi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-studi-kualitatif" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"> Studi Kualitatif</a>
                 </div>
-            </div>
+            </nav>
             
-            <div>
-                <!-- Header -->
-                <div class="header-screening-cluster">
-                    <h3>Screening &bull; Profesi</h3>
-                </div>
-                
-                <!-- Screening List -->
-                <div class="screening-list">                
-                    <!-- Saya bekerja -->
-                    <div class="section-screening grid-2">
-                        <img class="section-screening__icon" src="src/assets/favicon.png">
-                        <form>
-                            <label class="section-screening__question">Saya bekerja...</label><br>
-                            <select class="section-screening__option">
-                                <option value="fulltime">Full time</option>
-                                <option value="parttime">Part time</option>
-                            </select>
-                        </form>
-                    </div>
-                    
-                    <!-- Jabatan saya -->
-                    <div class="section-screening grid-2">
-                        <img class="section-screening__icon" src="src/assets/favicon.png">
-                        <form>
-                            <label class="section-screening__question">Jabatan saya sebagai...</label><br>
-                            <select class="section-screening__option">
-                                <option value="designer">Designer</option>
-                                <option value="programmer">Programmer</option>
-                                <option value="administrator">Administrator</option>
-                                <option value="supervisor">Supervisor</option>
-                            </select>
-                        </form>
-                    </div>
-                    
-                    <!-- Bidang section-activity-marketplace- -->
-                    <div class="section-screening grid-2">
-                        <img class="section-screening__icon" src="src/assets/favicon.png">
-                        <form>
-                            <label class="section-screening__question">Perusahaan saya bergerak di bidang...</label><br>
-                            <select class="section-screening__option">
-                                <option value="software">Teknologi perangkat lunak</option>
-                                <option value="hardware">Teknologi perangkat keras</option>
-                                <option value="electric">Elektronik</option>
-                                <option value="foodtech">Teknologi Pangan</option>
-                            </select>
-                        </form>
-                    </div>
-                    
-                    <!-- Cuti -->
-                    <div class="section-screening grid-2">
-                        <img class="section-screening__icon" src="src/assets/favicon.png">
-                        <form>
-                            <label class="section-screening__question">Saya pernah mengambil cuti...</label><br>
-                            <select class="section-screening__option">
-                                <option value="pernah">Pernah</option>
-                                <option value="tidakpernah">Tidak pernah</option>
-                            </select>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-profesi" role="tabpanel" aria-labelledby="nav-tab-profesi">
+                    <div class="body1">
+                        <!-- Progress / Floating Card -->
+                        <div class="floating-card mobile-disabled">
+                            <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
                             
-                            <label class="section-screening__question">Cuti yang saya ambil dalam 1 tahun...</label><br>
-                            <select class="section-screening__option">
-                                <option value="14">14 hari</option>
-                                <option value="21">21 hari</option>
-                                <option value="28">28 hari</option>
-                            </select>
-                        </form>
-                    </div>
-                    
-                    <!-- Installed Marketplace App -->
-                    <div class="section-screening grid-2">
-                        <img class="section-screening__icon" src="src/assets/favicon.png">
-                        <form>
-                            <label class="section-screening__question">Marketplace apa saja yang terinstal di handphone anda?</label><br>
-                            <select class="section-screening__option"> 
-                                <option value="a">A. Tokopedia, Bukalapak</option>
-                                <option value="b">B. Zalora, JD.ID, Bukalapak</option>
-                                <option value="c">C. Tokopedia, Zalora, JD.ID</option>
-                                <option value="d">D. JD.ID Bukalapak, Zalora</option>
-                                <option value="e">E. Tokopedia, Zalora, JD.ID, Bukalapak</option>
-                            </select>
-                        </form>
-                    </div>
-                    
-                    <!-- Modal After Finish Answering Screening -->
-                    <!-- Button Trigger Modal -->
-                    <button type="button" class="btn btn-primary btn-block text--white modal-btn" data-toggle="modal" data-target="#test-modal">Test Modal</button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="test-modal" tabindex="-1" role="dialog" aria-labelledby="test-modal-title" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                            <div class="progress-card">
+                                <!-- Progress Bar -->
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="modal-body text-center">
-                                    <img class="img-lg" src="src/assets/congratulation-icon.png">
-                                    <h4 class="font-bold">Selamat Juinal</h4>
-                                    <p>Kamu telah menyelesaikan screening dari kategori travel. 
-                                        Segera lengkapi kategori yang lain agar kamu bisa memperbesar 
-                                        peluangmu untuk mendapatkan studi lebih banyak.
-                                    </p>
+                                <!-- Content -->
+                                <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
+                                <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
+                                <div class="progress-screening-list">
+                                    <div class="progress-screening-item">
+                                        <img>
+                                        <h4>Kesehatan</h4>
+                                    </div>
+                                    <div class="progress-screening-item">
+                                        <img>
+                                        <h4>Makanan</h4>
+                                    </div>
                                 </div>
-                                <div class="modal-footer modal-footer-type-1">
-                                    <a role="button" href="#" class="btn btn-primary text--white modal-footer-btn">Pilih kategori yang lain</a>
+                                <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- Header -->
+                            <div class="header-screening-cluster desktop-disabled">
+                                <h3>Screening &bull; Profesi</h3>
+                            </div>
+                            
+                            <!-- Screening List -->
+                            <div class="screening-list">                
+                                <!-- Saya bekerja -->
+                                <div class="section-screening grid-2">
+                                    <img class="section-screening__icon" src="src/assets/favicon.png">
+                                    <form>
+                                        <label class="section-screening__question">Saya bekerja...</label><br>
+                                        <select class="section-screening__option">
+                                            <option value="fulltime">Full time</option>
+                                            <option value="parttime">Part time</option>
+                                        </select>
+                                    </form>
                                 </div>
+                                
+                                <!-- Jabatan saya -->
+                                <div class="section-screening grid-2">
+                                    <img class="section-screening__icon" src="src/assets/favicon.png">
+                                    <form>
+                                        <label class="section-screening__question">Jabatan saya sebagai...</label><br>
+                                        <select class="section-screening__option">
+                                            <option value="designer">Designer</option>
+                                            <option value="programmer">Programmer</option>
+                                            <option value="administrator">Administrator</option>
+                                            <option value="supervisor">Supervisor</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                
+                                <!-- Bidang section-activity-marketplace- -->
+                                <div class="section-screening grid-2">
+                                    <img class="section-screening__icon" src="src/assets/favicon.png">
+                                    <form>
+                                        <label class="section-screening__question">Perusahaan saya bergerak di bidang...</label><br>
+                                        <select class="section-screening__option">
+                                            <option value="software">Teknologi perangkat lunak</option>
+                                            <option value="hardware">Teknologi perangkat keras</option>
+                                            <option value="electric">Elektronik</option>
+                                            <option value="foodtech">Teknologi Pangan</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                
+                                <!-- Cuti -->
+                                <div class="section-screening grid-2">
+                                    <img class="section-screening__icon" src="src/assets/favicon.png">
+                                    <form>
+                                        <label class="section-screening__question">Saya pernah mengambil cuti...</label><br>
+                                        <select class="section-screening__option">
+                                            <option value="pernah">Pernah</option>
+                                            <option value="tidakpernah">Tidak pernah</option>
+                                        </select>
+                                        
+                                        <label class="section-screening__question">Cuti yang saya ambil dalam 1 tahun...</label><br>
+                                        <select class="section-screening__option">
+                                            <option value="14">14 hari</option>
+                                            <option value="21">21 hari</option>
+                                            <option value="28">28 hari</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                
+                                <!-- Installed Marketplace App -->
+                                <div class="section-screening grid-2">
+                                    <img class="section-screening__icon" src="src/assets/favicon.png">
+                                    <form>
+                                        <label class="section-screening__question">Marketplace apa saja yang terinstal di handphone anda?</label><br>
+                                        <select class="section-screening__option"> 
+                                            <option value="a">A. Tokopedia, Bukalapak</option>
+                                            <option value="b">B. Zalora, JD.ID, Bukalapak</option>
+                                            <option value="c">C. Tokopedia, Zalora, JD.ID</option>
+                                            <option value="d">D. JD.ID Bukalapak, Zalora</option>
+                                            <option value="e">E. Tokopedia, Zalora, JD.ID, Bukalapak</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal After Finish Answering Screening -->
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="btn btn-primary btn-block text--white modal-btn" data-toggle="modal" data-target="#test-modal">Test Modal</button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="test-modal" tabindex="-1" role="dialog" aria-labelledby="test-modal-title" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <img class="img-lg" src="src/assets/congratulation-icon.png">
+                                                <h4 class="font-bold">Selamat Juinal</h4>
+                                                <p>Kamu telah menyelesaikan screening dari kategori travel. 
+                                                    Segera lengkapi kategori yang lain agar kamu bisa memperbesar 
+                                                    peluangmu untuk mendapatkan studi lebih banyak.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer modal-footer-type-1">
+                                                <a role="button" href="#" class="btn btn-primary text--white modal-footer-btn">Pilih kategori yang lain</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Modal Backdrop -->
+                                <div id="modal-backdrop" class="modal-backdrop-transparent modal-transition"></div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Modal Backdrop -->
-                    <div id="modal-backdrop" class="modal-backdrop-transparent modal-transition"></div>
                 </div>
             </div>
+            
+            
         </div>
     </div>
     
