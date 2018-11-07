@@ -26,7 +26,7 @@
             </button>
             
             <div class="content-header mobile-disabled">
-                <h3>Akun</h3>
+                <h3>Screening</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -71,7 +71,7 @@
                         <a class="nav-link link" href="#">Lihat Studi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link" href="#">Screening</a>
+                        <a class="nav-link link active" href="#">Screening</a>
                     </li>
                 </ul>
             </div>
@@ -99,13 +99,13 @@
                         <a class="nav-link link dropdown-toggle" data-toggle="dropdown" 
                         role="button" aria-haspopup="true" aria-expanded="false" href="#">Screening</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
-                            <a href="#" class="downdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"><span>Profesi</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"><span>Pendidikan</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"><span>Opini Politik</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"><span>Hubungan Keluarga</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"><span>Status Sosial</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"><span>Hobi</span></a>
+                            <a href="#" class="dropdown-item"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"><span>Studi Kualitatif</span></a>
                         </div>
                     </li>
                 </ul>
@@ -113,80 +113,98 @@
         </div>
         
         <!-- Body Starts Here -->
-        <div class="body-content body1">
-            <!-- Progress / Floating Card -->
-            <div class="floating-card mobile-disabled">
-                <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
-                
-                <div class="progress-card">
-                    <!-- Progress Bar -->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <!-- Content -->
-                    <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
-                    <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
-                    <div class="progress-screening-list">
-                        <div class="progress-screening-item">
-                            <img>
-                            <h4>Kesehatan</h4>
-                        </div>
-                        <div class="progress-screening-item">
-                            <img>
-                            <h4>Makanan</h4>
-                        </div>
-                    </div>
-                    <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
+        <div class="body-content">
+            <!-- Tab -->
+            <nav class="tab mobile-disabled">
+                <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-profesi" role="tab" aria-controls="tab-study" aria-selected="true"><img class="icon" src="src/assets/screening-tab-icons/profesi-icon.png"> Profesi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pendidikan" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/pendidikan-icon.png"> Pendidikan</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-opini-politik" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/opini-politik-icon.png"> Opini Politik</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-hubungan-keluarga" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/hubungan-keluarga-icon.png"> Hubungan Keluarga</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-status-sosial" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/status-sosial-icon.png"> Status Sosial</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-hobi" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/hobi-icon.png"> Hobi</a>
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-studi-kualitatif" role="tab" aria-controls="tab-history" aria-selected="false"><img class="icon" src="src/assets/screening-tab-icons/studi-kualitatif-icon.png"> Studi Kualitatif</a>
                 </div>
-            </div>
+            </nav>
             
-            <div>
-                <div class="fgd-screening-header">
-                    <h4 class="font-bold">Screening &bull; Studi kualitatif</h4>
-                    <!-- Bersedia mengikuti studi -->
-                    <div class="grid-2">
-                        <img class="fgd-screening__icon" src="src/assets/favicon.png">
-                        <div>
-                            <label class="question">Apakah kamu bersedia mengikuti studi kualitatif ?<br><br>
-                                Populix memerlukan kehadiran kamu dalam melakukan studi ini.
-                            </label>
-                            <select class="option">
-                                <option value="yes">Saya bersedia</option>
-                                <option value="no">Saya tidak bersedia</option>
-                            </select>
-                            <a href="#" class="text--light-blue float-right">Edit</a>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-profesi" role="tabpanel" aria-labelledby="nav-tab-profesi">
+                    <div class="body1">
+                        <!-- Progress / Floating Card -->
+                        <div class="floating-card mobile-disabled">
+                            <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
+                            
+                            <div class="progress-card">
+                                <!-- Progress Bar -->
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <!-- Content -->
+                                <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
+                                <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
+                                <div class="progress-screening-list">
+                                    <div class="progress-screening-item">
+                                        <img>
+                                        <h4>Kesehatan</h4>
+                                    </div>
+                                    <div class="progress-screening-item">
+                                        <img>
+                                        <h4>Makanan</h4>
+                                    </div>
+                                </div>
+                                <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
+                            </div>
                         </div>
-                    </div>
-                </div>            
-                
-                <!-- Bersedia mengikuti FGD -->
-                <div class="fgd-screening-list">
-                    <p>Fokus grup diskusi adalah metode riset kualitatif tatap muka secara 
-                        <strong class="text-highlight">berkelompok</strong> (4-6 orang / grup) dengan seorang 
-                        moderator sebagai pewawancara untuk <strong class="text-highlight">mengumpulkan informasi</strong>
-                        suatu masalah tertentu.
-                    </p>
-                    <label class="question f-12">Apakah kamu bersedia mengikuti Forum Grup Diskusi ?</label>
-                    <div class="fgd-screening__toggle">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-                
-                <!-- Bersedia mengikuti interview -->
-                <div class="fgd-screening-list">
-                    <p>In-depth interview adalah metodologi riset kualitatif <strong class="text-highlight">tatap muka</strong>
-                        yang digunakan untuk mendapatkan <strong class="text-highlight">wawasan mendalam</strong>
-                        dan eksploratif dari seorang responden.
-                    </p>
-                    <label class="question f-12">Apakah kamu bersedia menerima pemberitahuan via email saat ada studi baru ?</label>
-                    <div class="fgd-screening__toggle">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
+                        
+                        <div>
+                            <div class="fgd-screening-header">
+                                <h4 class="font-bold desktop-disabled">Screening &bull; Studi kualitatif</h4>
+                                <!-- Bersedia mengikuti studi -->
+                                <div class="grid-2">
+                                    <img class="fgd-screening__icon" src="src/assets/favicon.png">
+                                    <div class="study-approval">
+                                        <h2 class="question">Apakah kamu bersedia mengikuti studi kualitatif ?</h2>
+                                        <label class="question">Populix memerlukan kehadiran kamu dalam melakukan studi ini.</label>
+                                        <select class="option">
+                                            <option value="yes">Saya bersedia</option>
+                                            <option value="no">Saya tidak bersedia</option>
+                                        </select>
+                                        <a href="#" class="text--light-blue float-right">Edit</a>
+                                    </div>
+                                </div>
+                            </div>            
+                            
+                            <!-- Bersedia mengikuti FGD -->
+                            <div class="fgd-screening-list">
+                                <p>Fokus grup diskusi adalah metode riset kualitatif tatap muka secara 
+                                    <strong class="text-highlight">berkelompok</strong> (4-6 orang / grup) dengan seorang 
+                                    moderator sebagai pewawancara untuk <strong class="text-highlight">mengumpulkan informasi</strong>
+                                    suatu masalah tertentu.
+                                </p>
+                                <label class="question f-12">Apakah kamu bersedia mengikuti Forum Grup Diskusi ?</label>
+                                <div class="fgd-screening__toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Bersedia mengikuti interview -->
+                            <div class="fgd-screening-list">
+                                <p>In-depth interview adalah metodologi riset kualitatif <strong class="text-highlight">tatap muka</strong>
+                                    yang digunakan untuk mendapatkan <strong class="text-highlight">wawasan mendalam</strong>
+                                    dan eksploratif dari seorang responden.
+                                </p>
+                                <label class="question f-12">Apakah kamu bersedia menerima pemberitahuan via email saat ada studi baru ?</label>
+                                <div class="fgd-screening__toggle">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
     }
     
     .sidebar {        
-        padding: 32px 0 0 24px;
+        padding: 32px 0 76px 24px;
         z-index: 998;
     }
     
@@ -52,6 +52,7 @@
             a {
                 font-size: 0.81rem;
                 margin: 10px 0;
+                padding-left: 0;
                 color: $color-dark-blue;
                 &:hover, &:active {
                     color: $color-light-blue;

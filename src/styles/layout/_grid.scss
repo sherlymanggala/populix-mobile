@@ -29,7 +29,7 @@
 * Desktop View Grid Layout
 */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     // Assign Topnav, sidebar and body in grid
     .topnav {
         grid-area: topnav;
@@ -40,11 +40,11 @@
     }
     .sidebar {
         grid-area: sidebar;
-        padding: 32px 0 0 32px;
+        padding: 32px 0 76px 32px;
     }
     .body-content {
         grid-area: body;
-        // padding-left: 49px;
+        padding-bottom: 76px;
     }
     // grid template
     .container {

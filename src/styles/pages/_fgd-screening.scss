@@ -52,6 +52,12 @@
         }
     }
     
+    .study-approval {
+        h2 {
+            font-size: 0.81rem;
+        }
+    }
+    
     .fgd-screening-list {
         margin-top: 30px;
     }
@@ -61,33 +67,33 @@
 #fgd-screening-6 {
     .fgd-group {
         padding: 24px;
-
+        
         // Shadow for each group
         -webkit-box-shadow: 0 0 12px 0 $color-gray;
         -moz-box-shadow: 0 0 12px 0 $color-gray;
         box-shadow: 0 0 12px 0 $color-gray;
         border-radius: 8px;
         margin-bottom: 24px;
-
+        
         // Add margin for the first FGD Group
         &:nth-child(1) {
             margin-top: 32px;
         }
-
+        
         .fgd-group-header {
             border-bottom: $border-line--gray;
             padding-bottom: 42px;
             margin-bottom: 27px;
             text-align: center;
             vertical-align: center;
-
+            
             h4 {
                 float: left;
             }
             span {
                 float: right;
             }
-
+            
             .fgd-group-slot {
                 text-transform: uppercase;
                 font-size: 0.625rem;
@@ -97,17 +103,85 @@
                 background-color: $color-orange;
                 border-radius: 40px;
                 font-weight: $font-bold;
-
+                
                 // Group's status when full slot
                 &.slot--full {
                     background-color: $color-red;
                 }
             }
         }
-
+        
         .fgd-group-content {
             border-bottom: $border-line--gray;
             padding-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    // All FGD Screening
+    .fgd-screening {
+        .fgd-screening-header {
+            margin-top: 0 !important;
+        }
+        .study-approval {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas:
+            "heading ."
+            "question button"
+            "option .";
+            
+            h2 {
+                grid-area: heading;
+                font-size: 1.25rem !important;
+            }
+            
+            label {
+                grid-area: question;
+                margin: 0;
+            }
+            
+            select {
+                grid-area: option;
+                margin-top: 18px;
+            }
+            
+            a {
+                grid-area: button;
+                justify-self: end;
+                align-self: flex-end;
+            }
+        }
+    }
+    
+    //FGD Screening Page Only
+    #fgd-screening {
+        // Study and Rewards
+        .fgd-screening-item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-column-gap: 30px;
+            
+            a.btn-primary {
+                justify-self: end;
+                width: 100%;
+            }
+        }
+    }
+
+    //FGD Screening 6
+    #fgd-screening-6 {
+        .fgd-group-list {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 24px;
+
+            .fgd-group:nth-child(1) {
+                margin-top: 0;
+            }
         }
     }
 }

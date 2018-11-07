@@ -68,4 +68,12 @@
             }
         }
     }
+    
+    //History
+    .history-list {
+        //remove margin for history header
+        h6 {
+            margin-top: 0;
+        }
+    }
 }
