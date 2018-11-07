@@ -59,3 +59,54 @@
         margin-top: 44px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .studi {
+        .tab-study-header {
+            margin-top: 0;
+        }
+    }
+
+    #studi-7 {
+        // Study and Rewards
+        .study-item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-column-gap: 30px;
+            
+            a.btn-primary {
+                justify-self: end;
+                width: 100%;
+            }
+        }
+    }
+
+    #studi-8 {
+        .study-details {
+            border-radius: 8px;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+            padding: 32px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas: "study-icon .";
+
+            .study-icon {
+                grid-area: study-icon;
+            }
+        }
+    }
+
+    #studi-9 {
+        .body-content {
+            border-top: $border-line--gray;
+        }
+        .survey-header__id {
+            margin-top: 0 !important;
+        }
+        .survey-header__time {
+            margin-top: 10px !important;
+            float: right !important;
+
+        }
+    }
+}

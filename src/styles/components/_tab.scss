@@ -75,5 +75,21 @@
         h6 {
             margin-top: 0;
         }
+
+        .history-item {
+            display: grid;
+            grid-template-columns: 50px auto auto;
+            grid-column-gap: 20px;
+            grid-template-areas: "img . date";
+
+            img {
+                grid-area: img;
+            }
+
+            .history__date {
+                grid-area: date;
+                justify-self: end;
+            }
+        }
     }
 }
