@@ -217,7 +217,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 
@@ -1289,16 +1289,9 @@ input[type=date]:not(.settings__input) {
 * Desktop View
 */
 @media screen and (min-width: 768px) {
-  .settings .body-content {
+  .settings .settings-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "tab tab" "settings .";
-  }
-  .settings .body-content .tab {
-    grid-area: tab;
-  }
-  .settings .body-content .settings-content {
-    grid-area: settings;
   }
   .settings .profile-settings-form,
 .settings .password-settings-form,
@@ -1307,19 +1300,40 @@ input[type=date]:not(.settings__input) {
     margin-top: 0 !important;
   }
 
-  #setting-2 .settings-content form {
+  #setting-2 .settings-grid form {
     border: 0;
   }
-  #setting-2 .settings-content .settings-footer button {
+  #setting-2 .settings-grid .settings-footer button {
     margin-top: 48px !important;
   }
 
   #setting-6 h4 {
     margin-top: 0;
   }
+  #setting-6 .settings-icon {
+    width: 50%;
+    justify-self: center;
+  }
 
   #setting-8 form .btn-primary, #setting-8 form .btn-secondary, #setting-8 form .btn--orange {
     margin-top: 40px !important;
+  }
+
+  #setting-11 .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  #setting-11 .settings-grid .account-settings-item:nth-child(1) {
+    padding-top: 0;
+  }
+  #setting-11 .settings-grid .account-settings-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". button";
+  }
+  #setting-11 .settings-grid .account-settings-item button {
+    grid-area: button;
+    justify-self: end;
+    align-self: flex-end;
   }
 }
 #signup-1 .img-3-dots {

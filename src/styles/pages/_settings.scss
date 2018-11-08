@@ -106,20 +106,25 @@
 */
 @media screen and (min-width: 768px) {
     .settings {
-        .body-content {
+        // .body-content {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr;
+        //     grid-template-areas:
+        //     "tab tab"
+        //     "settings .";
+            
+        //     .tab {
+        //         grid-area: tab;
+        //     }
+            
+        //     .settings-grid {
+        //         grid-area: settings;
+        //     }
+        // }
+
+        .settings-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-areas:
-            "tab tab"
-            "settings .";
-            
-            .tab {
-                grid-area: tab;
-            }
-            
-            .settings-content {
-                grid-area: settings;
-            }
         }
         
         .profile-settings-form,
@@ -132,7 +137,7 @@
     
     //Edit Profile Settings
     #setting-2 {
-        .settings-content {
+        .settings-grid {
             form {
                 //remove border bottom
                 border: 0;
@@ -152,6 +157,11 @@
         h4 {
             margin-top: 0;
         }
+
+        .settings-icon {
+            width: 50%;
+            justify-self: center;
+        }
     }
 
     //Bank Account Settings
@@ -159,6 +169,29 @@
         form {
             .btn-primary {
                 margin-top: 40px !important;
+            }
+        }
+    }
+
+    //Account Settings
+    #setting-11 {
+        .settings-grid {
+            grid-template-columns: 1fr;
+
+            .account-settings-item:nth-child(1) {
+                padding-top: 0;
+            }
+
+            .account-settings-item {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: ". button";
+
+                button {
+                    grid-area: button;
+                    justify-self: end;
+                    align-self: flex-end;
+                }
             }
         }
     }
