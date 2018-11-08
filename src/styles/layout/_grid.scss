@@ -45,8 +45,8 @@
         grid-area: body;
         padding-bottom: 76px;
     }
-    // grid template
-    .container {
+    // Container Grid except login, signup, and prescreening
+    .container:not(.login):not(.signup):not(.prescreening) {
         display: grid;
         grid-template-columns: 220px auto;
         grid-template-areas:
@@ -70,4 +70,13 @@
             width: 220px;
         }
     }
+
+    // .signup .container {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+
+    //     .topnav {
+    //         grid-area: topnav;
+    //     }
+    // }
 }

@@ -54,133 +54,135 @@
                 </div>
             </div>
             
-            <!-- Progress Bar -->
-            <div class="prescreening-progress">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="prescreening-form">
+                <!-- Progress Bar -->
+                <div class="prescreening-progress">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="text-center">
+                        <p class="f-12"><span class="font-bold">50%</span> kelengkapan sebelum mengambil survey</p>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <p class="f-12"><span class="font-bold">50%</span> kelengkapan sebelum mengambil survey</p>
-                </div>
-            </div>
-            
-            <!-- Prescreening List -->
-            <div class="prescreening-list">
-                <!-- Gender -->
-                <div id="prescreening-gender" class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <div class="form-group">
-                            <label class="prescreening__question">Saya adalah...</label>           
-                            <div class="prescreening__option  text-center row">
-                                <div class="col">
-                                    <input id="male" type="radio" name="gender" value="male"/>
-                                    <label for="male" class="font-bold"><img src="src/assets/man.png"><br>Pria</label>
-                                </div>
-                                <div class="col">
-                                    <input id="female" type="radio" name="gender" value="female" />
-                                    <label for="female" class="font-bold"><img src="src/assets/women.png"><br>Wanita</label>
+                
+                <!-- Prescreening List -->
+                <div class="prescreening-list">
+                    <!-- Gender -->
+                    <div id="prescreening-gender" class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <div class="form-group">
+                                <label class="prescreening__question">Saya adalah...</label>           
+                                <div class="prescreening__option  text-center row">
+                                    <div class="col">
+                                        <input id="male" type="radio" name="gender" value="male"/>
+                                        <label for="male" class="font-bold"><img src="src/assets/man.png"><br>Pria</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="female" type="radio" name="gender" value="female" />
+                                        <label for="female" class="font-bold"><img src="src/assets/women.png"><br>Wanita</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                
-                <!-- Tanggal Lahir -->
-                <div class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <label class="prescreening__question">Saya lahir pada...</label>         
-                        <input type="date" class="form-control prescreening__input">
-                    </form>
-                </div>
-                
-                <!-- Etnis -->
-                <div class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <label class="prescreening__question">Etnis saya adalah...</label>         
-                        <select class="form-control prescreening__option">
-                            <option value="Jawa">Jawa</option>
-                            <option value="Sunda">Sunda</option>
-                            <option value="Betawi">Betawi</option>
-                        </select>
-                    </form>
-                </div>
-                
-                <!-- Agama -->
-                <div class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <label class="prescreening__question">Agama/kepercayaan saya adalah...</label>         
-                        <select class="form-control prescreening__option">
-                            <option value="Islam">Islam</option>
-                            <option value="Kristen">Kristen</option>
-                            <option value="Katolik">Katolik</option>
-                            <option value="Buddha">Buddha</option>
-                            <option value="Hindu">Hindu</option>
-                        </select>
-                    </form>
-                </div>
-                
-                <!-- Kewarganegaraan -->
-                <div class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <label class="prescreening__question">Kewarganegaraan saya adalah...</label>         
-                        <select class="form-control prescreening__option">
-                            <option value="WNI">WNI</option>
-                            <option value="WNA">WNA</option>
-                        </select>
-                    </form>
-                </div>
-                
-                <!-- Domisili -->
-                <div class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <label class="prescreening__question">Kota tempat saya tinggal di...</label>         
-                        <select class="form-control prescreening__option">
-                            <option value="Jakarta">Jakarta</option>
-                            <option value="Tangerang">Tangerang</option>
-                            <option value="Depok">Depok</option>
-                            <option value="Bekasi">Bekasi</option>
-                            <option value="Bogor">Bogor</option>
-                        </select>
-                    </form>
-                </div>
-                
-                <!-- ID Card -->                
-                <div class="prescreening-item grid-2">
-                    <span class="icon">Icon</span>
-                    <form>
-                        <div class="form-group">
-                            <label class="prescreening__question">Informasi KTP</label><br>
-                            <div class="prescreening-id-card">
-                                <span class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
-                                <p class="f-12">Maksimal file <strong>1 MB</strong></p>
-                            </div>
-                            <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
-                        </div>
-                        
-                        <!-- Upload KTP Success -->
-                        <div>
-                            <img src="src/assets/ktp-icon.png">
-                        </div>
-                    </form>
-                </div>                
-                
-                <!-- Prescreening Footer -->
-                <div class="prescreening-footer">
-                    <h4 class="font-bold">Yeay! Kamu sudah mencapai 50% kelengkapan.</h4>
-                    <p>Semakin banyak kamu menjawab pertanyaan screening maka semakin besar juga
-                        peluang kamu untuk bisa mengikuti studi dari kami.
-                    </p>
+                        </form>
+                    </div>
                     
-                    <!-- Button -->
-                    <div class="prescreening-footer-btn">
-                        <a role="button" class="btn btn-primary text--white" href="#">Lanjut</a>
-                        <a class="text--light-blue float-right" href="#">Tetap Lewati</a>
+                    <!-- Tanggal Lahir -->
+                    <div class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <label class="prescreening__question">Saya lahir pada...</label>         
+                            <input type="date" class="form-control prescreening__input">
+                        </form>
+                    </div>
+                    
+                    <!-- Etnis -->
+                    <div class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <label class="prescreening__question">Etnis saya adalah...</label>         
+                            <select class="form-control prescreening__option">
+                                <option value="Jawa">Jawa</option>
+                                <option value="Sunda">Sunda</option>
+                                <option value="Betawi">Betawi</option>
+                            </select>
+                        </form>
+                    </div>
+                    
+                    <!-- Agama -->
+                    <div class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <label class="prescreening__question">Agama/kepercayaan saya adalah...</label>         
+                            <select class="form-control prescreening__option">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Hindu">Hindu</option>
+                            </select>
+                        </form>
+                    </div>
+                    
+                    <!-- Kewarganegaraan -->
+                    <div class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <label class="prescreening__question">Kewarganegaraan saya adalah...</label>         
+                            <select class="form-control prescreening__option">
+                                <option value="WNI">WNI</option>
+                                <option value="WNA">WNA</option>
+                            </select>
+                        </form>
+                    </div>
+                    
+                    <!-- Domisili -->
+                    <div class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <label class="prescreening__question">Kota tempat saya tinggal di...</label>         
+                            <select class="form-control prescreening__option">
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Tangerang">Tangerang</option>
+                                <option value="Depok">Depok</option>
+                                <option value="Bekasi">Bekasi</option>
+                                <option value="Bogor">Bogor</option>
+                            </select>
+                        </form>
+                    </div>
+                    
+                    <!-- ID Card -->                
+                    <div class="prescreening-item grid-2">
+                        <span class="icon">Icon</span>
+                        <form>
+                            <div class="form-group">
+                                <label class="prescreening__question">Informasi KTP</label><br>
+                                <div class="prescreening-id-card">
+                                    <span class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
+                                    <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                                </div>
+                                <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
+                            </div>
+                            
+                            <!-- Upload KTP Success -->
+                            <div>
+                                <img src="src/assets/ktp-icon.png">
+                            </div>
+                        </form>
+                    </div>                
+                    
+                    <!-- Prescreening Footer -->
+                    <div class="prescreening-footer">
+                        <h4 class="font-bold">Yeay! Kamu sudah mencapai 50% kelengkapan.</h4>
+                        <p>Semakin banyak kamu menjawab pertanyaan screening maka semakin besar juga
+                            peluang kamu untuk bisa mengikuti studi dari kami.
+                        </p>
+                        
+                        <!-- Button -->
+                        <div class="prescreening-footer-btn">
+                            <a role="button" class="btn btn-primary text--white" href="#">Lanjut</a>
+                            <a class="text--light-blue float-right" href="#">Tetap Lewati</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,16 @@
     color: $color-light-blue !important;
 }
 
+.topnav {
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+
+    .nav-text {
+        justify-self: end;
+    }
+}
+
 // Notif & Avatar
 .topnav-notif-avatar {
     vertical-align: middle;    
@@ -40,11 +50,6 @@
 
 // Desktop view
 @media screen and (min-width: 768px) {
-    .topnav {
-        display: inline-grid;
-        grid-template-columns: 1fr auto;
-    }
-
     .topnav-notif-avatar {
         grid-column-gap: 24px;
 

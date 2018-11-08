@@ -257,6 +257,15 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   color: #179DFE !important;
 }
 
+.topnav {
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+}
+.topnav .nav-text {
+  justify-self: end;
+}
+
 .topnav-notif-avatar {
   vertical-align: middle;
   display: grid;
@@ -281,11 +290,6 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
 }
 
 @media screen and (min-width: 768px) {
-  .topnav {
-    display: inline-grid;
-    grid-template-columns: 1fr auto;
-  }
-
   .topnav-notif-avatar {
     grid-column-gap: 24px;
   }
@@ -343,7 +347,7 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     padding-bottom: 76px;
   }
 
-  .container {
+  .container:not(.login):not(.signup):not(.prescreening) {
     display: grid;
     grid-template-columns: 220px auto;
     grid-template-areas: "sidebar topnav" "sidebar tab" "sidebar body";
@@ -361,6 +365,23 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     grid-area: floating-card;
     max-width: 220px !important;
     width: 220px;
+  }
+
+  .login.container,
+.signup.container,
+.prescreening.container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .login.container .topnav,
+.signup.container .topnav,
+.prescreening.container .topnav {
+    grid-area: topnav;
+  }
+  .login.container .body-content,
+.signup.container .body-content,
+.prescreening.container .body-content {
+    grid-area: body;
   }
 }
 @media screen and (max-width: 767.98px) {
