@@ -1473,6 +1473,58 @@ input[type=date]:not(.settings__input) {
     grid-area: password;
   }
 }
+.saldo .balance-item:nth-child(1) {
+  padding-top: 0;
+}
+.saldo .balance-item {
+  padding: 24px 0;
+  border-bottom: 1px solid #EDEFF2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 10px;
+  grid-template-areas: "detail value";
+}
+.saldo .balance-item .balance__detail {
+  grid-area: detail;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-template-areas: "title title" "date time" "status status";
+}
+.saldo .balance-item .balance__detail .balance__title {
+  grid-area: title;
+}
+.saldo .balance-item .balance__detail .balance__date {
+  grid-area: date;
+}
+.saldo .balance-item .balance__detail .balance__time {
+  grid-area: time;
+}
+.saldo .balance-item .balance__detail .balance__status {
+  grid-area: status;
+}
+.saldo .balance-item .balance__value {
+  grid-area: value;
+  justify-self: end;
+}
+.saldo .balance__status {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.625rem;
+  width: 52px;
+  padding: 3px 5px;
+  margin-top: 8px;
+  color: #FFFFFF;
+  border-radius: 40px;
+  font-weight: 700;
+}
+.saldo .balance__status.status--success {
+  background-color: #3ccd90;
+}
+.saldo .balance__status.status--pending {
+  background-color: #FAAF40;
+}
+
 span {
   background-color: transparent;
 }

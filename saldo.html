@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container studi" id="studi">
+    <div class="container saldo" id="saldo">
         <!-- Top Navbar -->
         <nav class="topnav navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#sidebar-content" aria-controls="sidebar-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
             </button>
             
             <div class="content-header mobile-disabled">
-                <h3>Studi</h3>
+                <h3>Saldo</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -62,7 +62,7 @@
             </div>
             
             <!-- Link starts here -->
-            <div class="sidebar-nav">
+            <!-- <div class="sidebar-nav">
                 <ul class=" navbar-nav nav">
                     <li class="nav-item">
                         <a class="nav-link link" href="index.html">Dashboard</a>
@@ -74,7 +74,7 @@
                         <a class="nav-link link" href="#">Screening</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         
         <!-- Sidebar for Mobile -->
@@ -87,7 +87,7 @@
             </div>
             
             <!-- Link starts here -->
-            <div class="sidebar-nav">
+            <!-- <div class="sidebar-nav">
                 <ul class=" navbar-nav nav">
                     <li class="nav-item">
                         <a class="nav-link link" href="index.html">Dashboard</a>
@@ -109,23 +109,24 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <!-- Study and History Tab -->
+            <!-- All, Income, Outcome Tab -->
             <nav class="tab">
                 <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
-                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-study" role="tab" aria-controls="tab-study" aria-selected="true">Studi</a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-history" role="tab" aria-controls="tab-history" aria-selected="false">Riwayat</a>
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-all" role="tab" aria-controls="tab-all" aria-selected="true">Seluruhnya</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-income" role="tab" aria-controls="tab-income" aria-selected="false">Pemasukan</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-outcome" role="tab" aria-controls="tab-outcome" aria-selected="false">Penarikan</a>
                 </div>
             </nav>
             
             <!-- Study and History Content -->
             <div class="tab-content">
-                <!-- Tab Study -->
-                <div class="tab-pane fade show active" id="tab-study" role="tabpanel" aria-labelledby="nav-tab-study">
+                <!-- Tab All -->
+                <div class="tab-pane fade show active" id="tab-all" role="tabpanel" aria-labelledby="nav-tab-all">
                     <div class="body1">
                         <!-- Progress / Floating Card -->
                         <div class="floating-card mobile-disabled">
@@ -153,33 +154,61 @@
                             </div>
                         </div>
                         
-                        <div>
-                            <div class="tab-study-header">
-                                <!-- Welcome -->
-                                <h3>Hi, <span>Juinal William</span>.</h3>
-                                
-                                <!-- 3 titik -->
-                                <img class="img-3-dots" src="src/assets/dot.png">
-                                
-                                <h6 class="text-uppercase">Saat ini, belum ada studi yang tersedia bagi kamu</h6>
-                                <div class="text-center">
-                                    <img class="img-fluid img-lg" src="src/assets/berenang-icon.png">
+                        <!-- Balance List -->
+                        <div class="balance-list">                            
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Pendapatan dari survei Bukalapak</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--pending">Pending</span>
                                 </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 100.000</h4>
                             </div>
                             
-                            <!-- Study List -->
-                            <div class="study-list">
-                                <!-- Study Item -->
-                                <div class="study-item">
-                                    
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Pendapatan dari survei Populix</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--success">Sukses</span>
                                 </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 50.000</h4>
+                            </div>
+                            
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Penarikan</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--success">Sukses</span>
+                                </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 100.000</h4>
+                            </div>
+                            
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Penarikan</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--pending">Pending</span>
+                                </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 100.000</h4>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Tab History -->
-                <div class="tab-pane fade" id="tab-history" role="tabpanel" aria-labelledby="nav-tab-history">
+                <!-- Tab Income -->
+                <div class="tab-pane fade" id="tab-income" role="tabpanel" aria-labelledby="nav-tab-income">
                     <div class="body1">
                         <!-- Progress / Floating Card -->
                         <div class="floating-card mobile-disabled">
@@ -207,32 +236,88 @@
                             </div>
                         </div>
                         
-                        <div class="history-list">
-                            <h6 class="text-uppercase">Riwayat Aktivitas</h6>
+                        <!-- Balance List -->
+                        <div class="balance-list">                            
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Pendapatan dari survei Bukalapak</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--pending">Pending</span>
+                                </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 100.000</h4>
+                            </div>
                             
-                            <div class="history-item">
-                                <img class="history__icon" src="src/assets/screening-tab-icons/penarikan-dana-icon.png">
-                                <h4 class="font-bold">Kamu melakukan penarikan sebesar Rp <span>30.000</span></h4>
-                                <p class="history__date">3 hari lalu</p>
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Pendapatan dari survei Populix</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--success">Sukses</span>
+                                </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 50.000</h4>
                             </div>
-                            <div class="history-item">
-                                <img class="history__icon" src="src/assets/screening-tab-icons/prescreening-icon.png">
-                                <h4 class="font-bold">Kamu telah melengkapi pre screening.</h4>
-                                <p class="history__date">3 hari lalu</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab Outcome -->
+                <div class="tab-pane fade" id="tab-outcome" role="tabpanel" aria-labelledby="nav-tab-outcome">
+                    <div class="body1">
+                        <!-- Progress / Floating Card -->
+                        <div class="floating-card mobile-disabled">
+                            <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
+                            
+                            <div class="progress-card">
+                                <!-- Progress Bar -->
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <!-- Content -->
+                                <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
+                                <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
+                                <div class="progress-screening-list">
+                                    <div class="progress-screening-item">
+                                        <img>
+                                        <h4>Kesehatan</h4>
+                                    </div>
+                                    <div class="progress-screening-item">
+                                        <img>
+                                        <h4>Makanan</h4>
+                                    </div>
+                                </div>
+                                <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
                             </div>
-                            <div class="history-item">
-                                <img class="history__icon" src="src/assets/screening-tab-icons/survey-icon.png">
-                                <h4 class="font-bold">Kamu mengikuti survey untuk: <span>Sebuah alat kesehatan sedang membutuhkan masukkan kamu.</span></h4>
-                                <p class="history__date">3 hari lalu</p>
+                        </div>
+                        
+                        <!-- Balance List -->
+                        <div class="balance-list">                            
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Penarikan</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--success">Sukses</span>
+                                </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 100.000</h4>
                             </div>
-                            <div class="history-item">
-                                <img class="history__icon" src="src/assets/screening-tab-icons/penerimaan-dana-icon.png">
-                                <h4 class="font-bold">Kamu baru saja menerima dana sebesar Rp <span>250.000</span></h4>
-                                <p class="history__date">3 hari lalu</p>
-                            </div>
-                            <!-- Footer -->
-                            <div class="history-footer">
-                                <a href="#" class="btn btn--text text--light-blue float-right">Muat lainnya</a>
+                            
+                            <div class="balance-item">
+                                <div class="balance__detail">
+                                    <h4 class="balance__title font-bold">Penarikan</h4>
+                                    <span class="balance__date">16 Agustus 2018</span>
+                                    <span class="balance__time">Jam 13:20</span>
+                                    <span class="balance__status status--pending">Pending</span>
+                                </div>
+                                
+                                <!-- Balance Value -->
+                                <h4 class="balance__value font-bold">Rp 100.000</h4>
                             </div>
                         </div>
                     </div>

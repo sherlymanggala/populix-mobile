@@ -1,0 +1,69 @@
+.saldo {
+    .balance-item:nth-child(1) {
+        padding-top: 0;
+    }
+
+    .balance-item {
+        padding: 24px 0;
+        border-bottom: $border-line--gray;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 10px;
+        grid-template-areas: "detail value";
+
+        .balance__detail {
+            grid-area: detail;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 24px;
+            grid-template-areas: 
+            "title title"
+            "date time"
+            "status status";
+
+            .balance__title {
+                grid-area: title;
+            }
+
+            .balance__date {
+                grid-area: date;
+            }
+
+            .balance__time {
+                grid-area: time;
+            }
+
+            .balance__status {
+                grid-area: status;
+            }
+        }
+
+        .balance__value {
+            grid-area: value;
+            justify-self: end;
+        }
+    }
+
+    // Balance Status
+    .balance__status {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.625rem;
+        width: 52px;
+        padding: 3px 5px;
+        margin-top: 8px;
+        color: $color-white;
+        
+        border-radius: 40px;
+        font-weight: $font-bold;
+        
+        // Group's status when full slot
+        &.status--success {
+            background-color: $color-green;
+        }
+        
+        &.status--pending {
+            background-color: $color-orange;
+        }
+    }
+}
