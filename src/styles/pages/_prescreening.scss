@@ -18,6 +18,10 @@
     .prescreening-progress {
         //add margin
         margin: 32px 0;
+
+        .progress-detail {
+            text-align: center;
+        }
     }
     
     #prescreening-gender {
@@ -77,6 +81,21 @@
 
             a.btn-primary {
                 margin-top: 0 !important;
+            }
+        }
+    }
+}
+
+/*
+ * Desktop View
+ */
+@media screen and (min-width: 768px) {
+    .prescreening {
+        .prescreening-progress {
+            margin-top: 0 !important;
+
+            .progress-detail {
+                text-align: right !important;
             }
         }
     }

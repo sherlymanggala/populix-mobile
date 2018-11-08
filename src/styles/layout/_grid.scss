@@ -71,12 +71,40 @@
         }
     }
 
-    // .signup .container {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
+    //Login, Signup, Prescreening
+    .login,
+    .signup,
+    .prescreening {
+        .topnav {
+            border-bottom: $border-line--gray;
+            padding-bottom: 20px;
+        }
 
-    //     .topnav {
-    //         grid-area: topnav;
-    //     }
-    // }
+        .body-content {
+            padding: 0 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 5%;
+            grid-template-areas: 
+            "hero hero"
+            "head body";
+
+            .signup-hero { //Hero Image
+                grid-area: hero;
+                justify-self: center;
+            }
+
+            .login-header,
+            .signup-header,
+            .prescreening-header {
+                grid-area: head;
+            }
+
+            .login-list,
+            .signup-list,
+            .prescreening-form {
+                grid-area: body;
+            }
+        }
+    }
 }

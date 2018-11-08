@@ -15,6 +15,11 @@
         margin: 48px 0;
     }
 
+    .signup-icon {
+        text-align: center !important;
+        justify-self: center !important;
+    }
+
     .signup-header {
         h2 {
             margin-top: 24px; //add margin to header
@@ -36,4 +41,53 @@
     //     float: right;
     //     vertical-align: middle;
     // }
+}
+
+/*
+ * Desktop View
+ */
+@media screen and (min-width: 768px) {
+    //signup
+    #signup {
+        .signup-list {
+            margin-top: 24px;
+
+            .signup-btn-socmed { //Make 3 columns for buttons
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 12px;
+            }
+        }
+    }
+
+    // Signup-1
+    #signup-1 {
+        .signup-form {
+            .form-group {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 20px;
+                grid-template-areas: 
+                "name-first name-last"
+                "email email"
+                "password password";
+
+                .signup-name-first {
+                    grid-area: name-first;
+                }
+
+                .signup-name-last {
+                    grid-area: name-last;
+                }
+
+                .signup-email {
+                    grid-area: email;
+                }
+
+                .signup-password {
+                    grid-area: password;
+                }
+            }
+        }
+    }
 }

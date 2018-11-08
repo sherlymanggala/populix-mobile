@@ -24,12 +24,25 @@ body {
     .desktop-disabled {
         display: none;
     }
+
+    //Signup, Login, Prescreening
+    .signup,
+    .login,
+    .prescreening {
+        .topnav,
+        .body-content {
+            padding: 32px 10% 0 10%;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1440px;
-        margin: 0 auto;
+        
+        &:not(.login):not(.signup):not(.prescreening) {
+            margin: 0 auto;
+        }
     }
 
     .body-content {
