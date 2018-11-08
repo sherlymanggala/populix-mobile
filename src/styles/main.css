@@ -1285,6 +1285,43 @@ input[type=date]:not(.settings__input) {
   border-bottom: 1px solid #EDEFF2;
 }
 
+/*
+* Desktop View
+*/
+@media screen and (min-width: 768px) {
+  .settings .body-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tab tab" "settings .";
+  }
+  .settings .body-content .tab {
+    grid-area: tab;
+  }
+  .settings .body-content .settings-content {
+    grid-area: settings;
+  }
+  .settings .profile-settings-form,
+.settings .password-settings-form,
+.settings .notification-settings-form,
+.settings .bank-account-settings-form {
+    margin-top: 0 !important;
+  }
+
+  #setting-2 .settings-content form {
+    border: 0;
+  }
+  #setting-2 .settings-content .settings-footer button {
+    margin-top: 48px !important;
+  }
+
+  #setting-6 h4 {
+    margin-top: 0;
+  }
+
+  #setting-8 form .btn-primary, #setting-8 form .btn-secondary, #setting-8 form .btn--orange {
+    margin-top: 40px !important;
+  }
+}
 #signup-1 .img-3-dots {
   margin: 32px 0;
 }

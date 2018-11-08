@@ -26,7 +26,7 @@
             </button>
             
             <div class="content-header mobile-disabled">
-                <h3>Akun</h3>
+                <h3>Settings</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -124,30 +124,47 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <div class="settings-header">
-                <h3>Rekening bank</h3>
-            </div>
+            <!-- Settings Tab -->
+            <nav class="tab mobile-disabled">
+                <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-edit-profile" role="tab" aria-controls="tab-edit-profile" aria-selected="true">Edit profil</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-password" role="tab" aria-controls="tab-password" aria-selected="false">Kata sandi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-notification" role="tab" aria-controls="tab-notification" aria-selected="false">Notifikasi</a>
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-bank-account" role="tab" aria-controls="tab-bank-account" aria-selected="false">Rekening bank</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-account" role="tab" aria-controls="tab-account" aria-selected="false">Akun</a>
+                </div>
+            </nav>
             
-            <!-- Bank Account -->
-            <div class="bank-account-settings-form">
-                <form>
-                    <div class="form-group">
-                        <label class="settings__question" for="bank-account-name">Nama pemilik rekening</label>
-                        <input type="text" class="form-control settings__input" id="bank-account-name">
-                        <p class="f-12">Nama yang tertera harus sesuai dengan yang terdaftar di Bank</p>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-bank-account" role="tabpanel" aria-labelledby="nav-tab-bank-account">
+                    <div class="settings-content">
+                        <div class="settings-header desktop-disabled">
+                            <h3>Rekening bank</h3>
+                        </div>
                         
-                        <label class="settings__question" for="bank-account-number">No. rekening</label>
-                        <input type="text" class="form-control settings__input" id="bank-account-number">
-                        
-                        <label class="settings__question" for="bank-account-bank-name">Nama bank</label>
-                        <input type="text" class="form-control settings__input" id="bank-account-bank-name">
-                        
-                        <label class="settings__question" for="bank-account-bank-branch">Cabang</label>
-                        <input type="text" class="form-control settings__input" id="bank-account-bank-branch">
-                        
-                        <button class="btn btn-primary">Simpan</button>
+                        <!-- Bank Account -->
+                        <div class="bank-account-settings-form">
+                            <form>
+                                <div class="form-group">
+                                    <label class="settings__question" for="bank-account-name">Nama pemilik rekening</label>
+                                    <input type="text" class="form-control settings__input" id="bank-account-name">
+                                    <p class="f-12">Nama yang tertera harus sesuai dengan yang terdaftar di Bank</p>
+                                    
+                                    <label class="settings__question" for="bank-account-number">No. rekening</label>
+                                    <input type="text" class="form-control settings__input" id="bank-account-number">
+                                    
+                                    <label class="settings__question" for="bank-account-bank-name">Nama bank</label>
+                                    <input type="text" class="form-control settings__input" id="bank-account-bank-name">
+                                    
+                                    <label class="settings__question" for="bank-account-bank-branch">Cabang</label>
+                                    <input type="text" class="form-control settings__input" id="bank-account-bank-branch">
+                                    
+                                    <button class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

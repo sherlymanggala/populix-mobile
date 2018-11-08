@@ -26,7 +26,7 @@
             </button>
             
             <div class="content-header mobile-disabled">
-                <h3>Akun</h3>
+                <h3>Settings</h3>
             </div>
             
             <!-- Notif and Avatar -->
@@ -99,49 +99,66 @@
         
         <!-- Body Starts Here -->
         <div class="body-content">
-            <!-- Settings Header -->
-            <div class="settings-header">
-                <h3>Kata sandi</h3>
-            </div>
+            <!-- Settings Tab -->
+            <nav class="tab mobile-disabled">
+                <div class="tab-nav nav nav-tabs justify-content-left" id="content-tab" role="tablist">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-edit-profile" role="tab" aria-controls="tab-edit-profile" aria-selected="true">Edit profil</a>
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-password" role="tab" aria-controls="tab-password" aria-selected="false">Kata sandi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-notification" role="tab" aria-controls="tab-notification" aria-selected="false">Notifikasi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-bank-account" role="tab" aria-controls="tab-bank-account" aria-selected="false">Rekening bank</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-account" role="tab" aria-controls="tab-account" aria-selected="false">Akun</a>
+                </div>
+            </nav>
             
-            <!-- Password Settings Form -->
-            <div class="password-settings-form">
-                <!-- Old Password -->
-                <label for="password-old" class="font-bold">Kata sandi lama</label>
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control form-password settings__input">
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="form-control-feedback fas fa-eye form-icon-eye"></i>
-                        </span>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-password" role="tabpanel" aria-labelledby="nav-tab-password">
+                    <div class="settings-content">
+                        <!-- Settings Header -->
+                        <div class="settings-header desktop-disabled">
+                            <h3>Kata sandi</h3>
+                        </div>
+                        
+                        <!-- Password Settings Form -->
+                        <div class="password-settings-form">
+                            <!-- Old Password -->
+                            <label for="password-old" class="font-bold">Kata sandi lama</label>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control form-password settings__input">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="form-control-feedback fas fa-eye form-icon-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- New Password -->
+                            <label for="password-new" class="font-bold">Kata sandi baru</label>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control form-password settings__input">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="form-control-feedback fas fa-eye form-icon-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Confirm New Password-->
+                            <label for="password-confirm" class="font-bold">Konfirmasi kata sandi baru</label>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control form-password settings__input">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="form-control-feedback fas fa-eye form-icon-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Button Save -->
+                            <button class="btn btn-primary">Simpan</button>
+                            <p class="f-12">Apakah kamu lupa dengan kata sandi yang ada saat ini? <a href="#" class="text--light-blue font-bold">Atur ulang kata sandi via email</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- New Password -->
-                <label for="password-new" class="font-bold">Kata sandi baru</label>
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control form-password settings__input">
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="form-control-feedback fas fa-eye form-icon-eye"></i>
-                        </span>
-                    </div>
-                </div>
-                
-                <!-- Confirm New Password-->
-                <label for="password-confirm" class="font-bold">Konfirmasi kata sandi baru</label>
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control form-password settings__input">
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="form-control-feedback fas fa-eye form-icon-eye"></i>
-                        </span>
-                    </div>
-                </div>
-                
-                <!-- Button Save -->
-                <button class="btn btn-primary">Simpan</button>
-                <p class="f-12">Apakah kamu lupa dengan kata sandi yang ada saat ini? <a href="#" class="text--light-blue font-bold">Atur ulang kata sandi via email</p>
                 </div>
             </div>
         </div>

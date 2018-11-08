@@ -1,7 +1,7 @@
 // All Setting Pages
 .settings {
     margin-bottom: 76px;
-
+    
     .settings-header {
         margin-top: 48px;
         border-bottom: $border-line--gray;
@@ -21,46 +21,46 @@
         display: flex;
         align-items: flex-end;
         margin: 8px 0 32px;
-
+        
         // Reset delete button's margin and padding
         button {
             margin: 0;
             padding: 0;
         }
-
+        
         // Profile Picture
         #profile-avatar {
             max-width: 72px;
             max-height: 72px;
             border-radius: 50px;
         }
-
+        
         & > * {
             margin-right: 1rem;
         }
     }
-
+    
     // Input ID Card
     .profile-settings-id-card {
         display: flex;
         align-items: center;
         margin-bottom: 8px;
-
+        
         //remove p margin-bottom
         p {
             margin: 0 0 0 24px;
         }
     }
-
+    
     //add border bottom for Form
     form {
         border-bottom: $border-line--gray;
     }
-
+    
     // Settings Footer
     .settings-footer {
         display: inline;
-
+        
         .btn {
             width: 47%;            
         }
@@ -86,7 +86,7 @@
     input#bank-account-name {
         margin-bottom: 8px;
     }
-
+    
     // Remove last input margin bottom
     #bank-account-bank-branch {
         margin-bottom: 0 !important;
@@ -98,5 +98,68 @@
     .account-settings-item {
         padding: 32px 0;
         border-bottom: $border-line--gray;
+    }
+}
+
+/*
+* Desktop View
+*/
+@media screen and (min-width: 768px) {
+    .settings {
+        .body-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "tab tab"
+            "settings .";
+            
+            .tab {
+                grid-area: tab;
+            }
+            
+            .settings-content {
+                grid-area: settings;
+            }
+        }
+        
+        .profile-settings-form,
+        .password-settings-form,
+        .notification-settings-form,
+        .bank-account-settings-form {
+            margin-top: 0 !important;
+        }
+    }
+    
+    //Edit Profile Settings
+    #setting-2 {
+        .settings-content {
+            form {
+                //remove border bottom
+                border: 0;
+            }
+            
+            // Footer (2 buttons)
+            .settings-footer {
+                button {
+                    margin-top: 48px !important;
+                }
+            }
+        }
+    }
+
+    //Notification Settings
+    #setting-6 {
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    //Bank Account Settings
+    #setting-8 {
+        form {
+            .btn-primary {
+                margin-top: 40px !important;
+            }
+        }
     }
 }
