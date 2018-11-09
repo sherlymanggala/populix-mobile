@@ -192,13 +192,14 @@ p, label {
   padding: 0 34px;
 }
 
-body {
+html, body {
   height: 100%;
 }
 
 @media screen and (max-width: 767.98px) {
   .container {
     padding: 32px 24px 76px 24px;
+    height: 100%;
   }
 
   .mobile-disabled {
@@ -352,6 +353,7 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   .sidebar {
     grid-area: sidebar;
     padding: 32px 0 76px 32px;
+    height: 100%;
   }
 
   .body-content {
@@ -362,13 +364,14 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
   .container:not(.login):not(.signup):not(.prescreening) {
     display: grid;
     grid-template-columns: 220px auto;
+    grid-template-rows: 0 70px auto;
     grid-template-areas: "sidebar topnav" "sidebar tab" "sidebar body";
     grid-column-gap: 49px;
   }
 
   .body1 {
     display: grid;
-    grid-template-columns: auto 220px;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-template-areas: ". floating-card";
     grid-column-gap: 40px;
@@ -377,6 +380,7 @@ i.fas.fa-arrow-right, i.fab.fa-arrow-right {
     grid-area: floating-card;
     max-width: 220px !important;
     width: 220px;
+    justify-self: end;
   }
 
   .login .topnav,
@@ -919,6 +923,9 @@ input[type=date]:not(.settings__input) {
  * Desktop View (More than 768px)
  */
 @media screen and (min-width: 768px) {
+  .dashboard {
+    height: 100%;
+  }
   .dashboard .body-content {
     margin: 0;
   }
@@ -1006,10 +1013,13 @@ input[type=date]:not(.settings__input) {
  * Desktop View (More than 768px)
  */
 @media screen and (min-width: 768px) {
-  #screening .header-screening-cluster {
+  .screening {
+    height: 100%;
+  }
+  .screening .header-screening-cluster {
     margin: 0 0 16px;
   }
-  #screening .section-screening:nth-child(1) {
+  .screening .section-screening:nth-child(1) {
     margin-top: 0;
   }
 }
@@ -1171,6 +1181,9 @@ input[type=date]:not(.settings__input) {
 }
 
 @media screen and (min-width: 1024px) {
+  .fgd-screening {
+    height: 100%;
+  }
   .fgd-screening .fgd-screening-header {
     margin-top: 0 !important;
   }
@@ -1259,6 +1272,9 @@ input[type=date]:not(.settings__input) {
 }
 
 @media screen and (min-width: 768px) {
+  .studi {
+    height: 100%;
+  }
   .studi .tab-study-header {
     margin-top: 0;
   }
@@ -1369,6 +1385,9 @@ input[type=date]:not(.settings__input) {
 * Desktop View
 */
 @media screen and (min-width: 768px) {
+  .settings {
+    height: 100%;
+  }
   .settings .settings-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1472,6 +1491,9 @@ input[type=date]:not(.settings__input) {
   #signup-1 .signup-form .form-group .signup-password {
     grid-area: password;
   }
+}
+.saldo {
+  height: 100%;
 }
 .saldo .balance-item:nth-child(1) {
   padding-top: 0;

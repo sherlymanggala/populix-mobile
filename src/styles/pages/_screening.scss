@@ -34,7 +34,9 @@
  * Desktop View (More than 768px)
  */
  @media screen and (min-width: 768px) {
-     #screening {
+     .screening {
+         height: 100%;
+         
         .header-screening-cluster {
             margin: 0 0 16px;
         }

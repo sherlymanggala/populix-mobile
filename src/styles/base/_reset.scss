@@ -1,4 +1,4 @@
-body {
+html, body {
     height: 100%;
 }
 
@@ -6,6 +6,7 @@ body {
     // Define padding for all pages
     .container {
         padding: 32px 24px 76px 24px;
+        height: 100%;
     }
 
     //hide component for mobile view

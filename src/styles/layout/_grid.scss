@@ -40,15 +40,17 @@
     .sidebar {
         grid-area: sidebar;
         padding: 32px 0 76px 32px;
+        height: 100%;
     }
     .body-content {
         grid-area: body;
         padding-bottom: 76px;
     }
-    // Container Grid except login, signup, and prescreening
+    //Container Grid except login, signup, and prescreening
     .container:not(.login):not(.signup):not(.prescreening) {
         display: grid;
         grid-template-columns: 220px auto;
+        grid-template-rows: 0 70px auto;
         grid-template-areas:
         "sidebar topnav"
         "sidebar tab"
@@ -59,7 +61,7 @@
     // For Body that has progress card or image
     .body1 {
         display: grid;
-        grid-template-columns: auto 220px;
+        grid-template-columns: auto auto;
         grid-template-rows: auto;
         grid-template-areas: ". floating-card";
         grid-column-gap: 40px;
@@ -68,6 +70,7 @@
             grid-area: floating-card;
             max-width: 220px !important;
             width: 220px;
+            justify-self: end;
         }
     }
 
