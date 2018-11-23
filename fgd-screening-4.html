@@ -127,82 +127,82 @@
                 </div>
             </nav>
             
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab-profesi" role="tabpanel" aria-labelledby="nav-tab-profesi">
-                    <div class="body1">
-                        <!-- Progress / Floating Card -->
-                        <div class="floating-card mobile-disabled">
-                            <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
-                            
-                            <div class="progress-card">
-                                <!-- Progress Bar -->
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="body1">
+                <!-- Progress / Floating Card -->
+                <div class="floating-card mobile-disabled">
+                    <a href="#" class="text--light-blue font-bold">Butuh bantuan ?</a>
+                    
+                    <div class="progress-card">
+                        <!-- Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <!-- Content -->
+                        <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
+                        <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
+                        <div class="progress-screening-list">
+                            <div class="progress-screening-item">
+                                <img>
+                                <h4>Kesehatan</h4>
+                            </div>
+                            <div class="progress-screening-item">
+                                <img>
+                                <h4>Makanan</h4>
+                            </div>
+                        </div>
+                        <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
+                    </div>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Tab Profesi -->
+                    <div class="tab-pane fade show active" id="tab-profesi" role="tabpanel" aria-labelledby="nav-tab-profesi">
+                        <div class="fgd-screening-header">
+                            <h4 class="font-bold desktop-disabled">Screening &bull; Studi kualitatif</h4>
+                            <!-- Bersedia mengikuti studi -->
+                            <div class="grid-2">
+                                <img class="fgd-screening__icon" src="src/assets/favicon.png">
+                                <div class="study-approval">
+                                    <h2 class="question">Apakah kamu bersedia mengikuti studi kualitatif ?</h2>
+                                    <label class="question">Populix memerlukan kehadiran kamu dalam melakukan studi ini.</label>
+                                    <select class="option">
+                                        <option value="yes">Saya bersedia</option>
+                                        <option value="no">Saya tidak bersedia</option>
+                                    </select>
+                                    <a href="#" class="text--light-blue float-right">Edit</a>
                                 </div>
-                                <!-- Content -->
-                                <p class="f-12"><span class="font-bold">50%</span> pertanyaan screening yang telah kamu jawab dari total screening yang ada</p>
-                                <h6 class="f-13 text-uppercase font-semibold">Pertanyaan Screening yang belum kamu ambil</h6>
-                                <div class="progress-screening-list">
-                                    <div class="progress-screening-item">
-                                        <img>
-                                        <h4>Kesehatan</h4>
-                                    </div>
-                                    <div class="progress-screening-item">
-                                        <img>
-                                        <h4>Makanan</h4>
-                                    </div>
-                                </div>
-                                <a href="#" class="text--light-blue font-semibold">Lihat semua</a>
+                            </div>
+                        </div>            
+                        
+                        <!-- Bersedia mengikuti FGD -->
+                        <div class="fgd-screening-list">
+                            <p>Fokus grup diskusi adalah metode riset kualitatif tatap muka secara 
+                                <strong class="text-highlight">berkelompok</strong> (4-6 orang / grup) dengan seorang 
+                                moderator sebagai pewawancara untuk <strong class="text-highlight">mengumpulkan informasi</strong>
+                                suatu masalah tertentu.
+                            </p>
+                            <label class="question f-12">Apakah kamu bersedia mengikuti Forum Grup Diskusi ?</label>
+                            <div class="fgd-screening__toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
                             </div>
                         </div>
                         
-                        <div>
-                            <div class="fgd-screening-header">
-                                <h4 class="font-bold desktop-disabled">Screening &bull; Studi kualitatif</h4>
-                                <!-- Bersedia mengikuti studi -->
-                                <div class="grid-2">
-                                    <img class="fgd-screening__icon" src="src/assets/favicon.png">
-                                    <div class="study-approval">
-                                        <h2 class="question">Apakah kamu bersedia mengikuti studi kualitatif ?</h2>
-                                        <label class="question">Populix memerlukan kehadiran kamu dalam melakukan studi ini.</label>
-                                        <select class="option">
-                                            <option value="yes">Saya bersedia</option>
-                                            <option value="no">Saya tidak bersedia</option>
-                                        </select>
-                                        <a href="#" class="text--light-blue float-right">Edit</a>
-                                    </div>
-                                </div>
-                            </div>            
-                            
-                            <!-- Bersedia mengikuti FGD -->
-                            <div class="fgd-screening-list">
-                                <p>Fokus grup diskusi adalah metode riset kualitatif tatap muka secara 
-                                    <strong class="text-highlight">berkelompok</strong> (4-6 orang / grup) dengan seorang 
-                                    moderator sebagai pewawancara untuk <strong class="text-highlight">mengumpulkan informasi</strong>
-                                    suatu masalah tertentu.
-                                </p>
-                                <label class="question f-12">Apakah kamu bersedia mengikuti Forum Grup Diskusi ?</label>
-                                <div class="fgd-screening__toggle">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <!-- Bersedia mengikuti interview -->
-                            <div class="fgd-screening-list">
-                                <p>In-depth interview adalah metodologi riset kualitatif <strong class="text-highlight">tatap muka</strong>
-                                    yang digunakan untuk mendapatkan <strong class="text-highlight">wawasan mendalam</strong>
-                                    dan eksploratif dari seorang responden.
-                                </p>
-                                <label class="question f-12">Apakah kamu bersedia menerima pemberitahuan via email saat ada studi baru ?</label>
-                                <div class="fgd-screening__toggle">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
+                        <!-- Bersedia mengikuti interview -->
+                        <div class="fgd-screening-list">
+                            <p>In-depth interview adalah metodologi riset kualitatif <strong class="text-highlight">tatap muka</strong>
+                                yang digunakan untuk mendapatkan <strong class="text-highlight">wawasan mendalam</strong>
+                                dan eksploratif dari seorang responden.
+                            </p>
+                            <label class="question f-12">Apakah kamu bersedia menerima pemberitahuan via email saat ada studi baru ?</label>
+                            <div class="fgd-screening__toggle">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
                             </div>
                         </div>
                     </div>

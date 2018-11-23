@@ -110,135 +110,138 @@
                 </div>
             </nav>
             
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab-edit-profile" role="tabpanel" aria-labelledby="nav-tab-edit-profile">
-                    <div class="settings-grid">
-                        <!-- Settings Header -->
-                        <div class="settings-header desktop-disabled">
-                            <h3>Edit profile</h3>
-                        </div>
-                        
-                        <!-- Profile Settings Form -->
-                        <div class="profile-settings-form">
-                            <!-- Profile Picture -->
-                            <h4 class="font-bold">Foto Profil</h4>
-                            <div class="profile-settings-picture">
-                                <img id="profile-avatar" class="img-avatar" src="src/assets/profile-picture.png">
-                                <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
-                                <button class="btn btn--text text--dark-gray">Delete</button>
+            <!-- Body without Floating Card -->
+            <div class="body">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-edit-profile" role="tabpanel" aria-labelledby="nav-tab-edit-profile">
+                        <div class="settings-grid">
+                            <!-- Settings Header -->
+                            <div class="settings-header desktop-disabled">
+                                <h3>Edit profile</h3>
                             </div>
                             
-                            <form>
-                                <div class="form-group">
-                                    <div class="form-row">
-                                        <!-- First Name -->
-                                        <div class="col-lg">
-                                            <label for="profile-name-first" class="settings__question">Nama depan</label>
-                                            <input type="text" class="form-control settings__input" id="profile-name-first">
-                                        </div>
-                                        
-                                        <!-- Last Name -->
-                                        <div class="col-lg">
-                                            <label for="profile-name-last" class="settings__question">Nama belakang</label>
-                                            <input type="text" class="form-control settings__input" id="profile-name-last">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-row">
-                                        <!-- Gender -->
-                                        <div class="col-lg">
-                                            <label for="profile-gender" class="settings__question">Jenis kelamin</label><br>
-                                            <select id="profile-gender" class="form-control settings__option">
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
-                                        </div>
-                                        
-                                        <!-- Birthday -->
-                                        <div class="col-lg">
-                                            <label for="profile-birthday" class="settings__question">Tanggal lahir</label>
-                                            <input type="date" class="form-control settings__input" id="profile-birthday">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-row">
-                                        <!-- Ethnic -->
-                                        <div class="col-lg">
-                                            <label for="profile-ethnic" class="settings__question">Etnis</label>
-                                            <select id="profile-ethnic" class="form-control settings__option">
-                                                <option value="Sunda">Sunda</option>
-                                                <option value="Jawa">Jawa</option>
-                                                <option value="Tionghoa">Tionghoa</option>
-                                            </select>
-                                        </div>
-                                        
-                                        <!-- Religion -->
-                                        <div class="col-lg">
-                                            <label for="profile-religion" class="settings__question">Agama</label>
-                                            <select id="profile-religion" class="form-control settings__option">
-                                                <option value="Kristen">Kristen</option>
-                                                <option value="Katolik">Katolik</option>
-                                                <option value="Islam">Islam</option>
-                                                <option value="Buddha">Buddha</option>
-                                                <option value="Hindu">Hindu</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Nationality -->
-                                    <label for="profile-nationality" class="settings__question">Kewarganegaraan</label>
-                                    <select id="profile-nationality" class="form-control settings__option">
-                                        <option value="Indonesia">Indonesia</option>
-                                        <option value="Luar Negeri">Luar Negeri</option>
-                                    </select>
-                                    
-                                    <!-- Address -->
-                                    <label for="profile-address" class="settings__question">Alamat</label>
-                                    <input type="text" class="form-control settings__input" id="profile-address">
-                                    
-                                    <div class="form-row">
-                                        <!-- City -->
-                                        <div class="col-lg">
-                                            <label for="profile-city" class="settings__question">Kota</label>
-                                            <select id="profile-city" class="form-control settings__option">
-                                                <option value="Jakarta">Jakarta</option>
-                                                <option value="Tangerang">Tangerang</option>
-                                                <option value="Depok">Depok</option>
-                                                <option value="Bogor">Bogor</option>
-                                                <option value="Bekasi">Bekasi</option>
-                                            </select>
-                                        </div>
-                                        
-                                        <!-- Province -->
-                                        <div class="col-lg">
-                                            <label for="profile-province" class="settings__question">Provinsi</label>
-                                            <select id="profile-province" class="form-control settings__option">
-                                                <option value="DKI Jakarta">DKI Jakarta</option>
-                                                <option value="Banten">Banten</option>
-                                                <option value="Jawa Barat">Jawa Barat</option>
-                                                <option value="Jawa Tengah">Jawa Tengah</option>
-                                                <option value="DI Yogyakarta">DI Yogyakarta</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- ID Card -->
-                                    <label for="profile-id-card" class="settings__question">Informasi KTP</label><br>
-                                    <div class="profile-settings-id-card">
-                                        <span id="profile-id-card" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
-                                        <p class="f-12">Maksimal file <strong>1 MB</strong></p>
-                                    </div>
-                                    <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
+                            <!-- Profile Settings Form -->
+                            <div class="profile-settings-form">
+                                <!-- Profile Picture -->
+                                <h4 class="font-bold">Foto Profil</h4>
+                                <div class="profile-settings-picture">
+                                    <img id="profile-avatar" class="img-avatar" src="src/assets/profile-picture.png">
+                                    <span class="btn btn-file text--light-blue">Pilih foto <input type="file"></span>
+                                    <button class="btn btn--text text--dark-gray">Delete</button>
                                 </div>
-                            </form>
-                            
-                            <!-- Settings Footer -->
-                            <div class="settings-footer row">
-                                <!-- Button Save -->
-                                <button class="btn btn-primary float-left font-semibold">Simpan</button>
                                 
-                                <!-- Button Cancel -->
-                                <button class="btn btn-secondary float-right font-semibold">Batal</button>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <!-- First Name -->
+                                            <div class="col-lg">
+                                                <label for="profile-name-first" class="settings__question">Nama depan</label>
+                                                <input type="text" class="form-control settings__input" id="profile-name-first">
+                                            </div>
+                                            
+                                            <!-- Last Name -->
+                                            <div class="col-lg">
+                                                <label for="profile-name-last" class="settings__question">Nama belakang</label>
+                                                <input type="text" class="form-control settings__input" id="profile-name-last">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-row">
+                                            <!-- Gender -->
+                                            <div class="col-lg">
+                                                <label for="profile-gender" class="settings__question">Jenis kelamin</label><br>
+                                                <select id="profile-gender" class="form-control settings__option">
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <!-- Birthday -->
+                                            <div class="col-lg">
+                                                <label for="profile-birthday" class="settings__question">Tanggal lahir</label>
+                                                <input type="date" class="form-control settings__input" id="profile-birthday">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-row">
+                                            <!-- Ethnic -->
+                                            <div class="col-lg">
+                                                <label for="profile-ethnic" class="settings__question">Etnis</label>
+                                                <select id="profile-ethnic" class="form-control settings__option">
+                                                    <option value="Sunda">Sunda</option>
+                                                    <option value="Jawa">Jawa</option>
+                                                    <option value="Tionghoa">Tionghoa</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <!-- Religion -->
+                                            <div class="col-lg">
+                                                <label for="profile-religion" class="settings__question">Agama</label>
+                                                <select id="profile-religion" class="form-control settings__option">
+                                                    <option value="Kristen">Kristen</option>
+                                                    <option value="Katolik">Katolik</option>
+                                                    <option value="Islam">Islam</option>
+                                                    <option value="Buddha">Buddha</option>
+                                                    <option value="Hindu">Hindu</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Nationality -->
+                                        <label for="profile-nationality" class="settings__question">Kewarganegaraan</label>
+                                        <select id="profile-nationality" class="form-control settings__option">
+                                            <option value="Indonesia">Indonesia</option>
+                                            <option value="Luar Negeri">Luar Negeri</option>
+                                        </select>
+                                        
+                                        <!-- Address -->
+                                        <label for="profile-address" class="settings__question">Alamat</label>
+                                        <input type="text" class="form-control settings__input" id="profile-address">
+                                        
+                                        <div class="form-row">
+                                            <!-- City -->
+                                            <div class="col-lg">
+                                                <label for="profile-city" class="settings__question">Kota</label>
+                                                <select id="profile-city" class="form-control settings__option">
+                                                    <option value="Jakarta">Jakarta</option>
+                                                    <option value="Tangerang">Tangerang</option>
+                                                    <option value="Depok">Depok</option>
+                                                    <option value="Bogor">Bogor</option>
+                                                    <option value="Bekasi">Bekasi</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <!-- Province -->
+                                            <div class="col-lg">
+                                                <label for="profile-province" class="settings__question">Provinsi</label>
+                                                <select id="profile-province" class="form-control settings__option">
+                                                    <option value="DKI Jakarta">DKI Jakarta</option>
+                                                    <option value="Banten">Banten</option>
+                                                    <option value="Jawa Barat">Jawa Barat</option>
+                                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                                    <option value="DI Yogyakarta">DI Yogyakarta</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- ID Card -->
+                                        <label for="profile-id-card" class="settings__question">Informasi KTP</label><br>
+                                        <div class="profile-settings-id-card">
+                                            <span id="profile-id-card" class="btn btn-file text--light-blue"><img src="src/assets/upload.png"> Pilih file <input type="file"></span>
+                                            <p class="f-12">Maksimal file <strong>1 MB</strong></p>
+                                        </div>
+                                        <p class="f-12">Diharapkan agar file KTP yang diupload memiliki kualitas yang baik dan jelas.</p>
+                                    </div>
+                                </form>
+                                
+                                <!-- Settings Footer -->
+                                <div class="settings-footer row">
+                                    <!-- Button Save -->
+                                    <button class="btn btn-primary float-left font-semibold">Simpan</button>
+                                    
+                                    <!-- Button Cancel -->
+                                    <button class="btn btn-secondary float-right font-semibold">Batal</button>
+                                </div>
                             </div>
                         </div>
                     </div>
